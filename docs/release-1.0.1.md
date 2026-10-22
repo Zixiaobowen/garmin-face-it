@@ -27,7 +27,7 @@
 - 文件：`artifacts/release-1.0.1/reference-face-configurable-1.0.1.iq`
 - 大小：2,048,457字节
 - SHA-256：`f071eefec0b1942ab4ae7363bec91e42cd4eb409baa3357d5e188e6cb1a2e392`
-- 35个manifest目标由官方export统一编译，退出0。
+- 35个manifest目标由官方export统一编译，日志为`56 OUT OF 56 DEVICES BUILT`、`BUILD SUCCESSFUL`，退出0。
 - 官方SDK `VerifyingUtils.verifyIqFile(File, null)`实际返回`SDK_IQ_SIGNATURE_VALID=true`，进程退出0。
 - 应用UUID继续使用`9d182df86c2d48938ce2c9795678f668`；密钥继续留在仓库外。
 
@@ -35,6 +35,12 @@
 
 ## 发布状态
 
-修复和可上传的新包已准备完成；本条记录首次提交时，1.0.1尚未提交Connect IQ。官方“上传新版本”入口持续显示加载状态，中英文入口和重新加载均未显示文件控件；已有1.0.0仍为待审核。
+源码修复已提交为`439fd2f`并推送到[GitHub main](https://github.com/Zixiaobowen/garmin-face-it)。Connect IQ已接受1.0.1程序包：官方校验HTTP 200，版本保存HTTP 204；页面及独立metadata回读均确认签名验证成功。开发者预览显示**1.0.1（内部2）**，应用仍为“待处理”，尚未公开上架。
 
-后续以官方提交回执为准更新本节。商店App ID为`aa58871d-46ed-49f2-9c18-72efdaa7eb50`，保持现有应用身份，不另建应用。
+商店App ID为`aa58871d-46ed-49f2-9c18-72efdaa7eb50`，沿用现有应用。[开发者预览页](https://apps-developer.garmin.com/zh-CN/apps/aa58871d-46ed-49f2-9c18-72efdaa7eb50)当前仅所属账户可见。
+
+新版图文尚未完成保存：三张新截图的上传分别返回HTTP 201，metadata已列出新素材ID；但最终资料保存PUT返回**HTTP 403 / Cloudflare**，正文为“Sorry, you have been blocked”。独立打开的预览仍显示旧截图、旧封面和1.0.0更新说明，不能把素材上传成功算作图文已更新。没有绕过该拦截，也没有重复上传1.0.1。
+
+中英文更新说明、新封面、中英文hero及三张截图已在本地准备完成，原更新表单保留。待网站解除拦截后，只需保存现有版本的图文并回读预览，不应再增加一个相同程序版本。联系邮箱及其它既有设置保持原值；不把该地址复制到回执。
+
+本地证据：`artifacts/release-1.0.1/publication-receipt.json`、`publication-receipt.html`、`store-preview.png`、`assets/`。程序包接受、商店图文保存、公开上架、真机验收是不同状态。
