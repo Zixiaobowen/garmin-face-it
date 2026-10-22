@@ -268,7 +268,7 @@ class ReferenceFaceView extends WatchUi.WatchFace {
 
     function layoutFace() {
         var minimal = FaceSettings.layout == FaceSettings.MINIMAL;
-        timeY = compact ? detailHeight + 2 : (historyVisible ? 28 : (minimal ? 52 : 34));
+        timeY = compact ? detailHeight + 2 : (historyVisible ? 28 : (minimal ? 52 : 46));
         calendarY = timeY + timeHeight + (compact ? 1 : 3);
         gridStart = calendarY + detailHeight + (compact ? 3 : (minimal ? 17 : 6));
         rowHeight = horizontalCells ? max(labelHeight, valueHeight) + detailHeight + 1 : labelHeight + valueHeight + detailHeight;

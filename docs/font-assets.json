@@ -113,12 +113,12 @@
         "lineHeight": 10
       },
       "time": {
-        "size": 65,
+        "size": 53,
         "weight": 650,
         "glyphs": 11,
-        "width": 240,
-        "height": 106,
-        "lineHeight": 51
+        "width": 231,
+        "height": 88,
+        "lineHeight": 42
       },
       "timedense": {
         "size": 48,
@@ -180,12 +180,12 @@
         "lineHeight": 10
       },
       "time": {
-        "size": 72,
+        "size": 62,
         "weight": 650,
         "glyphs": 11,
-        "width": 220,
-        "height": 177,
-        "lineHeight": 57
+        "width": 228,
+        "height": 106,
+        "lineHeight": 51
       },
       "timedense": {
         "size": 53,
@@ -247,12 +247,12 @@
         "lineHeight": 10
       },
       "time": {
-        "size": 78,
+        "size": 67,
         "weight": 650,
         "glyphs": 11,
-        "width": 240,
-        "height": 192,
-        "lineHeight": 62
+        "width": 246,
+        "height": 110,
+        "lineHeight": 53
       },
       "timedense": {
         "size": 57,
@@ -314,12 +314,12 @@
         "lineHeight": 12
       },
       "time": {
-        "size": 84,
+        "size": 72,
         "weight": 650,
         "glyphs": 11,
-        "width": 255,
-        "height": 204,
-        "lineHeight": 66
+        "width": 220,
+        "height": 177,
+        "lineHeight": 57
       },
       "timedense": {
         "size": 62,
@@ -381,12 +381,12 @@
         "lineHeight": 14
       },
       "time": {
-        "size": 108,
+        "size": 93,
         "weight": 650,
         "glyphs": 11,
-        "width": 195,
-        "height": 348,
-        "lineHeight": 85
+        "width": 224,
+        "height": 225,
+        "lineHeight": 73
       },
       "timedense": {
         "size": 80,
@@ -448,12 +448,12 @@
         "lineHeight": 16
       },
       "time": {
-        "size": 117,
+        "size": 101,
         "weight": 650,
         "glyphs": 11,
-        "width": 210,
-        "height": 376,
-        "lineHeight": 92
+        "width": 244,
+        "height": 243,
+        "lineHeight": 79
       },
       "timedense": {
         "size": 86,
@@ -515,12 +515,12 @@
         "lineHeight": 16
       },
       "time": {
-        "size": 125,
+        "size": 107,
         "weight": 650,
         "glyphs": 11,
-        "width": 225,
-        "height": 404,
-        "lineHeight": 99
+        "width": 195,
+        "height": 344,
+        "lineHeight": 84
       },
       "timedense": {
         "size": 92,
@@ -582,12 +582,12 @@
         "lineHeight": 17
       },
       "time": {
-        "size": 136,
+        "size": 117,
         "weight": 650,
         "glyphs": 11,
-        "width": 246,
-        "height": 432,
-        "lineHeight": 106
+        "width": 210,
+        "height": 376,
+        "lineHeight": 92
       },
       "timedense": {
         "size": 101,

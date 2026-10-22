@@ -6,7 +6,7 @@
 
 同一款表盘提供日常、训练、极简三种布局，红、蓝、绿、橙、白五种强调色。时间、日期和电量始终保留；秒、农历、本地跑量图和心率区可分别开关。
 
-Enduro 3 的标签字号为15px、次要文字13px、数据24px，日常/极简时间使用84px字库（实际数字最大字高约65px）。训练布局使用较紧凑的同款数字字体。小屏将标签与数值横排，保留全部已启用信息位；表盘与设置菜单分别加载各自需要的字形。
+Enduro 3 的标签字号为15px、次要文字13px、数据24px，日常/极简时间使用72px字库（实际数字最大字高约56px）。日常时间从圆屏顶部46px开始绘制，主时间字库按各屏幕顶部可用宽度缩小，避免两端数字被圆形边缘裁切。训练布局使用较紧凑的同款数字字体。小屏将标签与数值横排，保留全部已启用信息位；表盘与设置菜单分别加载各自需要的字形。
 
 - 信息位可选自动、关闭、心率、身体电量、温度/体感、恢复小时、周跑量、摄氧量/等级、日出、降雨概率、步数。日常最多4位，训练大屏最多6位，极简2位；宽度≤240或高度<200的设备最多4位。关闭后自动收拢，自动选择不重复占用显式指标。
 - 支持但暂缺合格数据时显示 `--`；显式选择设备不支持的能力时显示“不支持”。自动模式只选设备支持的能力，不因某次样本缺失而换位。
@@ -46,7 +46,7 @@ python3 scripts/build.py --device enduro3
 python3 scripts/build.py --all
 
 # 官方export：覆盖manifest全部目标的签名商店包
-python3 scripts/build.py --package 1.0.0
+python3 scripts/build.py --package 1.0.1
 
 # 先启动已安装的官方模拟器
 "$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2/bin/connectiq"
@@ -62,6 +62,8 @@ python3 scripts/build.py --device fr920xt --simulator
 `--package VERSION`使用官方`-e -r`导出，输出到`artifacts/release-VERSION/`，同时保存编译日志、目标列表、字节数和SHA-256。它不能与单目标、模拟器或测试模式混用；版本参数用于文件名及商店提交资料，不向manifest添加不存在的版本字段。此目录不提交Git；重复导出可能因SDK时间戳而产生不同SHA，不能承诺逐字节一致。
 
 已有18项数据／设置／信息位用例记录为PASS，但SDK9.2.0的测试摘要解析异常使runner退出1；不能把整条命令算作成功。历史全目标构建、代表设备显示和本次定向检查分别记在[提交审查](docs/review-commit-2026-10-22.md)，不混写为本轮重跑。原始日志与截图保留在本机，不是应用构建输入。
+
+1.0.1的时间裁切修复已检查11种屏幕规格、三种布局的全天时间组合，并在Enduro 3、FR55和FR965官方模拟器核对实际画面；商店包导出和SDK验签通过。详见[1.0.1修复与发布记录](docs/release-1.0.1.md)。
 
 ## 可重现资源
 
@@ -94,6 +96,7 @@ Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.
 - [设备兼容矩阵](docs/compatibility.md)
 - [字体来源、哈希及图集元数据](docs/font-assets.json)
 - [1.0.0发布记录与验证边界](docs/release-1.0.0.md)
+- [1.0.1时间裁切修复与发布记录](docs/release-1.0.1.md)
 - [隐私说明 / Privacy notice](docs/privacy.md)
 
 本表盘免费，无广告、付费解锁或订阅。健康数据通过设备本地官方API读取；没有开发者服务器、网络上传或第三方天气密钥。问题反馈请使用[GitHub Issues](https://github.com/Zixiaobowen/garmin-face-it/issues)，提供设备型号、固件版本及复现步骤，请勿附个人健康记录。响应取决于维护者可用时间，不承诺固定时限。

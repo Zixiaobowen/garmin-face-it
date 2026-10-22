@@ -16,15 +16,16 @@ VALUES = "0123456789:/.-%°+ ChkmNA"
 FACE_LABELS = "心率身体电量温度恢复周跑量摄氧量日出降雨步数不支持 " + VALUES
 DETAILS = "未设目标农历周日一二三四五六七八九十初廿卅正冬腊月闰优秀卓越良好一般较低过期无数据心率区天气最近体感本地今天间不支持" + VALUES + " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 # Group, label, detail, value, time, dense time, ambient time (pixels).
+# Round-screen Time fonts fit the circular chord at y=46/280 with at least 2px clearance.
 SIZES = [("compact", 10, 9, 16, 47, 32, 28),
-         ("small", 12, 11, 18, 65, 48, 31),
-         ("240", 13, 12, 21, 72, 53, 36),
-         ("260", 14, 12, 23, 78, 57, 39),
-         ("280", 15, 13, 24, 84, 62, 42),
-         ("360", 19, 17, 31, 108, 80, 54),
-         ("390", 21, 18, 34, 117, 86, 59),
-         ("416", 22, 19, 36, 125, 92, 62),
-         ("454", 24, 21, 39, 136, 101, 68)]
+         ("small", 12, 11, 18, 53, 48, 31),
+         ("240", 13, 12, 21, 62, 53, 36),
+         ("260", 14, 12, 23, 67, 57, 39),
+         ("280", 15, 13, 24, 72, 62, 42),
+         ("360", 19, 17, 31, 93, 80, 54),
+         ("390", 21, 18, 34, 101, 86, 59),
+         ("416", 22, 19, 36, 107, 92, 62),
+         ("454", 24, 21, 39, 117, 101, 68)]
 
 
 def bitmap_font(font_path, size, alphabet, folder, name, weight):
