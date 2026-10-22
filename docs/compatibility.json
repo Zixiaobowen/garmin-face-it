@@ -1,0 +1,4645 @@
+{
+  "summary": {
+    "retrieved_at": "2026-10-19T21:15:54.359796+08:00",
+    "alias_mapping_verified_at": "2026-10-19T15:48:48.891218+00:00",
+    "official_targets": 35,
+    "enduro_targets": 4,
+    "forerunner_targets": 31,
+    "named_product_rows_including_aliases": 38,
+    "forerunner_named_product_rows": 34,
+    "additional_aliases_target_unresolved": 1,
+    "watchface_supported_targets": 35,
+    "part_number_records": 65,
+    "unique_part_numbers": 65,
+    "screen_resolution_groups": {
+      "280 x 280": 4,
+      "390 x 390": 6,
+      "215 x 180": 4,
+      "240 x 240": 8,
+      "260 x 260": 3,
+      "218 x 218": 2,
+      "416 x 416": 1,
+      "360 x 360": 1,
+      "208 x 208": 2,
+      "454 x 454": 3,
+      "205 x 148": 1
+    },
+    "memory_bytes_groups": {
+      "114688": 1,
+      "131072": 19,
+      "65536": 5,
+      "98304": 9,
+      "49152": 1
+    },
+    "all_rows_cross_checked": true
+  },
+  "targets": [
+    {
+      "family": "Enduro",
+      "official_name": "Enduro™",
+      "in_scope_name": "Enduro",
+      "ciq_product_id": "enduro",
+      "screen_resolution": "280 x 280",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 114688,
+      "watchface_memory_kib": 112,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 114688,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3638-00",
+        "006-B3872-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3638-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3872-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/enduro/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/enduro.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Enduro",
+      "official_name": "Enduro™ 3",
+      "in_scope_name": "Enduro 3",
+      "ciq_product_id": "enduro3",
+      "screen_resolution": "280 x 280",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4575-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4575-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "vie"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/enduro3/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/enduro3.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Enduro",
+      "official_name": "Enduro™ 4",
+      "in_scope_name": "Enduro 4",
+      "ciq_product_id": "enduro4",
+      "screen_resolution": "280 x 280",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B5169-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B5169-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "vie"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "现行官方开发目录已列出；不据此推断各地零售上市或本机 SDK 可用性。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/enduro4/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/enduro4.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Enduro",
+      "official_name": "fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2",
+      "in_scope_name": "Enduro 2",
+      "ciq_product_id": "fenix7x",
+      "screen_resolution": "280 x 280",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B3907-00",
+        "006-B3910-00",
+        "006-B4135-00",
+        "006-B4341-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3907-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3910-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B4135-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B4341-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "Enduro 2 与 fēnix 7X/tactix 7/quatix 7X Solar 共享官方 target；本任务产品范围只计 Enduro 2。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix7x/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix7x.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 165",
+      "in_scope_name": "Forerunner 165",
+      "ciq_product_id": "fr165",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4432-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4432-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr165/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr165.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 165 Music",
+      "in_scope_name": "Forerunner 165 Music",
+      "ciq_product_id": "fr165m",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4433-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4433-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr165m/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr165m.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 170",
+      "in_scope_name": "Forerunner 170",
+      "ciq_product_id": "fr170",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4815-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4815-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "现行官方开发目录已列出；不据此推断各地零售上市或本机 SDK 可用性。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr170/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr170.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 170 Music",
+      "in_scope_name": "Forerunner 170 Music",
+      "ciq_product_id": "fr170m",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4814-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4814-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "现行官方开发目录已列出；不据此推断各地零售上市或本机 SDK 可用性。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr170m/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr170m.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 230",
+      "in_scope_name": "Forerunner 230",
+      "ciq_product_id": "fr230",
+      "screen_resolution": "215 x 180",
+      "screen_shape": "semi-round",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "display_colors_reference": 14,
+      "api_level_compatible_page": "1.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "watchface_memory_kib": 64,
+      "touch": false,
+      "all_app_types": {
+        "Data Field": {
+          "memory_bytes": 16384,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2157-00",
+        "006-B2313-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2157-00",
+          "language_groups": [
+            [
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "hrv",
+              "hun",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2313-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "jpn"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "兼容页写 MIP 16 colors，设备参考写 Display Colors 14；两种口径原样保留。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr230/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr230.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 235",
+      "in_scope_name": "Forerunner 235",
+      "ciq_product_id": "fr235",
+      "screen_resolution": "215 x 180",
+      "screen_shape": "semi-round",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "display_colors_reference": 14,
+      "api_level_compatible_page": "1.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "watchface_memory_kib": 64,
+      "touch": false,
+      "all_app_types": {
+        "Data Field": {
+          "memory_bytes": 16384,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2431-00",
+        "006-B2396-00",
+        "006-B2397-00",
+        "006-B2653-00",
+        "006-B2733-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2431-00",
+          "language_groups": [
+            [
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "hrv",
+              "hun",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2396-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2397-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "jpn"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2653-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "zhs"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2733-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "zhs"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "兼容页写 MIP 16 colors，设备参考写 Display Colors 14；两种口径原样保留。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr235/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr235.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 245",
+      "in_scope_name": "Forerunner 245",
+      "ciq_product_id": "fr245",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.3",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3076-00",
+        "006-B3145-00",
+        "006-B3914-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3076-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3145-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3914-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr245/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr245.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 245 Music",
+      "in_scope_name": "Forerunner 245 Music",
+      "ciq_product_id": "fr245m",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.3",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3077-00",
+        "006-B3321-00",
+        "006-B3913-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3077-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3321-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3913-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr245m/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr245m.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 255",
+      "in_scope_name": "Forerunner 255",
+      "ciq_product_id": "fr255",
+      "screen_resolution": "260 x 260",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 524288,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B3992-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3992-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr255/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr255.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 255 Music",
+      "in_scope_name": "Forerunner 255 Music",
+      "ciq_product_id": "fr255m",
+      "screen_resolution": "260 x 260",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B3990-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3990-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr255m/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr255m.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 255s",
+      "in_scope_name": "Forerunner 255s",
+      "ciq_product_id": "fr255s",
+      "screen_resolution": "218 x 218",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 524288,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B3993-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3993-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr255s/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr255s.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 255s Music",
+      "in_scope_name": "Forerunner 255s Music",
+      "ciq_product_id": "fr255sm",
+      "screen_resolution": "218 x 218",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B3991-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3991-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr255sm/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr255sm.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 265",
+      "in_scope_name": "Forerunner 265",
+      "ciq_product_id": "fr265",
+      "screen_resolution": "416 x 416",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4257-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4257-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr265/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr265.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 265s",
+      "in_scope_name": "Forerunner 265s",
+      "ciq_product_id": "fr265s",
+      "screen_resolution": "360 x 360",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4258-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4258-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr265s/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr265s.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 45",
+      "in_scope_name": "Forerunner 45",
+      "ciq_product_id": "fr45",
+      "screen_resolution": "208 x 208",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (8 colors)",
+      "display_colors_reference": 8,
+      "api_level_compatible_page": "1.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 49152,
+      "watchface_memory_kib": 48,
+      "touch": false,
+      "all_app_types": {
+        "Watch Face": {
+          "memory_bytes": 49152,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3282-00",
+        "006-B3847-00",
+        "006-B3469-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3282-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "ukr"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3847-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "ukr"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3469-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "仅支持 Watch Face；官方商店硬件编号已核实 45 Plus（006-B3847-00）及日版 ForeAthlete 45S（006-B3469-00）共用 fr45。国际版 45S 映射仍未确认，见 verification/fr45-device-mapping.json。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr45/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr45.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 55",
+      "in_scope_name": "Forerunner 55",
+      "ciq_product_id": "fr55",
+      "screen_resolution": "208 x 208",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (8 colors)",
+      "display_colors_reference": 8,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3869-00",
+        "006-B4033-00",
+        "006-B4838-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3869-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B4033-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "vie"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B4838-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr55/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr55.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 570 42mm",
+      "in_scope_name": "Forerunner 570 42mm",
+      "ciq_product_id": "fr57042mm",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4574-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4574-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr57042mm/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr57042mm.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 570 47mm",
+      "in_scope_name": "Forerunner 570 47mm",
+      "ciq_product_id": "fr57047mm",
+      "screen_resolution": "454 x 454",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4570-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4570-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr57047mm/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr57047mm.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 630",
+      "in_scope_name": "Forerunner 630",
+      "ciq_product_id": "fr630",
+      "screen_resolution": "215 x 180",
+      "screen_shape": "semi-round",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "display_colors_reference": 14,
+      "api_level_compatible_page": "1.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "watchface_memory_kib": 64,
+      "touch": true,
+      "all_app_types": {
+        "Data Field": {
+          "memory_bytes": 16384,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2156-00",
+        "006-B2310-00",
+        "006-B2311-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2156-00",
+          "language_groups": [
+            [
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "hrv",
+              "hun",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2310-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "zhs"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2311-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "jpn"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "兼容页写 MIP 16 colors，设备参考写 Display Colors 14；两种口径原样保留。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr630/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr630.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 645",
+      "in_scope_name": "Forerunner 645",
+      "ciq_product_id": "fr645",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.1",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2886-00",
+        "006-B3003-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2886-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "zsm"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3003-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr645/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr645.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 645 Music",
+      "in_scope_name": "Forerunner 645 Music",
+      "ciq_product_id": "fr645m",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 524288,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2888-00",
+        "006-B3004-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2888-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "zsm"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3004-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr645m/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr645m.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 70",
+      "in_scope_name": "Forerunner 70",
+      "ciq_product_id": "fr70",
+      "screen_resolution": "390 x 390",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4916-00",
+        "006-B5214-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4916-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B5214-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "现行官方开发目录已列出；不据此推断各地零售上市或本机 SDK 可用性。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr70/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr70.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 735xt",
+      "in_scope_name": "Forerunner 735xt",
+      "ciq_product_id": "fr735xt",
+      "screen_resolution": "215 x 180",
+      "screen_shape": "semi-round",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "display_colors_reference": 14,
+      "api_level_compatible_page": "2.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "watchface_memory_kib": 64,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2158-00",
+        "006-B2533-00",
+        "006-B2534-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2158-00",
+          "language_groups": [
+            [
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2533-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2534-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "jpn"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "兼容页写 MIP 16 colors，设备参考写 Display Colors 14；两种口径原样保留。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr735xt/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr735xt.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 745",
+      "in_scope_name": "Forerunner 745",
+      "ciq_product_id": "fr745",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.3",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3589-00",
+        "006-B3794-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3589-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3794-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr745/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr745.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 920XT",
+      "in_scope_name": "Forerunner 920XT",
+      "ciq_product_id": "fr920xt",
+      "screen_resolution": "205 x 148",
+      "screen_shape": "rectangle",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "display_colors_reference": 14,
+      "api_level_compatible_page": "1.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "watchface_memory_kib": 64,
+      "touch": false,
+      "all_app_types": {
+        "Data Field": {
+          "memory_bytes": 16384,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B1765-00",
+        "006-B2130-00",
+        "006-B2131-00",
+        "006-B2132-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B1765-00",
+          "language_groups": [
+            [
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "hrv",
+              "hun",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2130-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "zht"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2131-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "zhs"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2132-00",
+          "language_groups": [
+            [
+              "eng"
+            ],
+            [
+              "jpn"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "兼容页写 MIP 16 colors，设备参考写 Display Colors 14；两种口径原样保留。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr920xt/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr920xt.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 935",
+      "in_scope_name": "Forerunner 935",
+      "ciq_product_id": "fr935",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.1",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B2691-00",
+        "006-B2833-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B2691-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "nob",
+              "pol",
+              "por",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "zsm"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B2833-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr935/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr935.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 945",
+      "in_scope_name": "Forerunner 945",
+      "ciq_product_id": "fr945",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.3",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3113-00",
+        "006-B3441-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3113-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur"
+            ]
+          ]
+        },
+        {
+          "part_number": "006-B3441-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr945/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr945.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 945 LTE",
+      "in_scope_name": "Forerunner 945 LTE",
+      "ciq_product_id": "fr945lte",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3652-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3652-00",
+          "language_groups": [
+            [
+              "ara",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr945lte/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr945lte.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 955 / Solar",
+      "in_scope_name": "Forerunner 955 / Solar",
+      "ciq_product_id": "fr955",
+      "screen_resolution": "260 x 260",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4024-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4024-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ]
+        }
+      ],
+      "notes": [
+        "955 与 955 Solar 在官方参考页合并为 fr955。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr955/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr955.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 965",
+      "in_scope_name": "Forerunner 965",
+      "ciq_product_id": "fr965",
+      "screen_resolution": "454 x 454",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "5.2",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 262144,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4315-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4315-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr965/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr965.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "Forerunner",
+      "official_name": "Forerunner® 970",
+      "in_scope_name": "Forerunner 970",
+      "ciq_product_id": "fr970",
+      "screen_resolution": "454 x 454",
+      "screen_shape": "round",
+      "screen_technology": "AMOLED",
+      "display_colors_reference": 65536,
+      "api_level_compatible_page": "6.0",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": true,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 65536,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 65536,
+          "notes": "Build as Watch App or Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 786432,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 786432,
+          "notes": "Requires 4.x SDK"
+        }
+      },
+      "part_numbers": [
+        "006-B4565-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B4565-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ind",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr",
+              "vie",
+              "zsm"
+            ],
+            [
+              "zhs",
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ]
+          ]
+        }
+      ],
+      "notes": [],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fr970/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fr970.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    }
+  ],
+  "products": [
+    {
+      "name": "Enduro",
+      "family": "Enduro",
+      "ciq_product_id": "enduro",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/enduro/"
+    },
+    {
+      "name": "Enduro 3",
+      "family": "Enduro",
+      "ciq_product_id": "enduro3",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/enduro3/"
+    },
+    {
+      "name": "Enduro 4",
+      "family": "Enduro",
+      "ciq_product_id": "enduro4",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/enduro4/"
+    },
+    {
+      "name": "Enduro 2",
+      "family": "Enduro",
+      "ciq_product_id": "fenix7x",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix7x/"
+    },
+    {
+      "name": "Forerunner 165",
+      "family": "Forerunner",
+      "ciq_product_id": "fr165",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr165/"
+    },
+    {
+      "name": "Forerunner 165 Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr165m",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr165m/"
+    },
+    {
+      "name": "Forerunner 170",
+      "family": "Forerunner",
+      "ciq_product_id": "fr170",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr170/"
+    },
+    {
+      "name": "Forerunner 170 Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr170m",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr170m/"
+    },
+    {
+      "name": "Forerunner 230",
+      "family": "Forerunner",
+      "ciq_product_id": "fr230",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 65536,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr230/"
+    },
+    {
+      "name": "Forerunner 235",
+      "family": "Forerunner",
+      "ciq_product_id": "fr235",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 65536,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr235/"
+    },
+    {
+      "name": "Forerunner 245",
+      "family": "Forerunner",
+      "ciq_product_id": "fr245",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.3",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr245/"
+    },
+    {
+      "name": "Forerunner 245 Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr245m",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.3",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr245m/"
+    },
+    {
+      "name": "Forerunner 255",
+      "family": "Forerunner",
+      "ciq_product_id": "fr255",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr255/"
+    },
+    {
+      "name": "Forerunner 255 Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr255m",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr255m/"
+    },
+    {
+      "name": "Forerunner 255s",
+      "family": "Forerunner",
+      "ciq_product_id": "fr255s",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "218 x 218",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr255s/"
+    },
+    {
+      "name": "Forerunner 255s Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr255sm",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "218 x 218",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr255sm/"
+    },
+    {
+      "name": "Forerunner 265",
+      "family": "Forerunner",
+      "ciq_product_id": "fr265",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "416 x 416",
+      "screen_technology": "AMOLED",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr265/"
+    },
+    {
+      "name": "Forerunner 265s",
+      "family": "Forerunner",
+      "ciq_product_id": "fr265s",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "360 x 360",
+      "screen_technology": "AMOLED",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr265s/"
+    },
+    {
+      "name": "Forerunner 45",
+      "family": "Forerunner",
+      "ciq_product_id": "fr45",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "208 x 208",
+      "screen_technology": "Memory-In-Pixel (8 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 49152,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr45/"
+    },
+    {
+      "name": "Forerunner 55",
+      "family": "Forerunner",
+      "ciq_product_id": "fr55",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "208 x 208",
+      "screen_technology": "Memory-In-Pixel (8 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr55/"
+    },
+    {
+      "name": "Forerunner 570 42mm",
+      "family": "Forerunner",
+      "ciq_product_id": "fr57042mm",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr57042mm/"
+    },
+    {
+      "name": "Forerunner 570 47mm",
+      "family": "Forerunner",
+      "ciq_product_id": "fr57047mm",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr57047mm/"
+    },
+    {
+      "name": "Forerunner 630",
+      "family": "Forerunner",
+      "ciq_product_id": "fr630",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 65536,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr630/"
+    },
+    {
+      "name": "Forerunner 645",
+      "family": "Forerunner",
+      "ciq_product_id": "fr645",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.1",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr645/"
+    },
+    {
+      "name": "Forerunner 645 Music",
+      "family": "Forerunner",
+      "ciq_product_id": "fr645m",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.2",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr645m/"
+    },
+    {
+      "name": "Forerunner 70",
+      "family": "Forerunner",
+      "ciq_product_id": "fr70",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr70/"
+    },
+    {
+      "name": "Forerunner 735xt",
+      "family": "Forerunner",
+      "ciq_product_id": "fr735xt",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "api_level": "2.4",
+      "watchface_memory_bytes": 65536,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr735xt/"
+    },
+    {
+      "name": "Forerunner 745",
+      "family": "Forerunner",
+      "ciq_product_id": "fr745",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.3",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr745/"
+    },
+    {
+      "name": "Forerunner 920XT",
+      "family": "Forerunner",
+      "ciq_product_id": "fr920xt",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "205 x 148",
+      "screen_technology": "Memory-In-Pixel (16 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 65536,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr920xt/"
+    },
+    {
+      "name": "Forerunner 935",
+      "family": "Forerunner",
+      "ciq_product_id": "fr935",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.1",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr935/"
+    },
+    {
+      "name": "Forerunner 945",
+      "family": "Forerunner",
+      "ciq_product_id": "fr945",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.3",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr945/"
+    },
+    {
+      "name": "Forerunner 945 LTE",
+      "family": "Forerunner",
+      "ciq_product_id": "fr945lte",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr945lte/"
+    },
+    {
+      "name": "Forerunner 955",
+      "family": "Forerunner",
+      "ciq_product_id": "fr955",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr955/"
+    },
+    {
+      "name": "Forerunner 955 Solar",
+      "family": "Forerunner",
+      "ciq_product_id": "fr955",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr955/"
+    },
+    {
+      "name": "Forerunner 965",
+      "family": "Forerunner",
+      "ciq_product_id": "fr965",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "api_level": "5.2",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr965/"
+    },
+    {
+      "name": "Forerunner 970",
+      "family": "Forerunner",
+      "ciq_product_id": "fr970",
+      "target_mapping_status": "官方参考页明确",
+      "watchface_supported": true,
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "api_level": "6.0",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fr970/"
+    },
+    {
+      "name": "Forerunner 45S",
+      "family": "Forerunner",
+      "ciq_product_id": null,
+      "candidate_product_id": "fr45",
+      "target_mapping_status": "部分核实：官方商店把日版 ForeAthlete 45S 列为硬件 006-B3469-00 的别名，官方 SDK 将该编号映射到 fr45。国际版 Forerunner 45S 的名称与硬件编号对应仍未确认，不从日版结论外推全部地区。",
+      "watchface_supported": true,
+      "screen_resolution": "208 x 208",
+      "screen_technology": null,
+      "api_level": null,
+      "watchface_memory_bytes": null,
+      "verified_regional_mapping": {
+        "name": "ForeAthlete 45S",
+        "part_number": "006-B3469-00",
+        "ciq_product_id": "fr45"
+      },
+      "mapping_evidence": "docs/verification/fr45-device-mapping.json",
+      "source": "https://www.garmin.com/en-US/p/682416/",
+      "evidence": "官方产品页原始内嵌规格明确 Connect IQ: yes (watch faces only)，分辨率为 208 x 208。已保存对应 DOM 证据。"
+    },
+    {
+      "name": "Forerunner 45 Plus",
+      "family": "Forerunner",
+      "ciq_product_id": "fr45",
+      "target_mapping_status": "已核实：官方 Connect IQ 商店记录 Forerunner 45 Plus 的硬件编号为 006-B3847-00，官方 fr45/compiler.json 包含同一编号。此结论不替代商店发布或真机安装验证。",
+      "watchface_supported": true,
+      "screen_resolution": "208 x 208",
+      "screen_technology": "Memory-In-Pixel (8 colors)",
+      "api_level": "1.4",
+      "watchface_memory_bytes": 49152,
+      "source": "https://www8.garmin.com/manuals/webhelp/forerunner45/EN-US/GUID-8858A0D9-16E0-4172-8689-439FF0F33B70.html",
+      "mapping_source": "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/deviceTypes",
+      "mapping_evidence": "docs/verification/fr45-device-mapping.json",
+      "verified_part_number": "006-B3847-00",
+      "evidence": "官方 45/45 Plus 手册明确支持自定义表盘；官方商店 deviceTypes 记录和 SDK 设备定义通过相同硬件编号确认使用 fr45。"
+    }
+  ],
+  "research_notes": {
+    "scope": "只读研究，不修改项目、不安装工具、不访问凭据或用户聊天。官方兼容目录全量匹配 Enduro 和 Forerunner，再逐 target 核对 Watch Face。",
+    "sources": {
+      "compatible": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "reference_index": "https://developer.garmin.com/connect-iq/device-reference/",
+      "forerunner45s_product": "https://www.garmin.com/en-US/p/682416/",
+      "forerunner45plus_watchface_manual": "https://www8.garmin.com/manuals/webhelp/forerunner45/EN-US/GUID-8858A0D9-16E0-4172-8689-439FF0F33B70.html",
+      "connect_iq_store_device_types": "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/deviceTypes",
+      "compatibility_policy": "https://support.garmin.com/en-US?faq=jNPCPTtSF9249pBoAtfdo7"
+    },
+    "additional_aliases": [
+      {
+        "name": "Forerunner 45S",
+        "watch_face_support": "官方产品页原始内嵌规格明确 Connect IQ: yes (watch faces only)，分辨率为 208 x 208。已保存对应 DOM 证据。",
+        "ciq_product_id": null,
+        "candidate_product_id": "fr45",
+        "target_mapping_status": "日版 ForeAthlete 45S 已由官方商店别名和硬件编号 006-B3469-00 确认使用 fr45；国际版 Forerunner 45S 的映射仍未确认。",
+        "mapping_evidence": "docs/verification/fr45-device-mapping.json",
+        "source": "https://www.garmin.com/en-US/p/682416/"
+      },
+      {
+        "name": "Forerunner 45 Plus",
+        "watch_face_support": "官方 45/45 Plus 手册明确支持从 Connect IQ 商店下载自定义表盘，已读取原页。",
+        "ciq_product_id": "fr45",
+        "target_mapping_status": "官方商店的 Forerunner 45 Plus 硬件编号 006-B3847-00 与官方 fr45/compiler.json 一致，映射已核实。",
+        "mapping_evidence": "docs/verification/fr45-device-mapping.json",
+        "source": "https://www8.garmin.com/manuals/webhelp/forerunner45/EN-US/GUID-8858A0D9-16E0-4172-8689-439FF0F33B70.html"
+      }
+    ],
+    "known_legacy_exclusions_non_exhaustive": [
+      {
+        "name": "Forerunner 25",
+        "connect_iq_watchface": false,
+        "evidence": "完整官方 CIQ 兼容目录和 device-reference 中没有该型号或 target；官方手册描述 Garmin Connect 同步和内置自定义设置。未找到逐型号写明不支持 CIQ 的官方否定句。",
+        "manual": "https://www8.garmin.com/manuals/webhelp/forerunner25/EN-US/Forerunner_25_OM_EN-US.pdf"
+      },
+      {
+        "name": "Forerunner 30",
+        "connect_iq_watchface": false,
+        "evidence": "完整官方 CIQ 兼容目录和 device-reference 中没有该型号或 target；官方手册描述 Garmin Connect 同步和内置自定义设置。未找到逐型号写明不支持 CIQ 的官方否定句。",
+        "manual": "https://www8.garmin.com/manuals/webhelp/forerunner30/EN-US/Forerunner_30_OM_EN-US.pdf"
+      },
+      {
+        "name": "Forerunner 35",
+        "connect_iq_watchface": false,
+        "evidence": "完整官方 CIQ 兼容目录和 device-reference 中没有该型号或 target；官方手册描述 Garmin Connect 同步和内置自定义设置。官方社区有用户明确说明不支持，社区用户发言不等同 Garmin 官方技术声明。",
+        "manual": "https://www8.garmin.com/manuals/webhelp/forerunner35/EN-US/Forerunner_35_OM_EN-US.pdf",
+        "community_secondary": "https://forums.garmin.com/sports-fitness/sports-fitness/f/forerunner-30-35/118851/what-about-connectiq-support"
+      }
+    ],
+    "limitations": [
+      "全量覆盖仅指抓取时官方两个开发目录内 Enduro/Forerunner 的所有行及 target，不等于全部历史零售 SKU、国家款、颜色、材质和地区别名的完整枚举。",
+      "产品页的通用 Connect IQ 营销文案可能同时宣称 apps/widgets/data fields；fr45 的正式 App Types 表只含 Watch Face，应以开发者参考页判断应用类型。",
+      "API level 是官方兼容页当时公布的设备能力级别，不能当作所有在用固件的最低版本，不能直接当成项目 minApiLevel。",
+      "内存列来自 Watch Face 的 Memory Limit，单位按 bytes 记录；不是 Watch App、数据字段、存储空间或可用整幅图片容量。",
+      "不推定地区硬件编号与国家、零售 SKU、ForeAthlete/J/Lite 等名称的映射；保存各 target 的全部 Part Number 与语言/字体分组，以供后续验证。",
+      "原始矩阵调研后，主代理已安装官方 SDK 和设备包，完成全部 35 目标 Release 编译及 11 类屏幕代表模拟器验收；原始结果在 verification/。真机安装和商店发布后的实际下发仍未验证。",
+      "官网新增 Enduro 4、Forerunner 70/170/170 Music 已在兼容页、设备参考页和本机 SDK 设备包中核实并编译；不据此断言所有地区零售上市。",
+      "45 Plus 与日版 ForeAthlete 45S 的 target 映射已用官方商店和 SDK 的硬件编号交叉核实；国际版 45S 映射仍未确认，不把地区证据外推为全部零售 SKU。"
+    ],
+    "access_issues": [
+      "web_extract 拒绝 Garmin 域名，报 private/internal network；Python requests 无论代理或直连都出现 SSL EOF。",
+      "独立浏览器 garmin-device-research 可成功读取官方开发页；React/Gatsby 页面直接 fetch HTML 仅返回外壳，改用公开 /connect-iq/articles/device-reference/<id>.html 取得实际表格，再与渲染页面抽查。",
+      "部分 web_search 调用返回 403；美国产品页动态正文未完整渲染，菲律宾旧页面重定向到 404。未拿这些失败响应补造数据。"
+    ]
+  }
+}

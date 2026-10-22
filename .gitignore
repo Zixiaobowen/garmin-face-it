@@ -1,0 +1,33 @@
+# Build outputs and local tooling
+bin/
+artifacts/
+.local/
+*.prg
+*.prg.debug.xml
+*.iq
+*.der
+*.pem
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local agent installations and session material, not application dependencies
+.agents/
+.omp/
+.hermes/
+skills-lock.json
+
+# Signing and authentication material
+developer_key*
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+
+# Local verification captures and raw logs; runtime font PNGs remain tracked
+docs/verification/*.png
+docs/verification/*.webp
+*.log

@@ -1,0 +1,123 @@
+<settings>
+    <setting propertyKey="@Properties.LayoutMode" title="@Strings.LayoutTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Daily</listEntry>
+            <listEntry value="1">@Strings.Training</listEntry>
+            <listEntry value="2">@Strings.Minimal</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.AccentTheme" title="@Strings.AccentTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.Red</listEntry>
+            <listEntry value="1">@Strings.Blue</listEntry>
+            <listEntry value="2">@Strings.Green</listEntry>
+            <listEntry value="3">@Strings.Orange</listEntry>
+            <listEntry value="4">@Strings.White</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric1" title="@Strings.Metric1Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric2" title="@Strings.Metric2Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric3" title="@Strings.Metric3Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric4" title="@Strings.Metric4Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric5" title="@Strings.Metric5Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.Metric6" title="@Strings.Metric6Title">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.Auto</listEntry>
+            <listEntry value="0">@Strings.Off</listEntry>
+            <listEntry value="1">@Strings.HeartRate</listEntry>
+            <listEntry value="2">@Strings.BodyBattery</listEntry>
+            <listEntry value="3">@Strings.Weather</listEntry>
+            <listEntry value="4">@Strings.Recovery</listEntry>
+            <listEntry value="5">@Strings.WeeklyRun</listEntry>
+            <listEntry value="6">@Strings.Vo2</listEntry>
+            <listEntry value="7">@Strings.Sunrise</listEntry>
+            <listEntry value="8">@Strings.Rain</listEntry>
+            <listEntry value="9">@Strings.Steps</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.ShowSeconds" title="@Strings.SecondsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.ShowLunar" title="@Strings.LunarTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.ShowHistory" title="@Strings.HistoryTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.ShowZones" title="@Strings.ZonesTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.WeeklyGoalKm" title="@Strings.GoalTitle" prompt="@Strings.GoalPrompt">
+        <settingConfig type="numeric" min="0" max="1000" />
+    </setting>
+</settings>

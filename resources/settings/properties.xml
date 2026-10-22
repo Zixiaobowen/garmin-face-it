@@ -1,0 +1,15 @@
+<properties>
+    <property id="LayoutMode" type="number">0</property>
+    <property id="AccentTheme" type="number">0</property>
+    <property id="Metric1" type="number">-1</property>
+    <property id="Metric2" type="number">-1</property>
+    <property id="Metric3" type="number">-1</property>
+    <property id="Metric4" type="number">-1</property>
+    <property id="Metric5" type="number">-1</property>
+    <property id="Metric6" type="number">-1</property>
+    <property id="ShowSeconds" type="boolean">true</property>
+    <property id="ShowLunar" type="boolean">true</property>
+    <property id="ShowHistory" type="boolean">true</property>
+    <property id="ShowZones" type="boolean">false</property>
+    <property id="WeeklyGoalKm" type="float">0.0</property>
+</properties>

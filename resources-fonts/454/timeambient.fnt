@@ -1,0 +1,15 @@
+info face="ReferenceFace Noto subset" size=68 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=54 base=53 scaleW=246 scaleH=112 pages=1 packed=0
+page id=0 file="timeambient.png"
+chars count=11
+char id=48 x=0 y=0 width=39 height=53 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=49 x=41 y=0 width=39 height=51 xoffset=0 yoffset=1 xadvance=40 page=0 chnl=15
+char id=50 x=82 y=0 width=39 height=52 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=51 x=123 y=0 width=39 height=53 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=52 x=164 y=0 width=39 height=52 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=53 x=205 y=0 width=39 height=52 xoffset=0 yoffset=1 xadvance=40 page=0 chnl=15
+char id=54 x=0 y=56 width=39 height=53 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=55 x=41 y=56 width=39 height=51 xoffset=0 yoffset=1 xadvance=40 page=0 chnl=15
+char id=56 x=82 y=56 width=39 height=53 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=57 x=123 y=56 width=39 height=53 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=15
+char id=58 x=164 y=56 width=21 height=39 xoffset=0 yoffset=14 xadvance=22 page=0 chnl=15

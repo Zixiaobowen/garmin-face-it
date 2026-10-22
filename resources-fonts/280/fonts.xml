@@ -1,0 +1,10 @@
+<fonts>
+  <font id="Label" filename="label.fnt" />
+  <font id="Menu" filename="menu.fnt" />
+  <font id="Detail" filename="detail.fnt" />
+  <font id="Value" filename="value.fnt" />
+  <font id="Fit" filename="fit.fnt" />
+  <font id="Time" filename="time.fnt" />
+  <font id="TimeDense" filename="timedense.fnt" />
+  <font id="TimeAmbient" filename="timeambient.fnt" />
+</fonts>

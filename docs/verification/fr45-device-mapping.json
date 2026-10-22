@@ -1,0 +1,60 @@
+{
+  "recorded_at": "2026-10-19T15:48:48.891218+00:00",
+  "source_url": "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/deviceTypes",
+  "method": "Join the official public Connect IQ Store deviceTypes partNumber with the installed official fr45 compiler.json partNumbers[].number.",
+  "official_store_records": [
+    {
+      "id": "132",
+      "partNumber": "006-B3282-00",
+      "name": "Forerunner® 45",
+      "additionalNames": [],
+      "imageUrl": "https://static.garmincdn.com/en/products/010-02156-05/v/cf-sm-ddce0f3c-16b2-4cfc-bd14-7e541f5412bc.jpg",
+      "urlName": "forerunner45"
+    },
+    {
+      "id": "207",
+      "partNumber": "006-B3847-00",
+      "name": "Forerunner® 45 Plus",
+      "additionalNames": [],
+      "imageUrl": "https://static.garmincdn.com/en/products/010-02156-17/g/pd-01-sm-10961d0d-93c9-408a-a577-4feb56faa580.jpg",
+      "urlName": "forerunner45plus"
+    },
+    {
+      "id": "147",
+      "partNumber": "006-B3469-00",
+      "name": "ForeAthlete 45",
+      "additionalNames": [
+        "ForeAthlete 45S"
+      ],
+      "imageUrl": "https://static.garmincdn.com/en/products/010-02156-05/v/cf-sm-ddce0f3c-16b2-4cfc-bd14-7e541f5412bc.jpg",
+      "urlName": "foreathlete45"
+    }
+  ],
+  "official_sdk_definition": "ConnectIQ/Devices/fr45/compiler.json",
+  "official_sdk_definition_sha256": "84490342ffc2fb7300efd62fffa359ad430e6a2b11f37557dcbded882e86cd38",
+  "sdk_target": "fr45",
+  "sdk_part_numbers": [
+    "006-B3282-00",
+    "006-B3469-00",
+    "006-B3847-00"
+  ],
+  "verified_mappings": [
+    {
+      "name": "Forerunner® 45 Plus",
+      "part_number": "006-B3847-00",
+      "target": "fr45"
+    },
+    {
+      "name": "ForeAthlete 45S",
+      "scope": "Japanese marketed name explicitly listed in the store record; do not extrapolate to every international 45S SKU.",
+      "part_number": "006-B3469-00",
+      "target": "fr45"
+    }
+  ],
+  "unresolved": [
+    "Forerunner 45S international retail-name to hardware-part mapping; fr45 remains a candidate for that unconfirmed scope."
+  ],
+  "limits": [
+    "No store publication, download-to-watch or physical installation was performed. The SDK target mapping does not establish those results."
+  ]
+}

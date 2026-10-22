@@ -1,0 +1,28 @@
+info face="ReferenceFace Noto subset" size=34 bold=1 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=34 base=33 scaleW=238 scaleH=144 pages=1 packed=0
+page id=0 file="value.png"
+chars count=24
+char id=32 x=0 y=0 width=8 height=0 xoffset=0 yoffset=27 xadvance=9 page=0 chnl=15
+char id=37 x=34 y=0 width=32 height=25 xoffset=0 yoffset=2 xadvance=33 page=0 chnl=15
+char id=43 x=68 y=0 width=20 height=21 xoffset=0 yoffset=6 xadvance=21 page=0 chnl=15
+char id=45 x=102 y=0 width=12 height=12 xoffset=0 yoffset=15 xadvance=13 page=0 chnl=15
+char id=46 x=136 y=0 width=11 height=6 xoffset=0 yoffset=21 xadvance=12 page=0 chnl=15
+char id=47 x=170 y=0 width=13 height=33 xoffset=0 yoffset=0 xadvance=14 page=0 chnl=15
+char id=48 x=204 y=0 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=49 x=0 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=50 x=34 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=51 x=68 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=52 x=102 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=53 x=136 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=54 x=170 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=55 x=204 y=36 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=56 x=0 y=72 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=57 x=34 y=72 width=20 height=25 xoffset=0 yoffset=2 xadvance=21 page=0 chnl=15
+char id=58 x=68 y=72 width=11 height=19 xoffset=0 yoffset=8 xadvance=12 page=0 chnl=15
+char id=65 x=102 y=72 width=22 height=25 xoffset=0 yoffset=2 xadvance=22 page=0 chnl=15
+char id=67 x=136 y=72 width=22 height=25 xoffset=0 yoffset=2 xadvance=23 page=0 chnl=15
+char id=78 x=170 y=72 width=25 height=25 xoffset=0 yoffset=2 xadvance=26 page=0 chnl=15
+char id=104 x=204 y=72 width=21 height=27 xoffset=0 yoffset=0 xadvance=22 page=0 chnl=15
+char id=107 x=0 y=108 width=21 height=27 xoffset=0 yoffset=0 xadvance=21 page=0 chnl=15
+char id=109 x=34 y=108 width=32 height=19 xoffset=0 yoffset=8 xadvance=33 page=0 chnl=15
+char id=176 x=68 y=108 width=13 height=27 xoffset=0 yoffset=0 xadvance=13 page=0 chnl=15

@@ -1,0 +1,52 @@
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+  <iq:application id="9d182df86c2d48938ce2c9795678f668" type="watchface" name="@Strings.AppName" entry="ReferenceFaceApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="1.4.0">
+    <iq:products>
+      <iq:product id="enduro" />
+      <iq:product id="enduro3" />
+      <iq:product id="enduro4" />
+      <iq:product id="fenix7x" />
+      <iq:product id="fr165" />
+      <iq:product id="fr165m" />
+      <iq:product id="fr170" />
+      <iq:product id="fr170m" />
+      <iq:product id="fr230" />
+      <iq:product id="fr235" />
+      <iq:product id="fr245" />
+      <iq:product id="fr245m" />
+      <iq:product id="fr255" />
+      <iq:product id="fr255m" />
+      <iq:product id="fr255s" />
+      <iq:product id="fr255sm" />
+      <iq:product id="fr265" />
+      <iq:product id="fr265s" />
+      <iq:product id="fr45" />
+      <iq:product id="fr55" />
+      <iq:product id="fr57042mm" />
+      <iq:product id="fr57047mm" />
+      <iq:product id="fr630" />
+      <iq:product id="fr645" />
+      <iq:product id="fr645m" />
+      <iq:product id="fr70" />
+      <iq:product id="fr735xt" />
+      <iq:product id="fr745" />
+      <iq:product id="fr920xt" />
+      <iq:product id="fr935" />
+      <iq:product id="fr945" />
+      <iq:product id="fr945lte" />
+      <iq:product id="fr955" />
+      <iq:product id="fr965" />
+      <iq:product id="fr970" />
+    </iq:products>
+    <iq:permissions>
+      <iq:uses-permission id="UserProfile" />
+      <iq:uses-permission id="SensorHistory" />
+      <iq:uses-permission id="ComplicationSubscriber" />
+    </iq:permissions>
+    <iq:languages>
+      <iq:language>eng</iq:language>
+      <iq:language>zhs</iq:language>
+      <iq:language>zht</iq:language>
+    </iq:languages>
+    <iq:barrels />
+  </iq:application>
+</iq:manifest>

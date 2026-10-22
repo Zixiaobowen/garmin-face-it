@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>耐力仪表 · 首次提交审查</title>
+<style>
+:root{--bg:#fbfcfd;--fg:#16242c;--muted:#52646e;--accent:#176286;--line:#c9d6dd}
+@media(prefers-color-scheme:dark){:root{--bg:#131b21;--fg:#e0ebf0;--muted:#abbec7;--accent:#8bc2da;--line:#43545e}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,"PingFang SC",sans-serif}main{max-width:800px;margin:auto;padding:36px 24px 56px}h1{font-size:27px;line-height:1.35;text-wrap:balance;margin:0}h2{font-size:19px;margin:30px 0 10px}p{margin:12px 0}ul{padding-left:23px;margin:12px 0}li+li{margin-top:9px}.meta{color:var(--muted);font-size:14px}code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}footer{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}@media(max-width:480px){main{padding:24px 18px}h1{font-size:24px}}@media print{body{background:white;color:black}main{max-width:none;padding:0}h2{break-after:avoid}p,li{orphans:3;widows:3}a{color:inherit}footer{border-color:#bbb}@page{size:A4;margin:18mm}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>耐力仪表：首次提交审查</h1>
+<p class="meta">2026-10-22 · feat/readable-typography · 仅本地提交</p>
+</header>
+<p>本次建立完整应用的首次 Git 基线。静态审查覆盖数据、农历、设置、绘制、显示 profile、资源及构建入口，没有确认阻止本地提交的正确性缺陷。新增应用修复仅为三处摄氏单位标签。</p>
+<h2>修正与保留事项</h2>
+<p><code>ReferenceFaceView.mc</code> 的主标签、短标签和体感统一明确标“°C”。数值继续使用 <a href="https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/CurrentConditions.html#temperature-var">Garmin SDK 返回的摄氏值</a>，没有增加华氏转换、测试开关或模拟数据分支。</p>
+<p>12 小时制没有 AM/PM 的既有边界保留。README、项目说明和设备映射说明同步更新；本机工具、截图、日志、缓存和签名材料排除在应用基线之外。</p>
+<h2>本轮实际证据</h2>
+<ul>
+<li><strong>实际显示：</strong>Enduro 3 常规与训练三列、FR55 小屏均观察到清楚的“°C”。当前真实模拟值为温度 −12、体感 13；三列来自暂存文件的独立导出构建，标签没有重叠。另观察到天气过期提示保持可见。</li>
+<li><strong>字体边界：</strong>9 组字体的相关字形及宽度检查通过。Enduro 3 三列单元宽 72px，温度标签宽 51px，所查说明最大 66px。负体感文本只做了几何检查，不算实际输入验收。</li>
+<li><strong>独立构建：</strong>显式暂存的 185 个应用及必要说明文件经 <code>git checkout-index</code> 导出，在新目录执行 Enduro 3 Release 构建成功，并实际运行模拟器版本。SDK 9.2.0／Java 17；密钥始终留在仓库外。</li>
+</ul>
+<p>独立导出的 Release 为 46,588 字节，SHA-256：</p>
+<p><code>73c666f7c966dedc1ec51434c30718b1329264c02332361cb7f590fa904c8ece</code></p>
+<p class="meta">产物实际目录及最终提交清单保存在本机 <code>.local/review-commit-receipt.json</code>。仓库原有 bin 产物未作为本次 Release 证据。审查及交接在应用验证后补入暂存，随后只清理了OFL许可证一处行尾空白；运行源码和字体图集没有继续修改。</p>
+<h2>验证边界</h2>
+<p>此前的 35 目标 Release、72 图集及代表设备显示记录继续保留，不能算作新增标签后的重跑。既有 18 项用例记录为 PASS，但 SDK runner 退出 1；本次未重跑，也未吞掉退出码。既有编译警告保留。</p>
+<p>零温、负体感、无天气数据等特殊输入本轮未实际验收，已按收尾要求停止调试。未新增永久测试、全仓测试或全目标构建。字体及单位修订没有安装到手表；真机可读性、真实指标、续航、手机设置链路与 AMOLED 烧屏预算仍需独立验收。</p>
+<h2>提交范围</h2>
+<p>应用源码、两个显示 profile、设置与中文资源、九组字体及 OFL 许可证、构建／生成脚本、既有测试、manifest／jungle、兼容矩阵与字体元数据，以及必要说明、审查和交接。</p>
+<p><code>.agents/</code>、<code>.omp/</code>、<code>.hermes/</code>、<code>skills-lock.json</code> 和本机历史报告、安装回读、截图、日志、缓存、产物、签名材料均不纳入；这些本地文件没有被删除。候选内容的常见私钥／token 标记检查未命中。</p>
+<p>仅创建本地首次提交，不推送、发布、部署或写手表。具体 SHA 与剩余状态由最终 Git 回读提供。按用户收尾要求，本 HTML 未做浏览器检查。</p>
+<footer>
+<a href="review-commit-2026-10-22.md">完整 Markdown 记录</a> · <a href="codex-handoffs/2026-10-22-review-commit.md">交接</a> · <a href="../README.md">构建说明</a>
+</footer>
+</main>
+</body>
+</html>
