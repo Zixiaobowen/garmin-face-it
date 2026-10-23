@@ -39,8 +39,10 @@
 
 商店App ID为`aa58871d-46ed-49f2-9c18-72efdaa7eb50`，沿用现有应用。[开发者预览页](https://apps-developer.garmin.com/zh-CN/apps/aa58871d-46ed-49f2-9c18-72efdaa7eb50)当前仅所属账户可见。
 
-2026-10-23再次通过当前已登录的Chrome官方“编辑详细信息”表单提交：中英文1.0.1更新说明、500×500封面及两种语言1440×720 hero均已填写，已有三张新截图正常加载。所有图片均符合表单尺寸和大小要求，必填项无校验错误，联系邮箱及其它既有选项保持原值。保存PUT仍返回**HTTP 403 / Cloudflare**，响应为“Attention Required! / Sorry, you have been blocked”，Ray ID为`a4ed487c68cc0d79`。
+2026-10-23商店图文更新完成。在同一登录会话中，通过官方“编辑详细信息”页分别保存中英文更新说明、封面、英文hero和中文hero，四次PUT均返回**HTTP 204**。使用原定文案及图片；本轮没有再次上传程序包或三张截图。
 
-独立metadata回读仍为旧中英文1.0.0更新说明；新开官方预览确认封面仍是旧图。与此同时，**三张新版截图已在商店预览中显示**：Enduro 3日常、Enduro 3训练、FR55日常均显示完整的23:58。不能再把整个图文状态概括为“全部旧图”，也不能把截图已显示算作文案、封面及hero保存成功。官方表单`garmin-listing-live`保留未保存内容，待站点解除拦截后继续提交与回读。本轮没有再次上传程序包或截图，没有绕过安全拦截。
+独立metadata返回HTTP 200，中英文更新说明均与1.0.1文案一致；中英文预览均显示新说明、完整23:58的三张截图以及新版500×500封面。新封面ID为`860fd5d1-d801-4122-b4c5-efa849e5b3aa`。两种语言的官方hero URL均已直接回读，确认显示1440×720的新版三联图。应用仍为1.0.1（内部2）、待审核；图文保存成功不等于公开上架。
 
-本地证据：`artifacts/release-1.0.1/publication-receipt.json`、`publication-receipt.html`、`listing-attempt-2026-10-23.json`、`store-preview-2026-10-23.png`及`assets/`。程序包接受、截图展示、其它图文保存、公开上架、真机验收是不同状态；2026-10-22的构建与模拟器记录未在本轮重跑。
+此前把所有资料合并提交曾被Cloudflare返回HTTP403。分次正常保存已经完成本次更新，但未查明服务端具体拦截规则，不把成功结果推断为请求大小或某张图片导致拦截。旧失败记录仅作历史证据；无需再提交旧编辑页草稿。
+
+最新本地证据：`artifacts/release-1.0.1/listing-success-2026-10-23.json`、`store-listing-updated-zh-2026-10-23.png`、`store-listing-updated-en-2026-10-23.png`、`publication-receipt.json/html`及`assets/`。本轮执行官方表单保存、metadata回读、中英文浏览器预览和hero图片回读；2026-10-22的构建与模拟器记录未重跑，没有新增真机安装或续航验证。
