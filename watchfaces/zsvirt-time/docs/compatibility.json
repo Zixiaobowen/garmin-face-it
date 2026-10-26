@@ -1,0 +1,2238 @@
+{
+  "application": "ZSvirt Time",
+  "application_id": "cb51f19636e64ae1b979bfd8bf070e31",
+  "minimum_api": "1.4.0",
+  "observed_on": "2026-10-26",
+  "source": {
+    "kind": "Installed official Garmin Connect IQ device packages",
+    "root": "~/Library/Application Support/Garmin/ConnectIQ/Devices",
+    "files": [
+      "<ciq_product_id>/compiler.json",
+      "<ciq_product_id>/simulator.json"
+    ],
+    "fields": {
+      "resolution": "compiler.resolution and simulator.display.location",
+      "screen_shape": "simulator.display.shape",
+      "display_type": "compiler.displayType",
+      "api_versions": "compiler.partNumbers[].connectIQVersion",
+      "watchface_memory_bytes": "compiler.appTypes[type=watchFace].memoryLimit",
+      "launcher_icon": "compiler.launcherIcon",
+      "resource_palette_colors": "compiler.palette.colors when present; not inferred from bitsPerPixel"
+    }
+  },
+  "scope_note": "The 35 product IDs match the requested scope of reference-face-configurable. All capability data below was read independently from official installed device metadata; no build or runtime dependency on that face. Product support is distinct from simulator, store export or physical-device validation.",
+  "api_note": "Regional part numbers may advertise API 1.3.1. The manifest minimum of 1.4.0 excludes those regional firmware versions; a product ID is not a claim that every region or firmware is supported.",
+  "resource_note": "White official logos on black; four gray levels where supported. Screen width 208 and launcher sizes shared with 8-color MIP use only black and white. Launcher dimensions are independent of screen width.",
+  "targets": [
+    {
+      "ciq_product_id": "enduro",
+      "official_name": "Enduro™",
+      "resolution": {
+        "height": 280,
+        "width": 280
+      },
+      "simulator_resolution": {
+        "width": 280,
+        "height": 280
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.4.2"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 114688,
+      "logo_width": 160,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3638-00",
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3872-00",
+          "api_version": "3.4.2"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "enduro/compiler.json",
+        "enduro/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "enduro3",
+      "official_name": "Enduro™ 3",
+      "resolution": {
+        "height": 280,
+        "width": 280
+      },
+      "simulator_resolution": {
+        "width": 280,
+        "height": 280
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "69f9c27a08d175c50b86464a70c24d15718945cb",
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 160,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4575-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "enduro3/compiler.json",
+        "enduro3/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "enduro4",
+      "official_name": "Enduro™ 4",
+      "resolution": {
+        "height": 280,
+        "width": 280
+      },
+      "simulator_resolution": {
+        "width": 280,
+        "height": 280
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "ee244507b073c52779d26e77dc69b690d79098bd",
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 160,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B5169-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "enduro4/compiler.json",
+        "enduro4/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fenix7x",
+      "official_name": "fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2",
+      "resolution": {
+        "height": 280,
+        "width": 280
+      },
+      "simulator_resolution": {
+        "width": 280,
+        "height": 280
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 160,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3907-00",
+          "api_version": "5.2.0"
+        },
+        {
+          "part_number": "006-B3910-00",
+          "api_version": "5.2.0"
+        },
+        {
+          "part_number": "006-B4135-00",
+          "api_version": "5.2.0"
+        },
+        {
+          "part_number": "006-B4341-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fenix7x/compiler.json",
+        "fenix7x/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr165",
+      "official_name": "Forerunner® 165",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4432-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr165/compiler.json",
+        "fr165/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr165m",
+      "official_name": "Forerunner® 165 Music",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4433-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr165m/compiler.json",
+        "fr165m/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr170",
+      "official_name": "Forerunner® 170",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4815-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr170/compiler.json",
+        "fr170/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr170m",
+      "official_name": "Forerunner® 170 Music",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4814-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr170m/compiler.json",
+        "fr170m/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr230",
+      "official_name": "Forerunner® 230",
+      "resolution": {
+        "height": 180,
+        "width": 215
+      },
+      "simulator_resolution": {
+        "width": 215,
+        "height": 180
+      },
+      "screen_shape": "semi-round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "1.3.1",
+        "1.4.4"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2157-00",
+          "api_version": "1.4.4"
+        },
+        {
+          "part_number": "006-B2313-00",
+          "api_version": "1.3.1"
+        }
+      ],
+      "resource_palette_colors": [
+        "FFFFFF",
+        "AAAAAA",
+        "555555",
+        "000000",
+        "FF0000",
+        "AA0000",
+        "FF5500",
+        "FF00FF",
+        "FFAA00",
+        "AA00FF",
+        "00FF00",
+        "00AA00",
+        "00AAFF",
+        "0000FF"
+      ],
+      "source_files": [
+        "fr230/compiler.json",
+        "fr230/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr235",
+      "official_name": "Forerunner® 235",
+      "resolution": {
+        "height": 180,
+        "width": 215
+      },
+      "simulator_resolution": {
+        "width": 215,
+        "height": 180
+      },
+      "screen_shape": "semi-round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "1.3.1",
+        "1.4.4",
+        "1.4.5"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2431-00",
+          "api_version": "1.4.4"
+        },
+        {
+          "part_number": "006-B2396-00",
+          "api_version": "1.3.1"
+        },
+        {
+          "part_number": "006-B2397-00",
+          "api_version": "1.4.5"
+        },
+        {
+          "part_number": "006-B2653-00",
+          "api_version": "1.3.1"
+        },
+        {
+          "part_number": "006-B2733-00",
+          "api_version": "1.3.1"
+        }
+      ],
+      "resource_palette_colors": [
+        "FFFFFF",
+        "AAAAAA",
+        "555555",
+        "000000",
+        "FF0000",
+        "AA0000",
+        "FF5500",
+        "FF00FF",
+        "FFAA00",
+        "AA00FF",
+        "00FF00",
+        "00AA00",
+        "00AAFF",
+        "0000FF"
+      ],
+      "source_files": [
+        "fr235/compiler.json",
+        "fr235/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr245",
+      "official_name": "Forerunner® 245",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.3.1",
+        "3.3.6"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3076-00",
+          "api_version": "3.3.1"
+        },
+        {
+          "part_number": "006-B3145-00",
+          "api_version": "3.3.6"
+        },
+        {
+          "part_number": "006-B3914-00",
+          "api_version": "3.3.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr245/compiler.json",
+        "fr245/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr245m",
+      "official_name": "Forerunner® 245 Music",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.3.1",
+        "3.3.6"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3077-00",
+          "api_version": "3.3.1"
+        },
+        {
+          "part_number": "006-B3321-00",
+          "api_version": "3.3.6"
+        },
+        {
+          "part_number": "006-B3913-00",
+          "api_version": "3.3.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr245m/compiler.json",
+        "fr245m/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr255",
+      "official_name": "Forerunner® 255",
+      "resolution": {
+        "height": 260,
+        "width": 260
+      },
+      "simulator_resolution": {
+        "width": 260,
+        "height": 260
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 148,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3992-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr255/compiler.json",
+        "fr255/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr255m",
+      "official_name": "Forerunner® 255 Music",
+      "resolution": {
+        "height": 260,
+        "width": 260
+      },
+      "simulator_resolution": {
+        "width": 260,
+        "height": 260
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 148,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3990-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr255m/compiler.json",
+        "fr255m/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr255s",
+      "official_name": "Forerunner® 255s",
+      "resolution": {
+        "height": 218,
+        "width": 218
+      },
+      "simulator_resolution": {
+        "width": 218,
+        "height": 218
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "218 x 218",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 124,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3993-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr255s/compiler.json",
+        "fr255s/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr255sm",
+      "official_name": "Forerunner® 255s Music",
+      "resolution": {
+        "height": 218,
+        "width": 218
+      },
+      "simulator_resolution": {
+        "width": 218,
+        "height": 218
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "218 x 218",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 124,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3991-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr255sm/compiler.json",
+        "fr255sm/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr265",
+      "official_name": "Forerunner® 265",
+      "resolution": {
+        "height": 416,
+        "width": 416
+      },
+      "simulator_resolution": {
+        "width": 416,
+        "height": 416
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 60,
+        "width": 60
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "416 x 416",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 238,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4257-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr265/compiler.json",
+        "fr265/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr265s",
+      "official_name": "Forerunner® 265s",
+      "resolution": {
+        "height": 360,
+        "width": 360
+      },
+      "simulator_resolution": {
+        "width": 360,
+        "height": 360
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 60,
+        "width": 60
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "360 x 360",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 206,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4258-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr265s/compiler.json",
+        "fr265s/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr45",
+      "official_name": "Forerunner® 45",
+      "resolution": {
+        "height": 208,
+        "width": 208
+      },
+      "simulator_resolution": {
+        "width": 208,
+        "height": 208
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "1.4.5"
+      ],
+      "launcher_icon": {
+        "height": 65,
+        "width": 65
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "208 x 208",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 49152,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3282-00",
+          "api_version": "1.4.5"
+        },
+        {
+          "part_number": "006-B3847-00",
+          "api_version": "1.4.5"
+        },
+        {
+          "part_number": "006-B3469-00",
+          "api_version": "1.4.5"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "0000FF",
+        "00FF00",
+        "00FFFF",
+        "FF0000",
+        "FF00FF",
+        "FFFF00",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr45/compiler.json",
+        "fr45/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr55",
+      "official_name": "Forerunner® 55",
+      "resolution": {
+        "height": 208,
+        "width": 208
+      },
+      "simulator_resolution": {
+        "width": 208,
+        "height": 208
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "3.4.2",
+        "3.4.6"
+      ],
+      "launcher_icon": {
+        "height": 35,
+        "width": 35
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "208 x 208",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3869-00",
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B4033-00",
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B4838-00",
+          "api_version": "3.4.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "0000FF",
+        "00FF00",
+        "00FFFF",
+        "FF0000",
+        "FF00FF",
+        "FFFF00",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr55/compiler.json",
+        "fr55/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr57042mm",
+      "official_name": "Forerunner® 570 42mm",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4574-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr57042mm/compiler.json",
+        "fr57042mm/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr57047mm",
+      "official_name": "Forerunner® 570 47mm",
+      "resolution": {
+        "height": 454,
+        "width": 454
+      },
+      "simulator_resolution": {
+        "width": 454,
+        "height": 454
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 65,
+        "width": 65
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 260,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4570-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr57047mm/compiler.json",
+        "fr57047mm/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr630",
+      "official_name": "Forerunner® 630",
+      "resolution": {
+        "height": 180,
+        "width": 215
+      },
+      "simulator_resolution": {
+        "width": 215,
+        "height": 180
+      },
+      "screen_shape": "semi-round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "1.3.1",
+        "1.4.4"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2156-00",
+          "api_version": "1.4.4"
+        },
+        {
+          "part_number": "006-B2310-00",
+          "api_version": "1.3.1"
+        },
+        {
+          "part_number": "006-B2311-00",
+          "api_version": "1.3.1"
+        }
+      ],
+      "resource_palette_colors": [
+        "FFFFFF",
+        "AAAAAA",
+        "555555",
+        "000000",
+        "FF0000",
+        "AA0000",
+        "FF5500",
+        "FF00FF",
+        "FFAA00",
+        "AA00FF",
+        "00FF00",
+        "00AA00",
+        "00AAFF",
+        "0000FF"
+      ],
+      "source_files": [
+        "fr630/compiler.json",
+        "fr630/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr645",
+      "official_name": "Forerunner® 645",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.1.6",
+        "3.1.8"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2886-00",
+          "api_version": "3.1.6"
+        },
+        {
+          "part_number": "006-B3003-00",
+          "api_version": "3.1.8"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr645/compiler.json",
+        "fr645/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr645m",
+      "official_name": "Forerunner® 645 Music",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.2.3"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2888-00",
+          "api_version": "3.2.3"
+        },
+        {
+          "part_number": "006-B3004-00",
+          "api_version": "3.2.3"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr645m/compiler.json",
+        "fr645m/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr70",
+      "official_name": "Forerunner® 70",
+      "resolution": {
+        "height": 390,
+        "width": 390
+      },
+      "simulator_resolution": {
+        "width": 390,
+        "height": 390
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 54,
+        "width": 54
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "390 x 390",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 224,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4916-00",
+          "api_version": "6.0.3"
+        },
+        {
+          "part_number": "006-B5214-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr70/compiler.json",
+        "fr70/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr735xt",
+      "official_name": "Forerunner® 735xt",
+      "resolution": {
+        "height": 180,
+        "width": 215
+      },
+      "simulator_resolution": {
+        "width": 215,
+        "height": 180
+      },
+      "screen_shape": "semi-round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "2.4.1",
+        "2.4.5"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "215 x 180",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "logo_width": 120,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2158-00",
+          "api_version": "2.4.1"
+        },
+        {
+          "part_number": "006-B2533-00",
+          "api_version": "2.4.5"
+        },
+        {
+          "part_number": "006-B2534-00",
+          "api_version": "2.4.5"
+        }
+      ],
+      "resource_palette_colors": [
+        "FFFFFF",
+        "AAAAAA",
+        "555555",
+        "000000",
+        "FF0000",
+        "AA0000",
+        "FF5500",
+        "FF00FF",
+        "FFAA00",
+        "AA00FF",
+        "00FF00",
+        "00AA00",
+        "00AAFF",
+        "0000FF"
+      ],
+      "source_files": [
+        "fr735xt/compiler.json",
+        "fr735xt/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr745",
+      "official_name": "Forerunner® 745",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.3.1",
+        "3.3.6"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3589-00",
+          "api_version": "3.3.1"
+        },
+        {
+          "part_number": "006-B3794-00",
+          "api_version": "3.3.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr745/compiler.json",
+        "fr745/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr920xt",
+      "official_name": "Forerunner® 920XT",
+      "resolution": {
+        "height": 148,
+        "width": 205
+      },
+      "simulator_resolution": {
+        "width": 205,
+        "height": 148
+      },
+      "screen_shape": "rectangle",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 4,
+      "api_versions": [
+        "1.3.1",
+        "1.4.4"
+      ],
+      "launcher_icon": {
+        "height": 65,
+        "width": 65
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "205 x 148",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 65536,
+      "logo_width": 110,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B1765-00",
+          "api_version": "1.4.4"
+        },
+        {
+          "part_number": "006-B2130-00",
+          "api_version": "1.3.1"
+        },
+        {
+          "part_number": "006-B2131-00",
+          "api_version": "1.3.1"
+        },
+        {
+          "part_number": "006-B2132-00",
+          "api_version": "1.3.1"
+        }
+      ],
+      "resource_palette_colors": [
+        "FFFFFF",
+        "AAAAAA",
+        "555555",
+        "000000",
+        "FF0000",
+        "AA0000",
+        "FF5500",
+        "FF00FF",
+        "FFAA00",
+        "AA00FF",
+        "00FF00",
+        "00AA00",
+        "00AAFF",
+        "0000FF"
+      ],
+      "source_files": [
+        "fr920xt/compiler.json",
+        "fr920xt/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr935",
+      "official_name": "Forerunner® 935",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.1.6"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B2691-00",
+          "api_version": "3.1.6"
+        },
+        {
+          "part_number": "006-B2833-00",
+          "api_version": "3.1.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr935/compiler.json",
+        "fr935/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr945",
+      "official_name": "Forerunner® 945",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.3.1",
+        "3.3.6"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3113-00",
+          "api_version": "3.3.1"
+        },
+        {
+          "part_number": "006-B3441-00",
+          "api_version": "3.3.6"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr945/compiler.json",
+        "fr945/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr945lte",
+      "official_name": "Forerunner® 945 LTE",
+      "resolution": {
+        "height": 240,
+        "width": 240
+      },
+      "simulator_resolution": {
+        "width": 240,
+        "height": 240
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": null,
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "3.4.3"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "logo_width": 138,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B3652-00",
+          "api_version": "3.4.3"
+        }
+      ],
+      "resource_palette_colors": [
+        "000000",
+        "000055",
+        "0000AA",
+        "0000FF",
+        "005500",
+        "005555",
+        "0055AA",
+        "0055FF",
+        "00AA00",
+        "00AA55",
+        "00AAAA",
+        "00AAFF",
+        "00FF00",
+        "00FF55",
+        "00FFAA",
+        "00FFFF",
+        "550000",
+        "550055",
+        "5500AA",
+        "5500FF",
+        "555500",
+        "555555",
+        "5555AA",
+        "5555FF",
+        "55AA00",
+        "55AA55",
+        "55AAAA",
+        "55AAFF",
+        "55FF00",
+        "55FF55",
+        "55FFAA",
+        "55FFFF",
+        "AA0000",
+        "AA0055",
+        "AA00AA",
+        "AA00FF",
+        "AA5500",
+        "AA5555",
+        "AA55AA",
+        "AA55FF",
+        "AAAA00",
+        "AAAA55",
+        "AAAAAA",
+        "AAAAFF",
+        "AAFF00",
+        "AAFF55",
+        "AAFFAA",
+        "AAFFFF",
+        "FF0000",
+        "FF0055",
+        "FF00AA",
+        "FF00FF",
+        "FF5500",
+        "FF5555",
+        "FF55AA",
+        "FF55FF",
+        "FFAA00",
+        "FFAA55",
+        "FFAAAA",
+        "FFAAFF",
+        "FFFF00",
+        "FFFF55",
+        "FFFFAA",
+        "FFFFFF"
+      ],
+      "source_files": [
+        "fr945lte/compiler.json",
+        "fr945lte/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr955",
+      "official_name": "Forerunner® 955 / Solar",
+      "resolution": {
+        "height": 260,
+        "width": 260
+      },
+      "simulator_resolution": {
+        "width": 260,
+        "height": 260
+      },
+      "screen_shape": "round",
+      "display_type": "mip",
+      "pixel_format": "ARGB2222",
+      "bits_per_pixel": 8,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 40,
+        "width": 40
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 148,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4024-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr955/compiler.json",
+        "fr955/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr965",
+      "official_name": "Forerunner® 965",
+      "resolution": {
+        "height": 454,
+        "width": 454
+      },
+      "simulator_resolution": {
+        "width": 454,
+        "height": 454
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "5.2.0"
+      ],
+      "launcher_icon": {
+        "height": 65,
+        "width": 65
+      },
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 260,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4315-00",
+          "api_version": "5.2.0"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr965/compiler.json",
+        "fr965/simulator.json"
+      ]
+    },
+    {
+      "ciq_product_id": "fr970",
+      "official_name": "Forerunner® 970",
+      "resolution": {
+        "height": 454,
+        "width": 454
+      },
+      "simulator_resolution": {
+        "width": 454,
+        "height": 454
+      },
+      "screen_shape": "round",
+      "display_type": "amoled",
+      "pixel_format": null,
+      "bits_per_pixel": 16,
+      "api_versions": [
+        "6.0.3"
+      ],
+      "launcher_icon": {
+        "height": 65,
+        "width": 65
+      },
+      "device_version": "2a089d06d343f3feda75c93ddf12e1fa29abe918",
+      "screen_resolution": "454 x 454",
+      "screen_technology": "AMOLED",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "logo_width": 260,
+      "regional_api_versions": [
+        {
+          "part_number": "006-B4565-00",
+          "api_version": "6.0.3"
+        }
+      ],
+      "resource_palette_colors": null,
+      "source_files": [
+        "fr970/compiler.json",
+        "fr970/simulator.json"
+      ]
+    }
+  ]
+}

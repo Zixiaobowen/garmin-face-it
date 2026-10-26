@@ -13,6 +13,6 @@
       "sha256": "64a8be7af35d7957227602534eb81f357101ac07c85ebdb026c01562c76ed3e5"
     }
   ],
-  "processing": "Crop transparent padding, preserve aspect ratio, resize with Lanczos, composite on black, and quantize to the MIP-compatible gray levels 0, 85, 170 and 255. Logo: 160x45. Launcher: 40x40.",
+  "processing": "Crop transparent padding, preserve aspect ratio, resize with Lanczos and composite on black. Generate 11 logo widths (110–260 pixels) and device-specific launcher dimensions from docs/compatibility.json. Use black and white for 8-color MIP and launcher sizes shared with those devices; otherwise quantize to gray levels 0, 85, 170 and 255. Reproduce with scripts/generate-resources.py.",
   "rights": "Official ZSvirt brand assets. The download page does not state a separate logo license; do not treat these marks as a transfer of trademark rights."
 }

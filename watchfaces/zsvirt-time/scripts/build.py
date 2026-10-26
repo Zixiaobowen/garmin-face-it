@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build ZSvirt Time for Enduro 3, run its simulator, or export a store package."""
+"""Build ZSvirt Time device targets, run a simulator, or export a store package."""
 import argparse
 import datetime
 import hashlib
@@ -10,7 +10,7 @@ import re
 import shlex
 import subprocess
 import sys
-import xml.etree.ElementTree as ET
+from configure import write_configuration
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_KEY = Path.home() / ".local/share/garmin-face-it/developer_key.der"
@@ -36,11 +36,12 @@ def sdk_path(explicit):
     return sdk
 
 
-def package_app(sdk, key, devices, version):
+def package_app(sdk, key, targets, version):
     output = ROOT / "artifacts" / f"release-{version}"
-    output.mkdir(parents=True, exist_ok=True)
+    config = output / "config"
+    devices = write_configuration(targets, config)
     package = output / f"zsvirt-time-{version}.iq"
-    command = [str(sdk / "bin/monkeyc"), "-e", "-r", "-f", str(ROOT / "monkey.jungle"),
+    command = [str(sdk / "bin/monkeyc"), "-e", "-r", "-f", str(config / "monkey.jungle"),
                "-y", str(key), "-o", str(package), "-O", "2z", "-w", "--build-stats", "0"]
     build = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
     (output / "package.log").write_text("$ " + shlex.join(command) + "\n" + build.stdout + build.stderr)
@@ -62,7 +63,8 @@ def main():
     parser.add_argument("--sdk")
     parser.add_argument("--key", type=Path, default=DEFAULT_KEY)
     selection = parser.add_mutually_exclusive_group()
-    selection.add_argument("--device", default="enduro3")
+    selection.add_argument("--device", help="Single target; defaults to enduro3")
+    selection.add_argument("--all", action="store_true", help="Build every target in the device matrix")
     selection.add_argument("--package", metavar="VERSION", help="Export all manifest targets as a signed store IQ")
     parser.add_argument("--simulator", action="store_true", help="Build the official simulator target")
     parser.add_argument("--run", action="store_true", help="Run in an already running simulator")
@@ -71,60 +73,74 @@ def main():
     args = parser.parse_args()
     if args.test and args.release:
         parser.error("--release cannot be combined with --test")
+    if args.all and (args.run or args.test):
+        parser.error("Use one device for --run / --test")
     if args.package is not None:
         if args.run or args.test or args.simulator:
             parser.error("--package cannot be combined with simulator or test modes")
         if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", args.package):
             parser.error("Store version must use MAJOR.MINOR.PATCH, for example 1.0.0")
-    ns = {"iq": "http://www.garmin.com/xml/connectiq"}
-    devices = [p.attrib["id"] for p in ET.parse(ROOT / "manifest.xml").findall(".//iq:product", ns)]
-    if args.device not in devices:
-        parser.error(f"Unsupported device: {args.device}; supported: {', '.join(devices)}")
+    targets = json.loads((ROOT / "docs/compatibility.json").read_text())["targets"]
+    products = [target["ciq_product_id"] for target in targets]
+    devices = products if args.all or args.package is not None else [args.device or "enduro3"]
+    if any(device not in products for device in devices):
+        parser.error(f"Unsupported device: {args.device}; supported: {', '.join(products)}")
     if not args.key.is_file():
         parser.error(f"Signing key missing: {args.key}; keep signing keys outside this repository")
     sdk = sdk_path(args.sdk)
+    write_configuration(targets, ROOT)
     if args.package is not None:
-        return package_app(sdk, args.key, devices, args.package)
+        return package_app(sdk, args.key, targets, args.package)
     simulator = args.simulator or args.run or args.test
     suffix = "-tests" if args.test else "-sim" if simulator else ""
     if simulator and args.release:
         suffix += "-release"
-    compiler_device = args.device + "_sim" if simulator else args.device
     output = ROOT / "bin"
     logs = output / "logs"
     logs.mkdir(parents=True, exist_ok=True)
-    stem = f"zsvirt-time-{args.device}{suffix}"
-    program = output / f"{stem}.prg"
-    command = [str(sdk / "bin/monkeyc"), "-f", str(ROOT / "monkey.jungle"),
-               "-d", compiler_device, "-y", str(args.key), "-o", str(program),
-               "-w", "--build-stats", "0"]
-    if args.test:
-        command.append("-t")
-    else:
-        command += ["-O", "2z"]
-        if not simulator or args.release:
-            command.append("-r")
-    build = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
-    (logs / f"{stem}.log").write_text("$ " + shlex.join(command) + "\n" + build.stdout + build.stderr)
-    print(build.stdout + build.stderr, end="", flush=True)
-    result = {"observed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              "sdk": str(sdk), "device": args.device, "compiler_device": compiler_device,
-              "compiled": build.returncode == 0, "exit_code": build.returncode,
-              "program": str(program.relative_to(ROOT)), "unit_tests_included": args.test}
-    if build.returncode == 0:
-        result["bytes"] = program.stat().st_size
-        with program.open("rb") as stream:
-            result["sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
-        if args.run:
-            run_command = [str(sdk / "bin/monkeydo"), str(program), args.device]
-            if args.test:
-                run_command.append("-t")
-            run = subprocess.run(run_command, cwd=ROOT, capture_output=True, text=True)
-            (logs / f"{stem}-simulator.log").write_text(run.stdout + run.stderr)
-            print(run.stdout + run.stderr, end="", flush=True)
-            result["simulator_exit_code"] = run.returncode
-    (output / f"build-{args.device}{suffix}.json").write_text(json.dumps(result, indent=2) + "\n")
-    return 0 if result["compiled"] and result.get("simulator_exit_code", 0) == 0 else 1
+    results = []
+    for device in devices:
+        compiler_device = device + "_sim" if simulator else device
+        stem = f"zsvirt-time-{device}{suffix}"
+        program = output / f"{stem}.prg"
+        config = output / "config" / device
+        write_configuration([target for target in targets if target["ciq_product_id"] == device], config)
+        command = [str(sdk / "bin/monkeyc"), "-f", str(config / "monkey.jungle"),
+                   "-d", compiler_device, "-y", str(args.key), "-o", str(program),
+                   "-w", "--build-stats", "0"]
+        if args.test:
+            command.append("-t")
+        else:
+            command += ["-O", "2z"]
+            if not simulator or args.release:
+                command.append("-r")
+        build = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        (logs / f"{stem}.log").write_text("$ " + shlex.join(command) + "\n" + build.stdout + build.stderr)
+        print(build.stdout + build.stderr, end="", flush=True)
+        result = {"observed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                  "sdk": str(sdk), "device": device, "compiler_device": compiler_device,
+                  "compiled": build.returncode == 0, "exit_code": build.returncode,
+                  "program": str(program.relative_to(ROOT)), "unit_tests_included": args.test}
+        if build.returncode == 0:
+            result["bytes"] = program.stat().st_size
+            with program.open("rb") as stream:
+                result["sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+            if args.run:
+                run_command = [str(sdk / "bin/monkeydo"), str(program), device]
+                if args.test:
+                    run_command.append("-t")
+                run = subprocess.run(run_command, cwd=ROOT, capture_output=True, text=True)
+                (logs / f"{stem}-simulator.log").write_text(run.stdout + run.stderr)
+                print(run.stdout + run.stderr, end="", flush=True)
+                result["simulator_exit_code"] = run.returncode
+        (output / f"build-{device}{suffix}.json").write_text(json.dumps(result, indent=2) + "\n")
+        results.append(result)
+        print(f"{device}: {'COMPILED' if result['compiled'] else 'FAILED'}", flush=True)
+    if args.all:
+        (output / f"build-all{suffix}.json").write_text(json.dumps({
+            "observed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "sdk": str(sdk), "results": results}, indent=2) + "\n")
+    return 0 if all(result["compiled"] and result.get("simulator_exit_code", 0) == 0 for result in results) else 1
 
 
 if __name__ == "__main__":

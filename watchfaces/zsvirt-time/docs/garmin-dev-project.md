@@ -1,28 +1,32 @@
 # ZSvirt Time 开发约束
 
-本说明仅约束 `watchfaces/zsvirt-time/`。当前目标以时间与ZSvirt官方Logo为主视觉，并显示手表电量和今日步数；用户设备为Enduro 3。不要套用耐力仪表的UUID、35目标矩阵、数据模块、配置生成器或发布历史。
+本说明仅约束 `watchfaces/zsvirt-time/`。主视觉为本地时间和 ZSvirt 官方 Logo，辅以电量、今日步数；用户持有 Enduro 3。设备集合与耐力仪表一致，但本应用的矩阵、资源、UUID、配置、构建和发布证据完全独立。
 
-## 身份与工程
+## 身份与配置
 
-- 应用 UUID：`cb51f19636e64ae1b979bfd8bf070e31`；入口 `ZsvirtTimeApp`；名称 `ZSvirt Time`。
-- 官方目标仅 `enduro3`，280×280 MIP；最低 API 4.0.0；没有额外权限。不要以此宣称 AMOLED 或其它尺寸已适配。
-- 使用 SDK 9.2.0 的 `bin/templates/watchface/simple/` 模板结构创建；静态 `manifest.xml` 和 `monkey.jungle` 是真实构建输入，没有配置生成器。
-- 应用、资源、测试、脚本和输出均归属本目录。官方 SDK、Java 17 与仓库外开发者密钥可共用，不复制或链接密钥。
+- UUID `cb51f19636e64ae1b979bfd8bf070e31`，入口 `ZsvirtTimeApp`，名称 `ZSvirt Time`；更新继续沿用原签名，不复制密钥进仓库。
+- `docs/compatibility.json` 是本应用35个目标的配置源，含11种分辨率、圆形/半圆/矩形、MIP/AMOLED、设备内存和区域API。最低API1.4.0不覆盖仍标为1.3.1的区域固件。
+- `scripts/configure.py` 生成 manifest/jungle；构建脚本生成根配置及目标快照，不手改生成文件，不依赖其它表盘。
+- `profiles/mip` 与 `profiles/amoled` 提供编译期 `DeviceProfile.AMOLED`。无额外权限。
 
 ## 行为与资源
 
-- `FaceTime` 负责 12/24 小时制与 AM/PM；`ZsvirtTimeView` 直接读取设备本地时钟和系统时制，不模拟时间、不进行时区换算。
-- 时间字符串仅在时、分或时制变化时重建；电量、步数字符串仅在对应值变化时重建。每次 `onUpdate` 读取当前系统电量和当天步数，并重绘完整画面，避免返回表盘时出现残影或空白。
-- 不显示秒，不添加Timer、动画、后台联网或直接传感器采样。电量来自 `System.getSystemStats().battery`，显示整数百分比；步数来自 `ActivityMonitor.getInfo().steps`，有效0必须显示0，null显示 `--`，不沿用上一有效值。这两个系统API无需新增权限。
-- MIP休眠由官方WatchFace生命周期控制，保持Logo、时间、电量及步数完整可见；不宣称已测得节电比例。固定布局仅为Enduro 3设计：Logo顶部60px，时间中心158px，AM/PM中心197px，底部数据中心225px。
-- Logo 原件和来源见 `assets/SOURCES.json`；图形只裁透明边、等比缩放、转为四级灰。通过 `scripts/generate-resources.py` 重现，不能重画品牌图形或替换字标。
+- `FaceTime` 处理12/24小时制及AM/PM，直接使用设备时钟，不转换时区。时间字符串只在时、分或时制变化时生成。
+- `onLayout` 加载位图、读取实际字体尺寸并排布内容；字体常量的像素高度因设备和语言而异，不以固定坐标推广其它机型。Logo按11种屏宽生成，Launcher按官方定义的5种尺寸生成。
+- 位图使用 `WatchUi.loadResource` 返回值，不把API4.0后的具体位图类型用于API1.x目标。
+- 唤醒与MIP休眠读取 `System.getSystemStats().battery` 和 `ActivityMonitor.getInfo().steps`；数值变化时生成字符串。0步显示0，null显示`--`，不沿用旧值。完整重绘避免重新显示时残影。
+- AMOLED睡眠仅画灰色时间及AM/PM；根据分钟奇偶在上下不相交区域切换，唤醒恢复完整画面。按官方10%亮像素限制验证实际画面；该设计的跨区域切换是实现选择，官方也建议轻微移动静态元素。模拟器检查不证明真机功耗、烧屏寿命或续航。
+- 不显示秒，不引入Timer、动画、联网、后台服务或直接传感器采样。
+- 正式Logo源图与来源见 `assets/SOURCES.json`。生成器只裁透明边、等比缩放并转换为设备可用调色板；8色MIP使用纯黑白，不重画品牌图形。
 
 ## 调度与验证
 
-从仓库根使用 `python3 watchfaces/zsvirt-time/scripts/build.py --device enduro3`；从应用根使用 `python3 scripts/build.py --device enduro3`。参数 `--simulator` / `--run` / `--test` 使用官方 `enduro3_sim`；普通构建生成真机 PRG。先启动官方模拟器再使用 `--run`。
+从仓库根使用 `python3 watchfaces/zsvirt-time/scripts/build.py`；应用根可用 `python3 scripts/build.py`。默认 `--device enduro3`；`--all` 构建本应用全部目标；`--simulator`、`--run`、`--test` 使用官方对应模拟器目标。
 
-商店导出使用 `--package VERSION`，通过官方 `-e -r` 覆盖 manifest 全部目标，产物和SHA报告保留在本应用 `artifacts/release-VERSION/`。发布前通过 `--device enduro3 --release --run` 验证去除调试信息后的模拟器构建；该产物独立命名为 `-sim-release.prg`。
+`--run` 要求官方模拟器已启动，并持续连接直到应用结束。切换目标前使用 **File → Kill Device**，确认窗口回到空设备；仅Kill App会保留上一设备。截图时核对实际窗口目标，结束本任务时退出本次独占启动的模拟器。保留原始日志及退出码，不能把超时记为成功。
 
-`--run` 持续连接正在运行的应用，必须保留运行日志并在截图后结束本次独占模拟器；超时不能记作 runner 成功。SDK 9.2.0 存在测试摘要解析异常的项目历史，当前运行仍按实际用例输出和原始退出码分别报告，不吞异常或强制改为成功。
+`--package VERSION` 通过官方 `-e -r` 导出全部目标，保留 `artifacts/release-VERSION/` 的原包、SHA报告和日志。发布前使用 `--device TARGET --release --run` 验证去除调试信息的构建。
 
-修改渲染后须构建并查看官方模拟器实际画面。时制边界定向运行 `tests/TimeTests.mc`；不默认运行另一款表盘测试或全仓库构建。真机安装、商店发布、真机显示与续航各需相应授权和独立证据。
+渲染修改后验证对应尺寸及MIP/AMOLED实际模拟器画面；多目标变更需全目标发行导出和代表目标实际运行。仅时制逻辑改变时重跑 `tests/TimeTests.mc`。不默认运行另一表盘或全仓库测试。SDK9.2.0既有测试摘要解析问题需按实际用例输出和原始退出码分别报告，不吞异常。
+
+构建、模拟器、商店提交、真机安装、腕上显示、续航分别需要独立证据。商店发布及真机安装需要对应授权，不从历史权限推定新操作。

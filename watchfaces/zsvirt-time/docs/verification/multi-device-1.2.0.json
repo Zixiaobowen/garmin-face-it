@@ -1,0 +1,293 @@
+{
+  "observed_at": "2026-10-26T17:19:55.994148+08:00",
+  "app": "ZSvirt Time",
+  "version": "1.2.0",
+  "manifest_uuid": "cb51f19636e64ae1b979bfd8bf070e31",
+  "source_sha256": "45417428051f7298fc5bc56d1ed4db7b890b9bc339d792d17623edf09967676d",
+  "package": {
+    "observed_at": "2026-10-26T09:13:22.366316+00:00",
+    "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+    "store_version": "1.2.0",
+    "targets": [
+      "enduro",
+      "enduro3",
+      "enduro4",
+      "fenix7x",
+      "fr165",
+      "fr165m",
+      "fr170",
+      "fr170m",
+      "fr230",
+      "fr235",
+      "fr245",
+      "fr245m",
+      "fr255",
+      "fr255m",
+      "fr255s",
+      "fr255sm",
+      "fr265",
+      "fr265s",
+      "fr45",
+      "fr55",
+      "fr57042mm",
+      "fr57047mm",
+      "fr630",
+      "fr645",
+      "fr645m",
+      "fr70",
+      "fr735xt",
+      "fr745",
+      "fr920xt",
+      "fr935",
+      "fr945",
+      "fr945lte",
+      "fr955",
+      "fr965",
+      "fr970"
+    ],
+    "compiled": true,
+    "exit_code": 0,
+    "package": "artifacts/release-1.2.0/zsvirt-time-1.2.0.iq",
+    "bytes": 391119,
+    "sha256": "6cbfab13a67784d81c99fe39aadd4a81285f879bd6219a103ef449b9ff69b8ae"
+  },
+  "exported_regional_builds": 56,
+  "excluded_api_1_3_1_part_numbers": [
+    "006-B2313-00",
+    "006-B2310-00",
+    "006-B2311-00",
+    "006-B2733-00",
+    "006-B2653-00",
+    "006-B2396-00",
+    "006-B2132-00",
+    "006-B2130-00",
+    "006-B2131-00"
+  ],
+  "sdk_signature_valid": true,
+  "same_signing_identity_as_1_1_0": true,
+  "representative_runs": [
+    {
+      "observed_at": "2026-10-26T08:55:47.718479+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr920xt",
+      "compiler_device": "fr920xt_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr920xt-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 11308,
+      "sha256": "78c64aaccf53147ee0d200f2feebb976a47981c316eb906fde37efb7b7b49d91",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:16:35.624684+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr230",
+      "compiler_device": "fr230_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr230-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 10076,
+      "sha256": "eea6c9aeb9cb4d554a6f69011038ef6ffdb9ae2d649090fe92df16c70bfbd10e",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T08:55:26.275064+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr45",
+      "compiler_device": "fr45_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr45-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 11612,
+      "sha256": "322391184db3559d89c47ecc5b2c7813181e8db93ce13ecd17bd0b29e298b968",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T08:58:55.170250+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr255s",
+      "compiler_device": "fr255s_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr255s-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 12572,
+      "sha256": "528e5b89a2d6517fed0800a89dfd09df6859c217311c2fccda854ee7d1943f41",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T08:58:32.789294+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr245",
+      "compiler_device": "fr245_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr245-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 14300,
+      "sha256": "694598df245a21cf24cfb0c03ed527553476533469c9d4d30d5ec7b560a9fd24",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:00:22.050651+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr955",
+      "compiler_device": "fr955_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr955-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 15276,
+      "sha256": "bbbdca2c9c4de7911ea539054b1f82f3080c8d087420dd716edb0fa6d67fe591",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:01:10.212376+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "enduro3",
+      "compiler_device": "enduro3_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-enduro3-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 15756,
+      "sha256": "8761a81bb363a818a58fccfb6c0529c26b9d5ccf5769897b22d79f4a21f66e5f",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:11:10.530031+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr265s",
+      "compiler_device": "fr265s_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr265s-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 17868,
+      "sha256": "551362ebcfef8e6d3d5fd96094b56efb3d5249cf3442e4235b80af3bf59b4395",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:06:18.629510+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr165",
+      "compiler_device": "fr165_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr165-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 16300,
+      "sha256": "cc6fad11e9ca216c1007e7f2f4dcb760ccdfd6f074360a54051429a91ef26d73",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:08:06.851535+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr265",
+      "compiler_device": "fr265_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr265-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 18908,
+      "sha256": "e10db1e16c45379003043e48a84101a4943ee992c5e4491eb5be9db7cf711b66",
+      "simulator_exit_code": 0
+    },
+    {
+      "observed_at": "2026-10-26T09:09:00.647791+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "device": "fr965",
+      "compiler_device": "fr965_sim",
+      "compiled": true,
+      "exit_code": 0,
+      "program": "bin/zsvirt-time-fr965-sim-release.prg",
+      "unit_tests_included": false,
+      "bytes": 22588,
+      "sha256": "10a5b238858b7a1d7c319aa4442f8193d1ce38e0691f855ba5015e27c56c3623",
+      "simulator_exit_code": 0
+    }
+  ],
+  "visual_inputs": {
+    "battery_percent": 100,
+    "steps": 123456,
+    "time_format": "12h",
+    "period": "PM"
+  },
+  "visual_observations": {
+    "all_11_resolutions_reviewed": true,
+    "logo_time_metrics_visible": true,
+    "clipping_or_overlap_observed": false,
+    "amoled_wake_restores_complete_face": true
+  },
+  "aod_pixel_measurements": [
+    {
+      "device": "fr265s",
+      "file": "docs/verification/multi-fr265s-aod-final-a-raw.png",
+      "lit_pixels": 1419,
+      "display_circle_area": 101787.60197630929,
+      "lit_percent": 1.3941
+    },
+    {
+      "device": "fr265s",
+      "file": "docs/verification/multi-fr265s-aod-final-b-raw.png",
+      "lit_pixels": 1415,
+      "display_circle_area": 101787.60197630929,
+      "lit_percent": 1.3901
+    },
+    {
+      "device": "fr165",
+      "file": "docs/verification/multi-fr165-aod-raw.png",
+      "lit_pixels": 1834,
+      "display_circle_area": 119459.06065275188,
+      "lit_percent": 1.5353
+    },
+    {
+      "device": "fr265",
+      "file": "docs/verification/multi-fr265-aod-raw.png",
+      "lit_pixels": 2150,
+      "display_circle_area": 135917.8645649088,
+      "lit_percent": 1.5818
+    },
+    {
+      "device": "fr965",
+      "file": "docs/verification/multi-fr965-aod-even-raw.png",
+      "lit_pixels": 2399,
+      "display_circle_area": 161883.12784682846,
+      "lit_percent": 1.4819
+    },
+    {
+      "device": "fr965",
+      "file": "docs/verification/multi-fr965-aod-next-raw.png",
+      "lit_pixels": 2016,
+      "display_circle_area": 161883.12784682846,
+      "lit_percent": 1.2453
+    }
+  ],
+  "aod_transition": {
+    "device": "fr265s",
+    "times": [
+      "17:14",
+      "17:15"
+    ],
+    "files": [
+      "multi-fr265s-aod-final-a-raw.png",
+      "multi-fr265s-aod-final-b-raw.png"
+    ],
+    "lit_pixel_intersection": 0
+  },
+  "measurement_method": "Official File > Save Screen Capture exports. Count every nonblack pixel, divide by circular display area pi*r^2. Window captures include simulated bezel/lighting and were not used for pixel percentages.",
+  "automation_notes": [
+    "First target switch retained the prior simulated device until File > Kill Device was used; subsequent target titles were verified.",
+    "An Eval timeout reset runtime state; the interrupted fr230 run was repeated and exited 0.",
+    "Early native time dialog actions returned object errors; no time injection success is claimed. Final minute proof is the actual 17:14 and 17:15 frames."
+  ],
+  "not_performed": [
+    "physical-watch installation or visual inspection",
+    "hardware power/burn-in/battery-life measurements",
+    "rerun of unchanged time unit tests",
+    "full repository tests"
+  ]
+}
