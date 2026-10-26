@@ -3,8 +3,8 @@
 ## repo、branch、目标
 
 - repo：`/Users/zixiaobowen/myProjects/garmin-face-it`
-- branch：`refactor/multi-watchface-layout`，由任务开始时的 `master` 切出。
-- 目标：同一仓库持续开发多个独立 Garmin 表盘。目录重组与独立架构评审已完成；用户已明确授权评审后提交并推送 GitHub，本轮候选已精确暂存，未操作商店或真机。
+- branch：`refactor/multi-watchface-layout`，由任务开始时的 `master` 切出，现已跟踪 `origin/refactor/multi-watchface-layout`。
+- 目标已完成：同一仓库持续开发多个独立 Garmin 表盘。独立架构评审无阻断；实现提交 `3f68133` 已成功推送至 [GitHub分支](https://github.com/Zixiaobowen/garmin-face-it/tree/refactor/multi-watchface-layout)。用户授权包括本轮提交推送，未操作商店或真机。
 
 ## 已完成
 
@@ -50,6 +50,14 @@
 
 评审提出的非阻断项已处理：补充上述干净暂存导出构建，并同步本交接中的用户授权与当前阶段。商店export仍未重跑；本次不改变打包实现或应用内容，历史发布原包保留。
 
+## Git交付
+
+- 实现提交：[`3f68133`](https://github.com/Zixiaobowen/garmin-face-it/commit/3f68133)，`Organize watchfaces as independent Connect IQ projects`；198项文件变更，含190项原样移动。
+- `git push -u origin HEAD` 成功，远端回执为新分支 `HEAD -> refactor/multi-watchface-layout`，本地已设置同名上游。推送目标为 `https://github.com/Zixiaobowen/garmin-face-it.git`。
+- 架构评审指出的交接阶段描述已更新；本轮回执状态另作文档提交同步。提交自身的SHA不循环写入本文件，以远端分支头和会话最终回执为准。
+- 原有未跟踪历史材料未上传。已有time-clipping交接改动完整留在新位置工作区，目录移动提交只包含该文件原HEAD内容；没有全量暂存、重置或清理。
+
+
 ## 已知失败、风险与限制
 
 SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启动同一SDK的 `ConnectIQ.app/Contents/MacOS/simulator` 后成功运行。AppleScript的 System Events 查询被本机辅助访问权限拒绝；改用 CoreGraphics 查询窗口及 `screencapture -l` 取得实际画面，未改权限。此为本机验收工具限制，不是表盘代码失败。
@@ -67,8 +75,8 @@ SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启
 1. 继续现有表盘时，从 `watchfaces/reference-face-configurable/README.md` 与其专属开发约束进入。
 2. 新增表盘时，通过官方 Monkey C: New Project 在 `watchfaces/<新目录>/` 建立工程，设置独立身份与实际设备目标。
 3. 为新表盘添加自身的构建/验证说明，在根 README 与技能路由登记；只在出现真实共同需求时提取共享实现。
-4. 本轮用户已授权评审后提交推送；按精确候选推送 `origin/refactor/multi-watchface-layout`。原用户交接改动只留工作区，索引中的该文件使用原HEAD blob的路径移动；既有未跟踪资料不纳入提交。后续部署、发布与真机安装需要对应任务授权。
+4. 后续提交继续按具体变更暂存，保留已有time-clipping交接改动及未跟踪历史材料；商店发布、部署和真机安装按对应新任务执行。
 
 ## 恢复提示
 
-> garmin-face-it 已在 refactor/multi-watchface-layout 改为多表盘工作区，独立架构评审无阻断，用户已授权本轮提交推送。现有耐力仪表·可配完整工程在 watchfaces/reference-face-configurable/；根 README 与 docs/garmin-dev-project.md 是新入口。构建/配置/资源脚本未改，使用脚本位置定位应用根；新根命令为 python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3。176个源码/资源/测试/脚本文件原样、两份发布原包哈希不变，用户旧交接改动留工作区。Enduro3、FR55、FR965代表构建与干净暂存导出构建通过，Enduro3官方模拟器实际显示、runner退出0；无全量测试/真机/发布。先读本交接与根 README，Git完成回执见本轮提交和远端分支；不恢复旧根兼容链接、不复制密钥、不更改UUID、不清理旧证据。新增表盘建立独立子工程，再登记根导航。
+> garmin-face-it 已在 refactor/multi-watchface-layout 改为多表盘工作区，独立架构评审无阻断，实现提交3f68133已推送origin同名分支，本轮目标已完成。现有耐力仪表·可配完整工程在 watchfaces/reference-face-configurable/；根 README 与 docs/garmin-dev-project.md 是新入口。构建/配置/资源脚本未改，按脚本位置定位应用根；新根命令为 python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3。176个源码/资源/测试/脚本文件原样、两份发布原包哈希不变，用户旧交接改动和未跟踪资料留工作区。Enduro3、FR55、FR965代表构建与干净暂存导出构建通过，Enduro3官方模拟器实际显示、runner退出0；无全量测试/真机/发布。先读本交接与根 README；不恢复旧根兼容链接、不复制密钥、不更改UUID、不清理旧证据。新增表盘建立独立子工程，再登记根导航。
