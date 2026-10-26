@@ -13,7 +13,7 @@
 
 最低 API 为 1.4.0。部分旧机的区域设备定义仍标为 API 1.3.1，该固件范围不符合最低要求；35 个产品目标不代表所有地区、固件版本均可安装。
 
-1.1.0 已提交 Connect IQ，内部版本 2、状态 PENDING；1.2.0 正在完成兼容性发布验收。[商店预览](https://apps-developer.garmin.com/zh-CN/apps/2702e86b-ba01-44ed-9d5a-9b29777945f4)在审核通过前仅账户本人可见。历史原包和[1.1.0 发布记录](docs/release-1.1.0.md)保留。
+1.2.0已提交Connect IQ，内部版本3、状态PENDING；商店实际兼容列表已确认多设备范围。[商店预览](https://apps-developer.garmin.com/zh-CN/apps/2702e86b-ba01-44ed-9d5a-9b29777945f4?tid=1)在审核通过前仅账户本人可见，详见[发布记录](docs/release-1.2.0.md)。历史原包与1.1.0记录保留；用户追加的fēnix全系列（含6系列）正在后续版本扩展。
 
 ## 构建与运行
 

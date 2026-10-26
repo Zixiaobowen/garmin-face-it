@@ -1,6 +1,6 @@
 # ZSvirt Time 1.2.0 发布记录
 
-2026-10-26。兼容版代码与发行包已验证，正在执行 GitHub 推送和 Connect IQ 版本提交；最终提交状态以本页后续回执为准。
+2026-10-26。功能提交[`6ffea8a`](https://github.com/Zixiaobowen/garmin-face-it/commit/6ffea8a)已推送GitHub main。Garmin已接受1.2.0，内部版本3，状态PENDING；应用主记录与实际“兼容设备”页均确认多设备范围，尚未公开上架。
 
 ## 变化
 
@@ -18,5 +18,11 @@
 原包：`artifacts/release-1.2.0/zsvirt-time-1.2.0.iq`，391119字节，SHA-256 `6cbfab13a67784d81c99fe39aadd4a81285f879bd6219a103ef449b9ff69b8ae`。保留1.0.0与1.1.0原包。
 
 原始检查见[验证记录](verification/multi-device-1.2.0.json)，发行日志和验签输出保留在本版本artifacts目录。
+
+商店主记录确认56个device type ID及56个区域part number；编辑元数据确认版本1.2.0和签名true，中英文说明与更新说明逐项回读一致。实际页面显示Enduro 1–4、多款Forerunner及对应fēnix7X/tactix7变体。详见[商店回执](verification/store-submission-1.2.0.json)和[实际兼容列表](verification/store-compatible-1.2.0.txt)。
+
+上传成功后曾出现编辑后台已识别1.2.0、应用主记录仍为1.1.0且仅Enduro3的短暂不一致；之后主记录和页面均更新为1.2.0多设备版本。确切服务端延迟原因未确定，不能把上传204回执单独当作兼容范围已生效。只发生一次成功的1.2.0版本POST，未重复提交二进制。
+
+用户随后追加要求覆盖整个fēnix系列，明确包含fēnix6系列。该范围不属于1.2.0的35目标成果，继续由后续版本实现和验证。
 
 没有真机安装、腕上显示、功耗或续航证据；像素检查不能代替真机烧屏验证。本次没有重跑未改动的时制测试，也没有运行全仓库测试。
