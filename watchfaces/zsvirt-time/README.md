@@ -9,6 +9,8 @@
 - 不显示秒，不使用计时器、动画、后台服务或传感器权限。休眠由系统按分钟刷新；唤醒与休眠使用相同布局。尚未测量真机续航。
 - 应用名 `ZSvirt Time`，UUID `cb51f19636e64ae1b979bfd8bf070e31`，与耐力仪表独立安装。
 
+1.0.0已于2026-10-26提交Connect IQ，当前为“应用程序待处理”，尚未公开上架。[商店预览](https://apps-developer.garmin.com/zh-CN/apps/2702e86b-ba01-44ed-9d5a-9b29777945f4)在审核通过前仅账户本人可见；[发布记录](docs/release-1.0.0.md)保留实际提交和签名回读结果。
+
 ## 构建与运行
 
 依赖沿用工作区已安装的 Connect IQ SDK、Java 17、官方 Enduro 3 设备包与仓库外开发者签名密钥。构建使用 Python 3.11+；仅重新生成图片时需要 Pillow。工程按 SDK `bin/templates/watchface/simple/` 官方模板结构建立，删除了无行为的生命周期回调。
