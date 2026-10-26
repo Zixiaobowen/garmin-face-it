@@ -28,6 +28,6 @@ developer_key*
 .env.*
 
 # Local verification captures and raw logs; runtime font PNGs remain tracked
-docs/verification/*.png
-docs/verification/*.webp
+**/docs/verification/*.png
+**/docs/verification/*.webp
 *.log

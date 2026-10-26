@@ -1,0 +1,183 @@
+{
+  "observed_at": "2026-10-26T03:55:14.086144+00:00",
+  "branch": "refactor/multi-watchface-layout",
+  "application": "watchfaces/reference-face-configurable",
+  "original_files_moved": 1467,
+  "missing_original_files": [],
+  "non_document_files_preserved_outside_bin": 548,
+  "changed_protected_files": [],
+  "source_resource_script_files_preserved": 176,
+  "uuid": "9d182df86c2d48938ce2c9795678f668",
+  "configuration_regeneration": {
+    "exit_code": 0,
+    "official_targets": 35,
+    "manifest_identical": true,
+    "jungle_identical": true
+  },
+  "build_reports": [
+    {
+      "observed_at": "2026-10-26T03:50:32.867087+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "enduro3",
+          "compiler_device": "enduro3",
+          "simulator_build": false,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-enduro3.prg",
+          "log": "bin/logs/enduro3.log",
+          "unit_tests_included": false,
+          "bytes": 46412
+        }
+      ]
+    },
+    {
+      "observed_at": "2026-10-26T03:50:43.913230+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "fr55",
+          "compiler_device": "fr55",
+          "simulator_build": false,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-fr55.prg",
+          "log": "bin/logs/fr55.log",
+          "unit_tests_included": false,
+          "bytes": 51836
+        }
+      ]
+    },
+    {
+      "observed_at": "2026-10-26T03:50:43.921945+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "fr965",
+          "compiler_device": "fr965_sim",
+          "simulator_build": true,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-fr965-sim.prg",
+          "log": "bin/logs/fr965-sim.log",
+          "unit_tests_included": false,
+          "bytes": 165372
+        }
+      ]
+    },
+    {
+      "observed_at": "2026-10-26T03:53:07.517211+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "enduro3",
+          "compiler_device": "enduro3_sim",
+          "simulator_build": true,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-enduro3-sim.prg",
+          "log": "bin/logs/enduro3-sim.log",
+          "unit_tests_included": false,
+          "bytes": 149708,
+          "simulator_exit_code": 0
+        }
+      ]
+    }
+  ],
+  "simulator": {
+    "device": "enduro3",
+    "observed": "Rendered time, Chinese calendar and metrics in official simulator",
+    "screenshot": "docs/verification/multi-watchface-enduro3.png",
+    "runner_exit_code": 0
+  },
+  "document_links": {
+    "documents_checked": 42,
+    "local_targets_checked": 211,
+    "missing": []
+  },
+  "release_packages": [
+    {
+      "path": "watchfaces/reference-face-configurable/artifacts/release-1.0.0/reference-face-configurable-1.0.0.iq",
+      "sha256": "0b3433a5e7675a3fee1646a8a98dc0a6e6762dbf0937c7f15706497cc63505c0",
+      "preserved": true
+    },
+    {
+      "path": "watchfaces/reference-face-configurable/artifacts/release-1.0.1/reference-face-configurable-1.0.1.iq",
+      "sha256": "f071eefec0b1942ab4ae7363bec91e42cd4eb409baa3357d5e188e6cb1a2e392",
+      "preserved": true
+    }
+  ],
+  "user_modified_handoff_preserved": true,
+  "not_run": [
+    "full_target_build",
+    "Monkey C unit tests",
+    "store export",
+    "physical watch installation",
+    "store publication"
+  ],
+  "source_resources_scripts_unchanged": true,
+  "html_receipt": {
+    "path": "docs/multi-watchface-layout.html",
+    "owner": 2237677961422,
+    "block": 2237677961434,
+    "browser": "Tern",
+    "themes_observed": [
+      "light",
+      "dark"
+    ],
+    "wide_and_narrow_screenshots_observed": true,
+    "horizontal_overflow": false,
+    "local_targets_checked": 7,
+    "missing_targets": [],
+    "page_error_count": 0,
+    "console_entry_count": 0,
+    "simulator_image_embedded": true,
+    "screenshot_disclosure_keyboard_verified": true
+  },
+  "clean_staged_checkout": {
+    "source": "git checkout-index --all (198 tracked files only)",
+    "exit_code": 0,
+    "stdout": "enduro3: COMPILED (bin/logs/enduro3.log)",
+    "stderr": "",
+    "application_build": {
+      "observed_at": "2026-10-26T04:01:32.452222+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "enduro3",
+          "compiler_device": "enduro3",
+          "simulator_build": false,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-enduro3.prg",
+          "log": "bin/logs/enduro3.log",
+          "unit_tests_included": false,
+          "bytes": 46412
+        }
+      ]
+    },
+    "ignored_agent_installations_present": false,
+    "temporary_checkout_removed": true
+  },
+  "architecture_review": {
+    "agent": "reviewer",
+    "scope": "multi-watchface architecture and exact staged files",
+    "result": "no_blocking_findings",
+    "overall_correctness": "correct",
+    "non_blocking_followups": {
+      "clean_staged_checkout": "passed",
+      "handoff_status": "updated",
+      "store_export": "not_run"
+    }
+  },
+  "git_delivery": {
+    "remote": "https://github.com/Zixiaobowen/garmin-face-it.git",
+    "branch": "refactor/multi-watchface-layout",
+    "authorized_by_user": true,
+    "staged_tree_files": 198,
+    "exact_renames": 190,
+    "preexisting_untracked_documents_included": false,
+    "user_modified_handoff_content_included": false
+  }
+}
