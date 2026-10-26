@@ -5,6 +5,7 @@
 | 表盘 | 应用目录 | 开发约束 |
 | --- | --- | --- |
 | 耐力仪表·可配 | [watchfaces/reference-face-configurable/](watchfaces/reference-face-configurable/README.md) | [专属开发说明](watchfaces/reference-face-configurable/docs/garmin-dev-project.md) |
+| ZSvirt Time | [watchfaces/zsvirt-time/](watchfaces/zsvirt-time/README.md) | [专属开发说明](watchfaces/zsvirt-time/docs/garmin-dev-project.md) |
 
 ## 目录职责
 
@@ -48,7 +49,7 @@ python3 watchfaces/reference-face-configurable/scripts/generate-fonts.py --font 
 
 ## 新增表盘
 
-按 Garmin 的[官方新工程流程](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/)，在 VS Code 使用 **Monkey C: New Project**，选择 Watch Face，在 `watchfaces/` 下创建新的真实工程目录；为该表盘选择自己的最低 API 和目标设备，不预建空应用。
+按 Garmin 的[官方新工程流程](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/)，在 VS Code 使用 **Monkey C: New Project**，选择 Watch Face，在 `watchfaces/` 下创建新的真实工程目录；也可基于已安装 SDK 的 `bin/templates/watchface/simple/` 官方模板建立等价工程。为该表盘选择独立 UUID、最低 API 和目标设备，不预建空应用。
 
 新工程保留独立 `manifest.xml`、UUID、源码、资源、测试、脚本、文档及产物目录，并在本页和[技能路由](docs/garmin-dev-project.md)登记。若复用现有表盘脚本，必须先调整 `scripts/configure.py` 中的应用身份（UUID、入口、名称及资源引用）、权限/API要求和能力矩阵生成逻辑，建立新表盘自己的 `docs/compatibility.json`、配置与资源；同时调整 `scripts/build.py` 的 PRG/IQ 产物前缀及默认目标。只改目录名或手改生成的 manifest 会被配置生成覆盖，不能据此复用现有应用身份或35设备矩阵。
 

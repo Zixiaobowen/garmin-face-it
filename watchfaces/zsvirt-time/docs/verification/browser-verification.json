@@ -1,0 +1,38 @@
+{
+  "verified_on": "2026-10-26",
+  "receipt": "../delivery.html",
+  "tern": {
+    "owner": 2237677961422,
+    "block": 2237677961472,
+    "verified_block": 2237677961469,
+    "final_shown": true,
+    "final_driver_released": true,
+    "placement": "right",
+    "width": 1092,
+    "themes_checked": ["light", "dark"],
+    "horizontal_overflow": false,
+    "embedded_image_loaded": true,
+    "console_errors": 0,
+    "page_errors": 0
+  },
+  "narrow": {
+    "browser": "headless, relay disabled, Tern disabled; only this task's tab is closed afterward",
+    "width": 390,
+    "height": 844,
+    "theme": "dark",
+    "horizontal_overflow": false,
+    "embedded_image_loaded": true,
+    "disclosure_opened_by_click": true,
+    "console_errors": 0,
+    "page_errors": 0
+  },
+  "local_links": {
+    "checked": 3,
+    "missing": 0
+  },
+  "tool_limitations": [
+    "A docked Tern block rejects viewport emulation; narrow rendering was verified in a separate hidden browser tab.",
+    "Tern pip did not recognize the browser block ID. The original right-side receipt remained in place at that point.",
+    "Closing the adopted browser handle removed its block contrary to the documented release behavior. The same final receipt was reopened as block 2237677961472, docked right, released via native tern browser release, and confirmed shown=true."
+  ]
+}

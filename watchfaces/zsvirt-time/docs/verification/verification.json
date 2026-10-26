@@ -1,0 +1,74 @@
+{
+  "observed_at": "2026-10-26T05:45:33.363294+00:00",
+  "device": "enduro3",
+  "screen": {
+    "width": 280,
+    "height": 280,
+    "type": "MIP"
+  },
+  "build": {
+    "observed_at": "2026-10-26T05:40:09.269753+00:00",
+    "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+    "device": "enduro3",
+    "compiler_device": "enduro3",
+    "compiled": true,
+    "exit_code": 0,
+    "program": "bin/zsvirt-time-enduro3.prg",
+    "unit_tests_included": false,
+    "bytes": 14460,
+    "sha256": "7d1c52d0287d8c4d8d5943698862851de91eb92edb1f13f6ddc2a72de7305093"
+  },
+  "simulator": {
+    "compiler_device": "enduro3_sim",
+    "compiled": true,
+    "exit_code": 0,
+    "simulator_exit_code": 0,
+    "program": "bin/zsvirt-time-enduro3-sim.prg",
+    "sha256": "d1089da7145de2eaa0aa8ae726af21b7e59c26f2296ed2fb685c385f5f6b676a",
+    "completion": "Captured the actual application window, then gracefully terminated this task's simulator; runner exited 0."
+  },
+  "clock_tests": {
+    "observed_at": "2026-10-26T05:43:58.583698+00:00",
+    "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+    "device": "enduro3",
+    "compiler_device": "enduro3_sim",
+    "compiled": true,
+    "exit_code": 0,
+    "program": "bin/zsvirt-time-enduro3-tests.prg",
+    "unit_tests_included": true,
+    "bytes": 101788,
+    "sha256": "7cd8204273b169fa7bb583a8bab21fb97fe0d20b34e392ea7082f4afea9f6d8c",
+    "simulator_exit_code": 1
+  },
+  "clock_test_outcomes": {
+    "passed": 3,
+    "failed": 0,
+    "errors": 0,
+    "cases": [
+      "midnightAndNoon",
+      "twentyFourHourClock",
+      "afternoonAndMinutePadding"
+    ]
+  },
+  "visual": {
+    "source": "Official Connect IQ Simulator 9.2.0, Enduro 3 (6.0.3)",
+    "window_capture": "enduro3-window-final.png",
+    "screen_crop": "enduro3-screen-final.png",
+    "observed_time": "13:46",
+    "logo_visible": true,
+    "time_visible": true,
+    "observed_clipping": false,
+    "hardware_installation": false
+  },
+  "runner_limitations": [
+    "The three SDK unit-test cases report PASS, but monkeydo returns 1; the raw exit code is preserved.",
+    "The first interactive run exceeded a 120-second command deadline. Final interactive verification used no artificial deadline and ended normally with simulator_exit_code 0."
+  ],
+  "not_performed": [
+    "hardware installation",
+    "on-watch display and battery-life measurement",
+    "store upload",
+    "other-device builds",
+    "repository-wide tests"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "download_page": "https://zsvirt.io/download",
+  "retrieved_on": "2026-10-26",
+  "assets": [
+    {
+      "file": "zsvirt-horizontal-white.png",
+      "url": "https://zsvirt.io/brand/logos/png-transparent/zsvirt-horizontal-white.png",
+      "sha256": "327bc3ec9a8eb0ed70e1aaf00eb5191112a9dc180e04bbbadb25110f51b361ea"
+    },
+    {
+      "file": "zsvirt-symbol-white.png",
+      "url": "https://zsvirt.io/brand/logos/png-transparent/zsvirt-symbol-white.png",
+      "sha256": "64a8be7af35d7957227602534eb81f357101ac07c85ebdb026c01562c76ed3e5"
+    }
+  ],
+  "processing": "Crop transparent padding, preserve aspect ratio, resize with Lanczos, composite on black, and quantize to the MIP-compatible gray levels 0, 85, 170 and 255. Logo: 160x45. Launcher: 40x40.",
+  "rights": "Official ZSvirt brand assets. The download page does not state a separate logo license; do not treat these marks as a transfer of trademark rights."
+}

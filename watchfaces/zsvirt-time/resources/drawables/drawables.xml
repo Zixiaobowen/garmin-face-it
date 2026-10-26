@@ -1,0 +1,4 @@
+<drawables>
+    <bitmap id="ZsvirtLogo" filename="zsvirt-logo.png" dithering="none"/>
+    <bitmap id="LauncherIcon" filename="launcher-icon.png" dithering="none"/>
+</drawables>

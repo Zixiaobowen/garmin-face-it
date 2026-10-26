@@ -5,6 +5,7 @@
 | 表盘 | 应用根（相对仓库根） | 必读说明 |
 | --- | --- | --- |
 | 耐力仪表·可配 | `watchfaces/reference-face-configurable/` | [产品与命令](../watchfaces/reference-face-configurable/README.md)、[开发约束](../watchfaces/reference-face-configurable/docs/garmin-dev-project.md) |
+| ZSvirt Time | `watchfaces/zsvirt-time/` | [产品与命令](../watchfaces/zsvirt-time/README.md)、[开发约束](../watchfaces/zsvirt-time/docs/garmin-dev-project.md) |
 
 ## 路径与调度
 
@@ -24,6 +25,6 @@ python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3
 
 SDK、Java、官方设备包和仓库外开发者签名密钥可以共用。每款表盘的 UUID、能力矩阵、资源及产物独立维护；同一表盘更新维持原签名和 UUID。耐力仪表·可配的35目标、SDK故障记录、商店历史回读和真机验收边界只约束该应用。
 
-新增表盘按[根 README](../README.md#新增表盘)使用官方 **Monkey C: New Project** 在新子目录创建真实工程，再登记路由和专属说明。复用脚本前必须调整 `configure.py` 的身份与能力矩阵，以及 `build.py` 的产物前缀；不能把已有表盘的生成配置直接当作新工程。
+新增表盘按[根 README](../README.md#新增表盘)使用官方 **Monkey C: New Project** 或 SDK 自带的官方模板在新子目录创建真实工程，再登记路由和专属说明。复用脚本前必须调整 `configure.py` 的身份与能力矩阵，以及 `build.py` 的产物前缀；不能把已有表盘的生成配置直接当作新工程。
 
 API问题仍先查技能缓存索引，再核对当前SDK、官方设备包及官方文档。操作技能不构成构建、模拟器或真机验收，也不授权商店发布、手表安装、覆盖旧应用或改动用户数据。
