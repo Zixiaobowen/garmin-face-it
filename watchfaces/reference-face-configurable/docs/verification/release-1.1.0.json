@@ -1,0 +1,311 @@
+{
+  "observed_at": "2026-10-26T15:51:36.435Z",
+  "version": "1.1.0",
+  "git": {
+    "repository": "https://github.com/Zixiaobowen/garmin-face-it",
+    "branch": "main",
+    "feature_commit": "c89fd97",
+    "integration_commit": "3b1767f",
+    "code_pushed": true
+  },
+  "package": {
+    "observed_at": "2026-10-26T15:30:27.126383+00:00",
+    "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+    "store_version": "1.1.0",
+    "targets": [
+      "enduro",
+      "enduro3",
+      "enduro4",
+      "fenix6",
+      "fenix6pro",
+      "fenix6s",
+      "fenix6spro",
+      "fenix6xpro",
+      "fenix7x",
+      "fr165",
+      "fr165m",
+      "fr170",
+      "fr170m",
+      "fr230",
+      "fr235",
+      "fr245",
+      "fr245m",
+      "fr255",
+      "fr255m",
+      "fr255s",
+      "fr255sm",
+      "fr265",
+      "fr265s",
+      "fr45",
+      "fr55",
+      "fr57042mm",
+      "fr57047mm",
+      "fr630",
+      "fr645",
+      "fr645m",
+      "fr70",
+      "fr735xt",
+      "fr745",
+      "fr920xt",
+      "fr935",
+      "fr945",
+      "fr945lte",
+      "fr955",
+      "fr965",
+      "fr970"
+    ],
+    "exit_code": 0,
+    "compiled": true,
+    "package": "artifacts/release-1.1.0/reference-face-configurable-1.1.0.iq",
+    "log": "artifacts/release-1.1.0/package.log",
+    "bytes": 2776681,
+    "sha256": "e93c22b1f15830af45c7d7368aeba8717d16060d45334869d4d6f3a0a9f1317e",
+    "application_id": "9d182df86c2d48938ce2c9795678f668",
+    "sdk_signature_verified": true,
+    "sdk_signature_verifier_exit_code": 0
+  },
+  "verification": {
+    "release_simulator": {
+      "observed_at": "2026-10-26T15:39:14.206059+00:00",
+      "sdk": "/Users/zixiaobowen/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2",
+      "results": [
+        {
+          "device": "fenix6spro",
+          "compiler_device": "fenix6spro_sim",
+          "simulator_build": true,
+          "exit_code": 0,
+          "compiled": true,
+          "program": "bin/reference-face-configurable-fenix6spro-sim-release.prg",
+          "log": "bin/logs/fenix6spro-sim-release.log",
+          "unit_tests_included": false,
+          "bytes": 54124,
+          "simulator_exit_code": 0
+        }
+      ]
+    },
+    "release_simulator_screenshot": "artifacts/release-1.1.0/fenix6spro-release-window.png",
+    "release_test_mutual_exclusion_exit_code": 2,
+    "full_test_suite_run": false,
+    "new_hardware_installation": false,
+    "earlier_fenix_evidence": "docs/verification/fenix6-support.json"
+  },
+  "store": {
+    "app_id": "aa58871d-46ed-49f2-9c18-72efdaa7eb50",
+    "developer_url": "https://apps-developer.garmin.com/zh-CN/apps/aa58871d-46ed-49f2-9c18-72efdaa7eb50",
+    "public_url": "https://apps.garmin.com/zh-CN/apps/aa58871d-46ed-49f2-9c18-72efdaa7eb50",
+    "validation_http": 200,
+    "version_post_http": 204,
+    "metadata_put_http": 204,
+    "metadata_read_http": 200,
+    "signature_verified_by_store": true,
+    "manifest_app_id": "9d182df86c2d48938ce2c9795678f668",
+    "developer": {
+      "version": "1.1.0",
+      "internal_version": 3,
+      "app_status": "APPROVED",
+      "has_version_pending_scan": false,
+      "hardware_count": 76,
+      "hardware_part_numbers": [
+        "006-B3290-00",
+        "006-B3515-00",
+        "006-B3288-00",
+        "006-B3993-00",
+        "006-B4315-00",
+        "006-B2833-00",
+        "006-B3076-00",
+        "006-B4033-00",
+        "006-B3765-00",
+        "006-B3769-00",
+        "006-B3441-00",
+        "006-B4815-00",
+        "006-B3990-00",
+        "006-B2158-00",
+        "006-B3589-00",
+        "006-B3289-00",
+        "006-B3514-00",
+        "006-B3291-00",
+        "006-B2886-00",
+        "006-B3004-00",
+        "006-B4565-00",
+        "006-B5214-00",
+        "006-B3652-00",
+        "006-B3113-00",
+        "006-B3782-00",
+        "006-B2534-00",
+        "006-B3077-00",
+        "006-B4135-00",
+        "006-B3768-00",
+        "006-B3913-00",
+        "006-B3638-00",
+        "006-B3907-00",
+        "006-B4575-00",
+        "006-B2157-00",
+        "006-B3771-00",
+        "006-B4258-00",
+        "006-B3513-00",
+        "006-B3003-00",
+        "006-B3914-00",
+        "006-B3282-00",
+        "006-B4432-00",
+        "006-B3783-00",
+        "006-B2533-00",
+        "006-B3764-00",
+        "006-B3469-00",
+        "006-B3910-00",
+        "006-B3767-00",
+        "006-B4574-00",
+        "006-B3145-00",
+        "006-B3321-00",
+        "006-B2397-00",
+        "006-B1765-00",
+        "006-B2691-00",
+        "006-B3770-00",
+        "006-B4257-00",
+        "006-B4570-00",
+        "006-B3847-00",
+        "006-B2156-00",
+        "006-B2431-00",
+        "006-B3992-00",
+        "006-B3512-00",
+        "006-B4341-00",
+        "006-B2888-00",
+        "006-B3516-00",
+        "006-B4838-00",
+        "006-B3287-00",
+        "006-B4433-00",
+        "006-B4024-00",
+        "006-B3872-00",
+        "006-B4916-00",
+        "006-B3766-00",
+        "006-B3794-00",
+        "006-B4814-00",
+        "006-B3991-00",
+        "006-B5169-00",
+        "006-B3869-00"
+      ],
+      "displayed_fenix_models": [
+        "fēnix® 6",
+        "fēnix® 6 Dual Power",
+        "fēnix® 6 Pro, fēnix® 6 Sapphire",
+        "fēnix® 6 Pro Dual Power",
+        "fēnix® 6 Pro Solar",
+        "fēnix® 6 Solar",
+        "fēnix® 6S",
+        "fēnix® 6S Dual Power",
+        "fēnix® 6S Pro, fēnix® 6S Sapphire",
+        "fēnix® 6S Pro Dual Power",
+        "fēnix® 6S Pro Solar",
+        "fēnix® 6S Solar",
+        "fēnix® 6X Pro, fēnix® 6X Sapphire, fēnix® 6X Pro Solar, tactix® Delta Sapphire, quatix® 6X Solar, tactix® Delta Solar, tactix® Delta Solar Ballistics"
+      ]
+    },
+    "public": {
+      "version": "1.0.1",
+      "internal_version": 2,
+      "app_status": "APPROVED",
+      "has_version_pending_scan": false,
+      "hardware_count": 56,
+      "cache_control": "no-cache, no-store, max-age=0, must-revalidate",
+      "version_1_1_0_publicly_visible": false
+    },
+    "fenix_hardware_checks": [
+      {
+        "target": "fenix6",
+        "partNumbers": [
+          "006-B3289-00",
+          "006-B3514-00",
+          "006-B3766-00",
+          "006-B3770-00"
+        ],
+        "missingFromDeveloper": [],
+        "missingFromPublic": [
+          "006-B3289-00",
+          "006-B3514-00",
+          "006-B3766-00",
+          "006-B3770-00"
+        ]
+      },
+      {
+        "target": "fenix6pro",
+        "partNumbers": [
+          "006-B3290-00",
+          "006-B3515-00",
+          "006-B3782-00",
+          "006-B3767-00",
+          "006-B3771-00"
+        ],
+        "missingFromDeveloper": [],
+        "missingFromPublic": [
+          "006-B3290-00",
+          "006-B3515-00",
+          "006-B3782-00",
+          "006-B3767-00",
+          "006-B3771-00"
+        ]
+      },
+      {
+        "target": "fenix6s",
+        "partNumbers": [
+          "006-B3287-00",
+          "006-B3512-00",
+          "006-B3764-00",
+          "006-B3768-00"
+        ],
+        "missingFromDeveloper": [],
+        "missingFromPublic": [
+          "006-B3287-00",
+          "006-B3512-00",
+          "006-B3764-00",
+          "006-B3768-00"
+        ]
+      },
+      {
+        "target": "fenix6spro",
+        "partNumbers": [
+          "006-B3288-00",
+          "006-B3513-00",
+          "006-B3765-00",
+          "006-B3769-00"
+        ],
+        "missingFromDeveloper": [],
+        "missingFromPublic": [
+          "006-B3288-00",
+          "006-B3513-00",
+          "006-B3765-00",
+          "006-B3769-00"
+        ]
+      },
+      {
+        "target": "fenix6xpro",
+        "partNumbers": [
+          "006-B3291-00",
+          "006-B3516-00",
+          "006-B3783-00"
+        ],
+        "missingFromDeveloper": [],
+        "missingFromPublic": [
+          "006-B3291-00",
+          "006-B3516-00",
+          "006-B3783-00"
+        ]
+      }
+    ],
+    "localizations": [
+      {
+        "locale": "en",
+        "title": "Endurance Dial Configurable",
+        "description": "A Chinese-interface watch face centered on large time digits, with Daily, Training and Minimal layouts and red, blue, green, orange or white accents. Time, date and battery remain visible. Seconds, the Chinese lunar date, local running history and heart-rate zones can be toggled.\n\nChoose Auto, Off, heart rate, Body Battery, temperature/feels-like, recovery hours, system weekly running distance, VO2 max/rating, sunrise, precipitation chance or steps. Daily offers up to four slots, large-screen Training up to six, and Minimal two; small screens support up to four. Available data depends on device, firmware and existing records. Missing valid data is shown as --; explicitly selected unsupported metrics are labeled in Chinese. Auto uses supported capabilities.\n\nWeather uses the Garmin system cache and requires system weather availability; no third-party weather key is needed. Temperature and feels-like are always in Celsius. Weather older than three hours is hidden. Heart rate uses valid samples within five minutes and shows sample age; Body Battery uses samples within 30 minutes.\n\nThe local seven-day chart includes saved runs still on the device, excluding deleted or cloud-only activities. Bars scale to the largest value in the current seven days, so heights cannot be compared across weeks. System weekly running distance uses the device-defined week and differs from the local chart. Set a weekly goal from 0 to 1000 km, with 0.01 km adjustment on the watch; zero means no goal. Training-plan goals are not imported.\n\nVO2 max ratings require birth year and sex in the profile and cover ages 20–79. Birth-year-based age may differ by one year from birthday-based age. Chinese lunar dates cover Gregorian years 2000–2099. Metrics are for everyday information, not medical diagnosis.\n\nSettings are exposed through the Connect IQ phone app; devices supporting Connect IQ API 3.2 or later also offer on-watch settings. Watch-face labels are Chinese; this English listing does not imply an English interface. Older devices may lack weather, training or other metrics. See the store device list for compatibility. MIP sleep mode hides seconds. AMOLED sleep mode uses sparse time and date with alternating placement.\n\nFree, with no ads, paid unlocks or subscriptions. The watch face has no developer-operated server and does not upload health data. Images are simulator captures containing simulated data, not real wear records.\n\nSupport: https://github.com/Zixiaobowen/garmin-face-it/issues . Include device model, firmware and reproduction steps, without private health data. Responses depend on maintainer availability; no fixed response time is promised.\n\nfēnix 6 family: supports the compatible 6, 6 Pro, 6S, 6S Pro and 6X Pro variants shown in the device list. System weekly running distance and sunrise are unavailable on these devices; Auto skips them and manual selections show the unsupported label. The local seven-day chart still uses saved runs available on the device.",
+        "whats_new": "1.1.0: Added support for the fēnix 6, 6 Pro, 6S, 6S Pro and 6X Pro families, including the corresponding Solar, Sapphire and Dual Power variants listed by Garmin. Daily, Training and Minimal layouts and on-watch settings are available. On these devices, Auto skips system weekly running distance and sunrise; explicitly selecting either displays an unsupported label. The local seven-day saved-run chart remains available when activity history is present. Verified builds and official simulator runs; fēnix 6 hardware and battery-life testing have not been performed."
+      },
+      {
+        "locale": "zh_CN",
+        "title": "耐力仪表·可配",
+        "description": "以大字时间为中心的中文表盘，提供日常、训练、极简三种布局，以及红、蓝、绿、橙、白五种强调色。时间、日期、电量始终保留；秒、农历、本地跑量图和心率区可分别开关。\n\n信息位可选自动、关闭、心率、身体电量、温度/体感、恢复小时、系统周跑量、最大摄氧量/等级、日出、降雨概率和步数。日常最多4位，训练大屏最多6位，极简2位；小屏最多4位。数据和能力取决于设备型号、固件及设备已有记录。缺少有效样本显示“--”，显式选择不支持的指标显示“不支持”；自动模式只选择设备支持的能力。\n\n天气读取Garmin系统缓存，依赖设备能够取得系统天气；不需要第三方天气密钥。温度及体感固定显示°C。天气超过3小时不显示数值；心率只使用5分钟内有效样本并显示样本年龄，身体电量只使用30分钟内有效样本。\n\n训练布局可显示设备本地近7日已保存跑步；不含已删除或仅在云端的活动。柱高按当前7日最大值缩放，不能用于跨周比较。系统周跑量由设备定义周边界，与本地图不同。周跑量目标可设置0–1000km，机上可调至0.01km；0表示未设目标，不自动读取训练计划目标。\n\n最大摄氧量等级依赖完整出生年/性别档案，适用于20–79岁；按出生年推算年龄可能与实际生日相差1岁。农历支持公历2000–2099年。数据仅供日常信息参考，不用于医疗诊断。\n\n可通过Connect IQ手机应用的表盘设置调整属性；支持Connect IQ API 3.2及以上的设备还提供机上设置。界面标签以中文显示，英文商店介绍不代表英文表盘界面。老设备可能缺少天气、训练或其他数据能力。兼容型号以商店设备列表为准。MIP休眠时隐藏秒；AMOLED休眠时仅显示稀疏时间和日期并交替显示区域。\n\n免费使用，无广告、付费解锁或订阅。本表盘没有自建服务器，不上传健康数据。展示图片来自模拟器，包含模拟数据，不代表实际佩戴记录。\n\n问题反馈：https://github.com/Zixiaobowen/garmin-face-it/issues 。请提供设备型号、固件版本及复现步骤，勿公开个人健康数据；反馈按维护者可用时间处理，不承诺固定响应时限。\n\nfēnix 6 系列：支持兼容设备列表中的 6、6 Pro、6S、6S Pro、6X Pro 及对应型号。这些机型不支持本表盘的系统周跑量与日出指标；自动信息位跳过，手动选择显示“不支持”。本地近7日图仍读取设备上保留的跑步活动。",
+        "whats_new": "1.1.0：新增 fēnix 6、6 Pro、6S、6S Pro、6X Pro 系列支持，包含 Garmin 对应列出的 Solar、Sapphire、Dual Power 型号。保留日常、训练、极简三种布局及机上设置。这些机型不支持本表盘的系统周跑量与日出指标：自动信息位跳过，手动选择显示“不支持”；设备有活动历史时仍可显示本地近7日跑步图。已通过构建与官方模拟器运行验证，尚未进行 fēnix 6 真机及续航验收。"
+      }
+    ],
+    "privacy_url": "https://github.com/Zixiaobowen/garmin-face-it/blob/main/watchfaces/reference-face-configurable/docs/privacy.md",
+    "publication_boundary": "Upload and metadata updates accepted. Developer dashboard marks the app approved, but the public store still serves 1.0.1 / internal 2 and 56 hardware identifiers. No additional publish action was found; reason and time for public rollout are not confirmed.",
+    "metadata_localizations_verified": true
+  }
+}

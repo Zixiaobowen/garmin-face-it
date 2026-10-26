@@ -2,7 +2,7 @@
 
 [返回多表盘工作区](../../README.md) · [本表盘开发约束](docs/garmin-dev-project.md)
 
-“耐力仪表·可配”是一款中文 Connect IQ 表盘，优先适配 Enduro 3。本应用目录包含源码、设置、字体图集、字体许可证、40个官方目标配置及构建脚本；这些目标只属于本表盘。2026-10-22至2026-10-23的历史回读确认：1.0.1程序包和商店图文均已更新，中英文说明、封面、两种语言hero及三张截图已完成回读，后台版本为1.0.1（内部2），当时仍待审核、尚未公开上架。该记录不代表当前商店状态，详见[发布记录](docs/release-1.0.1.md)。
+“耐力仪表·可配”是一款中文 Connect IQ 表盘，优先适配 Enduro 3。本应用目录包含源码、设置、字体图集、字体许可证、40个官方目标配置及构建脚本；这些目标只属于本表盘。2026-10-26已上传包含fēnix 6系列支持的1.1.0（内部3），开发者后台验签、双语资料和新增20个硬件编号回读通过；公开商店仍返回1.0.1（内部2），尚未包含新增机型。详见[1.1.0发布记录](docs/release-1.1.0.md)。
 
 ## 显示内容
 
@@ -53,18 +53,21 @@ python3 scripts/build.py --device fenix6spro
 python3 scripts/build.py --all
 
 # 官方export：覆盖manifest全部目标的签名商店包
-python3 scripts/build.py --package 1.0.1
+python3 scripts/build.py --package 1.1.0
 
 # 先启动已安装的官方模拟器
 "$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2/bin/connectiq"
 python3 scripts/build.py --device enduro3 --run
 python3 scripts/build.py --device enduro3 --test --run
 
+# 发布前检查去除调试信息的模拟器构建
+python3 scripts/build.py --device fenix6spro --release --run
+
 # 只生成模拟器版本，便于单独运行和排查
 python3 scripts/build.py --device fr920xt --simulator
 ```
 
-构建日志保存在 `bin/logs/`，JSON报告记录编译器及模拟器原始退出码，入口以0/1表示总体成功/失败。`--run`、`--test`和`--simulator`使用官方`<device>_sim`编译目标；普通模拟器产物为`reference-face-configurable-<device>-sim.prg`，测试产物为`-tests.prg`。默认生成真机PRG。920XT真机字体含180°设备方向编码，必须区分两种目标。模拟器已经运行后才使用`--run`。
+构建日志保存在 `bin/logs/`，JSON报告记录编译器及模拟器原始退出码，入口以0/1表示总体成功/失败。`--run`、`--test`和`--simulator`使用官方`<device>_sim`编译目标；普通模拟器产物为`reference-face-configurable-<device>-sim.prg`，`--release`去除调试信息并输出`-sim-release.prg`，测试产物为`-tests.prg`。`--release`不能与`--test`混用。默认生成去除调试信息的真机PRG。920XT真机字体含180°设备方向编码，必须区分两种目标。模拟器已经运行后才使用`--run`。
 
 `--package VERSION`使用官方`-e -r`导出，输出到`artifacts/release-VERSION/`，同时保存编译日志、目标列表、字节数和SHA-256。它不能与单目标、模拟器或测试模式混用；版本参数用于文件名及商店提交资料，不向manifest添加不存在的版本字段。此目录不提交Git；重复导出可能因SDK时间戳而产生不同SHA，不能承诺逐字节一致。
 
@@ -95,7 +98,7 @@ Forerunner 45 Plus已由官方商店硬件编号`006-B3847-00`核实共用`fr45`
 
 最老目标仅API1.4，fr45表盘内存只有48KiB；现代天气/训练/Complications可能不可用，自动布局只选支持的指标。新版的编译、代表设备截图和内存记录以当前验证报告为准，不沿用旧版内存数值证明新版通过。40个target及历史模拟器范围不代表40款真机验收通过。
 
-Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.prg`和`-tests.prg`仅用于模拟器。UUID为`9d182df86c2d48938ce2c9795678f668`，后续更新维持此身份。旧“耐力仪表”的UUID为`b9b8804748954f99be17e7c4483b4db3`，其应用及数据必须保留。
+Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.prg`、`-sim-release.prg`和`-tests.prg`仅用于模拟器。UUID为`9d182df86c2d48938ce2c9795678f668`，后续更新维持此身份。旧“耐力仪表”的UUID为`b9b8804748954f99be17e7c4483b4db3`，其应用及数据必须保留。
 
 最近一次有侧载回读证据的是2026-10-21的可配置版；后续字体和温度单位修订尚无新增真机安装证据。真机可读性、真实指标与续航、手机设置传输链路均需独立验收。原始安装回读与旧版备份只保留在本机，不纳入源码基线。
 
@@ -107,6 +110,7 @@ Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.
 - [字体来源、哈希及图集元数据](docs/font-assets.json)
 - [1.0.0发布记录与验证边界](docs/release-1.0.0.md)
 - [1.0.1时间裁切修复与发布记录](docs/release-1.0.1.md)
+- [1.1.0 fēnix 6适配与上传记录](docs/release-1.1.0.md) · [HTML回执](docs/release-1.1.0.html)
 - [隐私说明 / Privacy notice](docs/privacy.md)
 
 本表盘免费，无广告、付费解锁或订阅。健康数据通过设备本地官方API读取；没有开发者服务器、网络上传或第三方天气密钥。问题反馈请使用[GitHub Issues](https://github.com/Zixiaobowen/garmin-face-it/issues)，提供设备型号、固件版本及复现步骤，请勿附个人健康记录。响应取决于维护者可用时间，不承诺固定时限。

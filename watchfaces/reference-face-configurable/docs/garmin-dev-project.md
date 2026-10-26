@@ -21,13 +21,16 @@ python3 scripts/build.py --device enduro3 --simulator
 python3 scripts/build.py --device enduro3 --run
 python3 scripts/build.py --device enduro3 --test --run
 
+# 发布前检查去除调试信息的模拟器构建
+python3 scripts/build.py --device fenix6spro --release --run
+
 # 覆盖manifest全部目标的官方商店export
-python3 scripts/build.py --package 1.0.1
+python3 scripts/build.py --package 1.1.0
 ```
 
 商店`.iq`沿用同一入口的`--package VERSION`，使用官方`-e -r`覆盖全部manifest目标，版本参数用于产物及商店资料，输出和SHA报告位于`artifacts/release-VERSION/`。打包、提交审核和公开上架分别记录，不能互相替代；只有任务授权时操作商店。现行开发者后台为`https://apps-developer.garmin.com/`，遇到登录或新协议由用户在官方界面处理，不读取凭据。本机真实设备传输继续使用OpenMTP/Kalam，写入后独立回读；截图按当前macOS窗口取证。
 
-商店状态仅作历史回读：2026-10-22至2026-10-23记录确认1.0.1（内部2）程序包及图文保存成功，当时待审核、尚未公开上架；详见 `docs/release-1.0.1.md`。目录调整未重新查询商店，不能把该历史状态当作当前状态。
+2026-10-26回读：1.1.0（内部3）程序包、双语说明及全部新增fēnix 6硬件编号已被开发者后台接收；公开商店仍返回1.0.1（内部2），尚未包含新增机型，详见 `docs/release-1.1.0.md`。2026-10-22至23的1.0.1历史记录保留在 `docs/release-1.0.1.md`；后台应用状态不能替代新版本公开可安装的证据。
 
 API问题先读技能的`references/connect-iq-docs/index.md`及对应章节。缓存只作为检索入口；精确签名、API版本、设备支持与当前SDK的`doc/Toybox`、官方设备包及官方网页核对。缓存中的“不支持”清单和观察性结论不直接当成设备事实。
 

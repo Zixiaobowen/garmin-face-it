@@ -28,6 +28,9 @@ python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3
 # 官方模拟器已经运行后，构建并运行
 python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3 --run
 
+# 发布前运行去除调试信息的模拟器版本
+python3 watchfaces/reference-face-configurable/scripts/build.py --device fenix6spro --release --run
+
 # 仅编译官方模拟器目标
 python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3 --simulator
 
@@ -38,7 +41,7 @@ python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3
 python3 watchfaces/reference-face-configurable/scripts/build.py --all
 
 # 导出此表盘的签名商店包
-python3 watchfaces/reference-face-configurable/scripts/build.py --package 1.0.1
+python3 watchfaces/reference-face-configurable/scripts/build.py --package 1.1.0
 
 # 重新生成此表盘配置、农历数据和字体
 python3 watchfaces/reference-face-configurable/scripts/configure.py

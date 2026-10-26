@@ -73,9 +73,12 @@ def main():
     parser.add_argument("--test", action="store_true", help="Include Monkey C unit tests for one target")
     parser.add_argument("--run", action="store_true", help="Run the single result in an already running simulator")
     parser.add_argument("--simulator", action="store_true", help="Compile for the official simulator device variant")
+    parser.add_argument("--release", action="store_true", help="Strip debug information from simulator builds; hardware builds are always stripped")
     args = parser.parse_args()
     if args.all and (args.test or args.run):
         parser.error("Use one device for --test / --run")
+    if args.release and args.test:
+        parser.error("--release cannot be combined with --test")
     if args.package is not None:
         if args.test or args.run or args.simulator:
             parser.error("--package cannot be combined with simulator or test modes")
@@ -83,6 +86,8 @@ def main():
             parser.error("Store version must use MAJOR.MINOR.PATCH, for example 1.0.0")
     simulator = args.simulator or args.run or args.test
     suffix = "-tests" if args.test else "-sim" if simulator else ""
+    if simulator and args.release:
+        suffix += "-release"
     sdk = sdk_path(args.sdk)
     if not args.key.is_file():
         parser.error(f"Signing key missing: {args.key}; see README.md. Keys stay outside this repository.")
@@ -109,7 +114,7 @@ def main():
             command.append("-t")
         else:
             command += ["-O", "2z"]
-            if not simulator:
+            if not simulator or args.release:
                 command.append("-r")
         completed = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
         log = logs / f"{device}{suffix}.log"

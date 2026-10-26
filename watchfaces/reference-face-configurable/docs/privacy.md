@@ -1,8 +1,8 @@
 # 隐私说明 / Privacy notice
 
 应用：耐力仪表·可配 / Endurance Dial Configurable  
-适用版本：1.0.0  
-更新日期：2026-10-22
+适用版本：1.1.0  
+更新日期：2026-10-26
 
 ## 中文
 

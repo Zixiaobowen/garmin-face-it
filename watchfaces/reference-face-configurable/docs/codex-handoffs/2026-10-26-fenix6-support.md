@@ -4,14 +4,14 @@
 
 - repo：`/Users/zixiaobowen/myProjects/garmin-face-it`。
 - branch：`feat/multifunction-fenix6`，由本轮从 `main` 创建。
-- 用户目标：让另一款多功能表盘“耐力仪表·可配”支持 fēnix 6 系列。本轮适配与定向验收已完成；没有提交、推送、商店上传或真机安装授权，未执行这些操作。
+- 用户目标：让另一款多功能表盘“耐力仪表·可配”支持 fēnix 6 系列。适配完成后，用户追加授权提交推送GitHub并上传商店，后续实际结果见 [1.1.0发布交接](2026-10-26-fenix6-release.md)。没有真机安装授权。
 - UUID 保持 `9d182df86c2d48938ce2c9795678f668`；ZSvirt Time 和旧“耐力仪表”身份均未改动。
 
 ## 已完成与修改
 
 `docs/compatibility.json` 新增 `fenix6`、`fenix6pro`、`fenix6s`、`fenix6spro`、`fenix6xpro`，覆盖官方对应的 17 个 fēnix 6 系列型号名称及 20 个地区硬件编号。总矩阵 40 targets、55 个命名型号行、85 个硬件编号；旧 35 个目标对象和原有型号行与修改前内存快照逐项比较，保持不变。
 
-通过现有 `scripts/configure.py` 重新生成 `manifest.xml`、`monkey.jungle`。240/260/280px、MIP、机上设置和 API 成员检测均已有实现，本轮没有修改 Monkey C 源码、字体、资源、构建脚本或测试。
+通过现有 `scripts/configure.py` 重新生成 `manifest.xml`、`monkey.jungle`。240/260/280px、MIP、机上设置和 API 成员检测均已有实现，适配阶段没有修改 Monkey C 源码、字体、资源、构建脚本或测试。后续发布阶段为构建入口增加 `--release`，详见发布交接。
 
 同步更新应用 `README.md`、`docs/compatibility.md`、`docs/garmin-dev-project.md`，以及仓库根 `README.md`、`docs/garmin-dev-project.md` 的当前范围。历史发布记录和历史 35-target 验收数字保持原义。
 
@@ -60,13 +60,12 @@ env JAVA_HOME=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home PAT
 
 ## 后续动作
 
-本轮功能已完成。后续按用户新指令推进：
+本轮适配完成，后续发布操作已获授权并执行；当前状态以 [1.1.0发布交接](2026-10-26-fenix6-release.md) 为准：
 
-1. 审阅当前分支的设备矩阵、生成配置和本轮回执；不以历史商店状态推定当前状态。
-2. 如授权提交或推送，仅暂存本轮相关文件，保留无关历史记录。
-3. 如授权发布，用新版本目录导出覆盖 40 targets 的 `.iq`，官方验签后更新现有应用，保留旧发布原包。
-4. 如获得实际 fēnix 6 设备及安装授权，再做侧载回读、真实数据、机上设置和续航验收；不要把用户已经不持有的 Fenix 6 Pro 当作现有硬件。
+1. 适配及远端ZSvirt拆分整合已推送 `origin/main`，保留用户无关未提交记录。
+2. 1.1.0官方包导出、验签、发布模拟器运行及商店上传均完成；开发者后台为1.1.0，公开侧仍为1.0.1，不将后台预览当公开可安装。
+3. 如获得实际fēnix 6设备及安装授权，再做侧载回读、真实数据、机上设置和续航验收；用户已不持有Fenix 6 Pro。
 
 ## 恢复提示
 
-> 继续 garmin-face-it 的 feat/multifunction-fenix6。用户要求另一款多功能表盘“耐力仪表·可配”支持 fēnix 6 系列。已新增 fenix6/fenix6pro/fenix6s/fenix6spro/fenix6xpro，矩阵 35→40，经原 configure.py 生成 manifest/jungle，无 Monkey C 或资源修改。五款真机版/模拟器版最终构建均通过，五款 --run 最终退出 0；240/260/280 三款 Pro 代表机型的三种布局、机上切换及 6S Pro 休眠隐藏秒有实际截图。非 Pro 两款截图受后段 macOS 截图接口失败影响，仅有加载和运行回执。初次 SDK critical error、缺少 Java 和被中止的 6X 启动均保留，不能隐藏失败。详见应用 docs/verification/fenix6-support.json 和 docs/fenix6-support.html。未提交、未推送、未商店发布、未真机安装；保留用户历史未提交内容及原签名。
+> 继续 garmin-face-it 的 feat/multifunction-fenix6。用户已要求另一款多功能表盘支持fēnix 6系列，并追加授权提交推送与商店上传。适配阶段新增五个官方目标，矩阵35→40，经原configure.py生成manifest/jungle，无Monkey C或资源修改；五款构建和运行最终通过，三款Pro代表机型的三种布局、机上切换及6S Pro休眠有截图。后续发布已完成1.1.0导出、验签、stripped模拟器运行及上传，源码已推送main；公开商店仍为1.0.1。恢复前先读同目录2026-10-26-fenix6-release.md及docs/release-1.1.0.md，不再使用本阶段原来的“未提交、未授权上传”状态。保留用户历史未提交内容与原签名；没有真机安装授权。

@@ -1,0 +1,81 @@
+{
+  "observed_at": "2026-10-26T16:04:02.087Z",
+  "owner": 2237677961599,
+  "browser_block": 2237677961623,
+  "wide": {
+    "width": 1512,
+    "scrollWidth": 1512,
+    "images": [
+      {
+        "complete": true,
+        "width": 698
+      }
+    ],
+    "links": [
+      "https://github.com/Zixiaobowen/garmin-face-it",
+      "https://apps.garmin.com/zh-CN/apps/aa58871d-46ed-49f2-9c18-72efdaa7eb50",
+      "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/release-1.1.0.md",
+      "https://github.com/Zixiaobowen/garmin-face-it/commit/c89fd97",
+      "https://github.com/Zixiaobowen/garmin-face-it/commit/3b1767f",
+      "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/artifacts/release-1.1.0/reference-face-configurable-1.1.0.iq",
+      "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/verification/release-1.1.0.json",
+      "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/fenix6-support.html",
+      "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/codex-handoffs/2026-10-26-fenix6-release.md"
+    ],
+    "color_scheme": "light",
+    "visual_screenshot_checked": true,
+    "screenshot": "artifacts/release-1.1.0/receipt-wide.png"
+  },
+  "narrow": {
+    "width": 460,
+    "scrollWidth": 460,
+    "detailsOpen": true,
+    "images": [
+      {
+        "complete": true,
+        "width": 698
+      }
+    ],
+    "color_scheme": "dark",
+    "requested_width": 390,
+    "actual_width": 460,
+    "visual_screenshot_checked": true,
+    "screenshot": "artifacts/release-1.1.0/receipt-narrow.png"
+  },
+  "details_open_close_verified": true,
+  "details_activation": "DOM click on native HTML summary; trusted Tern click did not toggle while off-screen",
+  "local_links": [
+    {
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/release-1.1.0.md",
+      "exists": true
+    },
+    {
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/artifacts/release-1.1.0/reference-face-configurable-1.1.0.iq",
+      "exists": true
+    },
+    {
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/verification/release-1.1.0.json",
+      "exists": true
+    },
+    {
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/fenix6-support.html",
+      "exists": true
+    },
+    {
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/codex-handoffs/2026-10-26-fenix6-release.md",
+      "exists": true
+    }
+  ],
+  "page_errors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "console": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "docking": "tern dock 2237677961623 right --json succeeded; opened with owner 2237677961599",
+  "external_browser_opened": false
+}
