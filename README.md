@@ -5,7 +5,8 @@
 | 表盘 | 应用目录 | 开发约束 |
 | --- | --- | --- |
 | 耐力仪表·可配 | [watchfaces/reference-face-configurable/](watchfaces/reference-face-configurable/README.md) | [专属开发说明](watchfaces/reference-face-configurable/docs/garmin-dev-project.md) |
-| ZSvirt Time | [watchfaces/zsvirt-time/](watchfaces/zsvirt-time/README.md) | [专属开发说明](watchfaces/zsvirt-time/docs/garmin-dev-project.md) |
+
+ZSvirt Time已迁至独立仓库[ZSvirt/zsvirt-garmin-face-it](https://github.com/ZSvirt/zsvirt-garmin-face-it)。后续开发、构建、兼容矩阵与发布记录在新仓库维护，本仓库不再保留其应用副本。
 
 ## 目录职责
 
@@ -14,7 +15,7 @@
 - 根 `.agents/`、`.omp/`、`.hermes/` 和 `skills-lock.json`：本机开发辅助配置与技能安装，不是应用构建输入。
 - 根 `.gitignore`：整个工作区的忽略规则。
 
-各表盘拥有独立应用身份、资源、测试及产物。官方 SDK、Java、设备定义和仓库外开发者签名密钥可以共用；新表盘使用独立 UUID，同一表盘更新维持原 UUID。签名密钥不得复制或链接进仓库。耐力仪表·可配的35个目标与ZSvirt Time的69个目标分别由各自应用维护，不是工作区通用支持范围。
+各表盘拥有独立应用身份、资源、测试及产物。官方 SDK、Java、设备定义和仓库外开发者签名密钥可以共用；新表盘使用独立 UUID，同一表盘更新维持原 UUID。签名密钥不得复制或链接进仓库。耐力仪表·可配的35个目标只属于该应用，不是工作区通用支持范围。
 
 ## 构建、运行与资源生成
 

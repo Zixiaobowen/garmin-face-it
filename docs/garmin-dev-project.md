@@ -5,7 +5,8 @@
 | 表盘 | 应用根（相对仓库根） | 必读说明 |
 | --- | --- | --- |
 | 耐力仪表·可配 | `watchfaces/reference-face-configurable/` | [产品与命令](../watchfaces/reference-face-configurable/README.md)、[开发约束](../watchfaces/reference-face-configurable/docs/garmin-dev-project.md) |
-| ZSvirt Time | `watchfaces/zsvirt-time/` | [产品与命令](../watchfaces/zsvirt-time/README.md)、[开发约束](../watchfaces/zsvirt-time/docs/garmin-dev-project.md) |
+
+ZSvirt Time已迁出本工作区，入口为[独立仓库](https://github.com/ZSvirt/zsvirt-garmin-face-it)及其[开发约束](https://github.com/ZSvirt/zsvirt-garmin-face-it/blob/main/docs/garmin-dev-project.md)。该仓库根即应用根，使用`python3 scripts/build.py`；不再使用原`watchfaces/zsvirt-time/`命令。
 
 ## 路径与调度
 
