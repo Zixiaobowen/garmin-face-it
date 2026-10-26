@@ -1,18 +1,18 @@
 # ZSvirt Time 开发约束
 
-本说明仅约束 `watchfaces/zsvirt-time/`。主视觉为本地时间和 ZSvirt 官方 Logo，辅以电量、今日步数；用户持有 Enduro 3。设备集合与耐力仪表一致，但本应用的矩阵、资源、UUID、配置、构建和发布证据完全独立。
+本说明仅约束 `watchfaces/zsvirt-time/`。主视觉为本地时间和 ZSvirt 官方 Logo，辅以电量、今日步数；用户持有 Enduro 3。设备集合覆盖Enduro、Forerunner与本机官方设备包中的35个fēnix目标，明确包含fēnix6/6S/6X标准版、Pro、Sapphire与Solar变体。本应用的矩阵、资源、UUID、配置、构建和发布证据完全独立。
 
 ## 身份与配置
 
 - UUID `cb51f19636e64ae1b979bfd8bf070e31`，入口 `ZsvirtTimeApp`，名称 `ZSvirt Time`；更新继续沿用原签名，不复制密钥进仓库。
-- `docs/compatibility.json` 是本应用35个目标的配置源，含11种分辨率、圆形/半圆/矩形、MIP/AMOLED、设备内存和区域API。最低API1.4.0不覆盖仍标为1.3.1的区域固件。
+- `docs/compatibility.json` 是本应用69个目标的配置源，含12种分辨率、圆形/半圆/矩形、MIP/AMOLED、设备内存和区域API。最低API1.4.0不覆盖仍标为1.3.1的区域固件；fēnix3等旧机的地区版本需按商店列表核对。
 - `scripts/configure.py` 生成 manifest/jungle；构建脚本生成根配置及目标快照，不手改生成文件，不依赖其它表盘。
 - `profiles/mip` 与 `profiles/amoled` 提供编译期 `DeviceProfile.AMOLED`。无额外权限。
 
 ## 行为与资源
 
 - `FaceTime` 处理12/24小时制及AM/PM，直接使用设备时钟，不转换时区。时间字符串只在时、分或时制变化时生成。
-- `onLayout` 加载位图、读取实际字体尺寸并排布内容；字体常量的像素高度因设备和语言而异，不以固定坐标推广其它机型。Logo按11种屏宽生成，Launcher按官方定义的5种尺寸生成。
+- `onLayout` 加载位图、读取实际字体尺寸并排布内容；字体常量的像素高度因设备和语言而异，不以固定坐标推广其它机型。Logo按12种屏宽生成，Launcher按官方定义的6种尺寸生成。
 - 位图使用 `WatchUi.loadResource` 返回值，不把API4.0后的具体位图类型用于API1.x目标。
 - 唤醒与MIP休眠读取 `System.getSystemStats().battery` 和 `ActivityMonitor.getInfo().steps`；数值变化时生成字符串。0步显示0，null显示`--`，不沿用旧值。完整重绘避免重新显示时残影。
 - AMOLED睡眠仅画灰色时间及AM/PM；根据分钟奇偶在上下不相交区域切换，唤醒恢复完整画面。按官方10%亮像素限制验证实际画面；该设计的跨区域切换是实现选择，官方也建议轻微移动静态元素。模拟器检查不证明真机功耗、烧屏寿命或续航。

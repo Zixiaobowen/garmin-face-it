@@ -12,8 +12,110 @@ enduro3.resourcePath = resources;resources-logos/280;resources-launchers/40x40
 enduro4.sourcePath = source;profiles/mip;tests
 enduro4.resourcePath = resources;resources-logos/280;resources-launchers/40x40
 
+fenix3.sourcePath = source;profiles/mip;tests
+fenix3.resourcePath = resources;resources-logos/218;resources-launchers/40x40
+
+fenix3_hr.sourcePath = source;profiles/mip;tests
+fenix3_hr.resourcePath = resources;resources-logos/218;resources-launchers/40x40
+
+fenix5.sourcePath = source;profiles/mip;tests
+fenix5.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix5plus.sourcePath = source;profiles/mip;tests
+fenix5plus.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix5s.sourcePath = source;profiles/mip;tests
+fenix5s.resourcePath = resources;resources-logos/218;resources-launchers/36x36
+
+fenix5splus.sourcePath = source;profiles/mip;tests
+fenix5splus.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix5x.sourcePath = source;profiles/mip;tests
+fenix5x.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix5xplus.sourcePath = source;profiles/mip;tests
+fenix5xplus.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix6.sourcePath = source;profiles/mip;tests
+fenix6.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix6pro.sourcePath = source;profiles/mip;tests
+fenix6pro.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix6s.sourcePath = source;profiles/mip;tests
+fenix6s.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix6spro.sourcePath = source;profiles/mip;tests
+fenix6spro.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix6xpro.sourcePath = source;profiles/mip;tests
+fenix6xpro.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenix7.sourcePath = source;profiles/mip;tests
+fenix7.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix7pro.sourcePath = source;profiles/mip;tests
+fenix7pro.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix7pronowifi.sourcePath = source;profiles/mip;tests
+fenix7pronowifi.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix7s.sourcePath = source;profiles/mip;tests
+fenix7s.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
+fenix7spro.sourcePath = source;profiles/mip;tests
+fenix7spro.resourcePath = resources;resources-logos/240;resources-launchers/40x40
+
 fenix7x.sourcePath = source;profiles/mip;tests
 fenix7x.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenix7xpro.sourcePath = source;profiles/mip;tests
+fenix7xpro.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenix7xpronowifi.sourcePath = source;profiles/mip;tests
+fenix7xpronowifi.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenix843mm.sourcePath = source;profiles/amoled;tests
+fenix843mm.resourcePath = resources;resources-logos/416;resources-launchers/60x60
+
+fenix847mm.sourcePath = source;profiles/amoled;tests
+fenix847mm.resourcePath = resources;resources-logos/454;resources-launchers/65x65
+
+fenix8pro47mm.sourcePath = source;profiles/amoled;tests
+fenix8pro47mm.resourcePath = resources;resources-logos/454;resources-launchers/65x65
+
+fenix8solar47mm.sourcePath = source;profiles/mip;tests
+fenix8solar47mm.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix8solar51mm.sourcePath = source;profiles/mip;tests
+fenix8solar51mm.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenix943mm.sourcePath = source;profiles/amoled;tests
+fenix943mm.resourcePath = resources;resources-logos/416;resources-launchers/60x60
+
+fenix947mm.sourcePath = source;profiles/amoled;tests
+fenix947mm.resourcePath = resources;resources-logos/454;resources-launchers/65x65
+
+fenix9pro43mm.sourcePath = source;profiles/amoled;tests
+fenix9pro43mm.resourcePath = resources;resources-logos/416;resources-launchers/60x60
+
+fenix9pro47mm.sourcePath = source;profiles/amoled;tests
+fenix9pro47mm.resourcePath = resources;resources-logos/454;resources-launchers/65x65
+
+fenix9pro51mm.sourcePath = source;profiles/amoled;tests
+fenix9pro51mm.resourcePath = resources;resources-logos/466;resources-launchers/65x65
+
+fenix9prosolar47mm.sourcePath = source;profiles/mip;tests
+fenix9prosolar47mm.resourcePath = resources;resources-logos/260;resources-launchers/40x40
+
+fenix9prosolar51mm.sourcePath = source;profiles/mip;tests
+fenix9prosolar51mm.resourcePath = resources;resources-logos/280;resources-launchers/40x40
+
+fenixchronos.sourcePath = source;profiles/mip;tests
+fenixchronos.resourcePath = resources;resources-logos/218;resources-launchers/36x36
+
+fenixe.sourcePath = source;profiles/amoled;tests
+fenixe.resourcePath = resources;resources-logos/416;resources-launchers/60x60
 
 fr165.sourcePath = source;profiles/amoled;tests
 fr165.resourcePath = resources;resources-logos/390;resources-launchers/54x54

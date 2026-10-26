@@ -2,7 +2,7 @@
 
 [返回工作区](../../README.md) · [开发约束](docs/garmin-dev-project.md)
 
-以本地时间与 ZSvirt 官方 Logo 为主视觉，显示电量和今日步数的 Connect IQ 表盘。1.2.0 将支持范围扩展为 35 个官方设备目标，涵盖 Enduro、Forerunner 及 Enduro 2 对应的 `fenix7x` 目标；完整列表以[独立设备矩阵](docs/compatibility.json)为准。
+以本地时间与ZSvirt官方Logo为主视觉，显示电量和今日步数的Connect IQ表盘。1.3.0扩展至69个官方设备目标，覆盖Enduro、Forerunner及本机官方设备包中的全部35个fēnix目标；完整清单以[独立设备矩阵](docs/compatibility.json)为准。
 
 - 黑底白字，正式横版 Logo 等比缩放；时间、Logo 和数据根据屏幕与实际字体尺寸排布。
 - 遵循手表 12/24 小时制；12 小时制显示 AM/PM，午夜和正午均为 12 点。
@@ -11,9 +11,9 @@
 - 不显示秒，不添加计时器、动画、后台服务、联网或传感器权限。电量来自 `System.getSystemStats().battery`，今日步数来自 `ActivityMonitor.getInfo().steps`。
 - 应用名 `ZSvirt Time`，UUID `cb51f19636e64ae1b979bfd8bf070e31`，沿用原签名，与耐力仪表独立安装。
 
-最低 API 为 1.4.0。部分旧机的区域设备定义仍标为 API 1.3.1，该固件范围不符合最低要求；35 个产品目标不代表所有地区、固件版本均可安装。
+fēnix6系列包含`fenix6`、`fenix6pro`、`fenix6s`、`fenix6spro`和`fenix6xpro`，由官方目标覆盖6／6S／6X的标准版、Pro、Sapphire、Solar及对应区域变体。另包含官方fēnix3、5、7、8、9、Chronos和E目标。最低API为1.4.0；部分旧机地区固件仍为API1.3.1，未包含在发行包中，具体可用型号以商店兼容列表为准。
 
-1.2.0已提交Connect IQ，内部版本3、状态PENDING；商店实际兼容列表已确认多设备范围。[商店预览](https://apps-developer.garmin.com/zh-CN/apps/2702e86b-ba01-44ed-9d5a-9b29777945f4?tid=1)在审核通过前仅账户本人可见，详见[发布记录](docs/release-1.2.0.md)。历史原包与1.1.0记录保留；用户追加的fēnix全系列（含6系列）正在后续版本扩展。
+1.3.0已提交Connect IQ，内部版本4、状态PENDING；商店主记录确认116个区域型号，fēnix6系列对应20个区域型号全部包含，实际兼容页已显示6／6S／6X及Pro、Sapphire、Solar变体。[商店预览](https://apps-developer.garmin.com/zh-CN/apps/2702e86b-ba01-44ed-9d5a-9b29777945f4?tid=1)在审核通过前仅账户本人可见，详见[发布记录](docs/release-1.3.0.md)。历史原包及1.0.0–1.2.0记录保留。
 
 ## 构建与运行
 
@@ -23,14 +23,14 @@
 # 构建 Enduro 3 真机 PRG（默认目标）
 python3 watchfaces/zsvirt-time/scripts/build.py --device enduro3
 
-# 构建本表盘全部 35 个目标
+# 构建本表盘全部69个目标
 python3 watchfaces/zsvirt-time/scripts/build.py --all
 
 # 官方模拟器已启动时，运行去除调试信息后的目标
 python3 watchfaces/zsvirt-time/scripts/build.py --device fr265 --release --run
 
 # 全目标签名商店包
-python3 watchfaces/zsvirt-time/scripts/build.py --package 1.2.0
+python3 watchfaces/zsvirt-time/scripts/build.py --package 1.3.0
 
 # 需要修改时制逻辑时运行边界测试
 python3 watchfaces/zsvirt-time/scripts/build.py --device enduro3 --test --run
