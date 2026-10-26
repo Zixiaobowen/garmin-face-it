@@ -185,5 +185,30 @@
     "upstream": "origin/refactor/multi-watchface-layout",
     "remote_receipt": "[new branch] HEAD -> refactor/multi-watchface-layout",
     "branch_url": "https://github.com/Zixiaobowen/garmin-face-it/tree/refactor/multi-watchface-layout"
+  },
+  "main_merge": {
+    "observed_at": "2026-10-26T05:14:32.733147+00:00",
+    "method": "fast-forward",
+    "base": "0f9e73f8378a18036c48191167f2a0d1eca8659f",
+    "reviewed_head": "98e1302c2a0ecf5427373a612e490e23f2f9eb5b",
+    "merged_head": "98e1302c2a0ecf5427373a612e490e23f2f9eb5b",
+    "merged": true,
+    "required_rules": [],
+    "check_runs": 0,
+    "commit_statuses": 0,
+    "tests_reused": true,
+    "source_branch_preserved": true,
+    "branch_readback": {
+      "main": {
+        "name": "main",
+        "protected": false,
+        "sha": "98e1302c2a0ecf5427373a612e490e23f2f9eb5b"
+      },
+      "source": {
+        "name": "refactor/multi-watchface-layout",
+        "protected": false,
+        "sha": "98e1302c2a0ecf5427373a612e490e23f2f9eb5b"
+      }
+    }
   }
 }

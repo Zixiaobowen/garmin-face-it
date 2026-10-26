@@ -3,8 +3,8 @@
 ## repo、branch、目标
 
 - repo：`/Users/zixiaobowen/myProjects/garmin-face-it`
-- branch：`refactor/multi-watchface-layout`，由任务开始时的 `master` 切出，现已跟踪 `origin/refactor/multi-watchface-layout`。
-- 目标已完成：同一仓库持续开发多个独立 Garmin 表盘。独立架构评审无阻断；实现提交 `3f68133` 已成功推送至 [GitHub分支](https://github.com/Zixiaobowen/garmin-face-it/tree/refactor/multi-watchface-layout)。用户授权包括本轮提交推送，未操作商店或真机。
+- branch：本地工作区保留在 `refactor/multi-watchface-layout`，跟踪同名远端；远端 `main` 已合入本轮重组。原有未提交修改与未跟踪资料保持原样。
+- 目标已完成：多表盘目录重组通过独立架构评审；实现提交 `3f68133` 与交付记录 `98e1302` 已按用户指令快进合并到 [GitHub main](https://github.com/Zixiaobowen/garmin-face-it/tree/main)。源分支保留，未操作商店或真机。
 
 ## 已完成
 
@@ -58,6 +58,14 @@
 - 原有未跟踪历史材料未上传。已有time-clipping交接改动完整留在新位置工作区，目录移动提交只包含该文件原HEAD内容；没有全量暂存、重置或清理。
 
 
+## 2026-10-26 合并到 main
+
+用户明确要求“这个分支要合并到main”。合并前重新fetch并核对：`main` 为 `0f9e73f8378a18036c48191167f2a0d1eca8659f`，源分支与已审版本均为 `98e1302c2a0ecf5427373a612e490e23f2f9eb5b`，main是该版本祖先。GitHub的main规则集合为空，check-runs和commit statuses均为0项；没有待满足的必需检查。
+
+执行 `git push origin 98e1302c2a0ecf5427373a612e490e23f2f9eb5b:refs/heads/main` 成功，远端回执 `0f9e73f..98e1302 -> main`。随后独立GitHub API读回main及源分支，二者均为完整SHA `98e1302c2a0ecf5427373a612e490e23f2f9eb5b`，确认实际合入且源分支保留。这是快进合并，没有新增merge commit或重写原提交。
+
+已审源码与main基线均未新增变更，复用本会话已有的代表构建、干净暂存导出构建和Enduro 3模拟器证据，没有重复运行构建/测试。本地工作区未checkout、stash、reset或clean。合并后的回执文档单独同步；文档提交SHA以远端分支头和最终回复为准，不循环写入本文件。
+
 ## 已知失败、风险与限制
 
 SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启动同一SDK的 `ConnectIQ.app/Contents/MacOS/simulator` 后成功运行。AppleScript的 System Events 查询被本机辅助访问权限拒绝；改用 CoreGraphics 查询窗口及 `screencapture -l` 取得实际画面，未改权限。此为本机验收工具限制，不是表盘代码失败。
@@ -79,4 +87,4 @@ SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启
 
 ## 恢复提示
 
-> garmin-face-it 已在 refactor/multi-watchface-layout 改为多表盘工作区，独立架构评审无阻断，实现提交3f68133已推送origin同名分支，本轮目标已完成。现有耐力仪表·可配完整工程在 watchfaces/reference-face-configurable/；根 README 与 docs/garmin-dev-project.md 是新入口。构建/配置/资源脚本未改，按脚本位置定位应用根；新根命令为 python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3。176个源码/资源/测试/脚本文件原样、两份发布原包哈希不变，用户旧交接改动和未跟踪资料留工作区。Enduro3、FR55、FR965代表构建与干净暂存导出构建通过，Enduro3官方模拟器实际显示、runner退出0；无全量测试/真机/发布。先读本交接与根 README；不恢复旧根兼容链接、不复制密钥、不更改UUID、不清理旧证据。新增表盘建立独立子工程，再登记根导航。
+> garmin-face-it 的多表盘目录重组已完成，独立架构评审无阻断；已审版本98e1302（含实现3f68133）已快进合并到origin/main，源分支refactor/multi-watchface-layout保留。本地工作区仍在源分支，原有未提交交接改动和未跟踪资料保持原样。现有耐力仪表·可配完整工程位于watchfaces/reference-face-configurable/；根README与docs/garmin-dev-project.md是入口。176个源码/资源/测试/脚本文件原样，两份发布原包哈希不变；Enduro3、FR55、FR965代表构建、干净暂存导出构建与Enduro3模拟器显示均已通过，本次合并复用这些证据。先读本交接和根README；不恢复旧根兼容链接、不复制密钥、不改UUID、不清理旧证据。新增表盘建立独立子工程再登记根导航。
