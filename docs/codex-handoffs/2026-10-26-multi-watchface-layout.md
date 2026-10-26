@@ -3,8 +3,8 @@
 ## repo、branch、目标
 
 - repo：`/Users/zixiaobowen/myProjects/garmin-face-it`
-- branch：本地工作区保留在 `refactor/multi-watchface-layout`，跟踪同名远端；远端 `main` 已合入本轮重组。原有未提交修改与未跟踪资料保持原样。
-- 目标已完成：多表盘目录重组通过独立架构评审；实现提交 `3f68133` 与交付记录 `98e1302` 已按用户指令快进合并到 [GitHub main](https://github.com/Zixiaobowen/garmin-face-it/tree/main)。源分支保留，未操作商店或真机。
+- branch：本地已切换到 `main` 并跟踪 `origin/main`；本地和远端 `refactor/multi-watchface-layout` 均已按用户后续指令删除。原有57个未提交或未跟踪文件内容保持原样。
+- 目标已完成：多表盘目录重组通过独立架构评审；实现提交 `3f68133` 与交付记录 `98e1302` 已快进合并到 [GitHub main](https://github.com/Zixiaobowen/garmin-face-it/tree/main)，合并后的源分支已清理，未操作商店或真机。
 
 ## 已完成
 
@@ -66,6 +66,8 @@
 
 已审源码与main基线均未新增变更，复用本会话已有的代表构建、干净暂存导出构建和Enduro 3模拟器证据，没有重复运行构建/测试。本地工作区未checkout、stash、reset或clean。合并后的回执文档单独同步；文档提交SHA以远端分支头和最终回复为准，不循环写入本文件。
 
+用户随后明确要求“合并了源分支就删了吧”。删除前fetch确认本地源分支、远端源分支和main均指向 `42871f416eef7d83c5bc443a15a1a80fad780097`，且源分支已完全合入main。执行 `git switch -c main --track origin/main`、`git push origin --delete refactor/multi-watchface-layout`、`git branch -d refactor/multi-watchface-layout` 均成功。独立查询远端heads和本地refs均只返回main，确认目标源分支不存在；删除前后的57个原有未提交/未跟踪文件逐一哈希相同，没有丢失内容。其它分支未删除。
+
 ## 已知失败、风险与限制
 
 SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启动同一SDK的 `ConnectIQ.app/Contents/MacOS/simulator` 后成功运行。AppleScript的 System Events 查询被本机辅助访问权限拒绝；改用 CoreGraphics 查询窗口及 `screencapture -l` 取得实际画面，未改权限。此为本机验收工具限制，不是表盘代码失败。
@@ -87,4 +89,4 @@ SDK的 `connectiq` 启动器调用返回0后未发现模拟器进程；直接启
 
 ## 恢复提示
 
-> garmin-face-it 的多表盘目录重组已完成，独立架构评审无阻断；已审版本98e1302（含实现3f68133）已快进合并到origin/main，源分支refactor/multi-watchface-layout保留。本地工作区仍在源分支，原有未提交交接改动和未跟踪资料保持原样。现有耐力仪表·可配完整工程位于watchfaces/reference-face-configurable/；根README与docs/garmin-dev-project.md是入口。176个源码/资源/测试/脚本文件原样，两份发布原包哈希不变；Enduro3、FR55、FR965代表构建、干净暂存导出构建与Enduro3模拟器显示均已通过，本次合并复用这些证据。先读本交接和根README；不恢复旧根兼容链接、不复制密钥、不改UUID、不清理旧证据。新增表盘建立独立子工程再登记根导航。
+> garmin-face-it 的多表盘目录重组已完成并通过独立架构评审；已审版本98e1302（含实现3f68133）已快进合并到origin/main。用户随后授权删除源分支，refactor/multi-watchface-layout的本地及远端分支均已删除；当前工作区在main，跟踪origin/main。原有57个未提交或未跟踪文件内容完整保留。现有耐力仪表·可配工程位于watchfaces/reference-face-configurable/，根README与docs/garmin-dev-project.md是入口。176个源码/资源/测试/脚本文件原样，两份发布原包哈希不变；Enduro3、FR55、FR965代表构建、干净暂存导出构建与Enduro3模拟器显示均已通过，合并和删分支未重复测试。不恢复旧根兼容链接、不复制密钥、不改UUID、不清理旧证据；新增表盘建立独立子工程后登记根导航。

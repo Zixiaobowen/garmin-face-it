@@ -210,5 +210,21 @@
         "sha": "98e1302c2a0ecf5427373a612e490e23f2f9eb5b"
       }
     }
+  },
+  "source_branch_cleanup": {
+    "observed_at": "2026-10-26T05:20:10.978480+00:00",
+    "user_authorized": true,
+    "branch": "refactor/multi-watchface-layout",
+    "source_sha_before_deletion": "42871f416eef7d83c5bc443a15a1a80fad780097",
+    "main_sha_before_deletion": "42871f416eef7d83c5bc443a15a1a80fad780097",
+    "fully_merged": true,
+    "local_branch_deleted": true,
+    "remote_branch_deleted": true,
+    "current_local_branch": "main",
+    "upstream": "origin/main",
+    "original_dirty_files_preserved": 57,
+    "changed_original_dirty_files": [],
+    "remote_ref_readback": "42871f416eef7d83c5bc443a15a1a80fad780097\trefs/heads/main",
+    "local_ref_readback": "main 42871f416eef7d83c5bc443a15a1a80fad780097"
   }
 }
