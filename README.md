@@ -14,7 +14,7 @@
 - 根 `.agents/`、`.omp/`、`.hermes/` 和 `skills-lock.json`：本机开发辅助配置与技能安装，不是应用构建输入。
 - 根 `.gitignore`：整个工作区的忽略规则。
 
-各表盘拥有独立应用身份、资源、测试及产物。官方 SDK、Java、设备定义和仓库外开发者签名密钥可以共用；新表盘使用独立 UUID，同一表盘更新维持原 UUID。签名密钥不得复制或链接进仓库。耐力仪表·可配的35个目标与ZSvirt Time的69个目标分别由各自应用维护，不是工作区通用支持范围。
+各表盘拥有独立应用身份、资源、测试及产物。官方 SDK、Java、设备定义和仓库外开发者签名密钥可以共用；新表盘使用独立 UUID，同一表盘更新维持原 UUID。签名密钥不得复制或链接进仓库。耐力仪表·可配的40个目标与ZSvirt Time的69个目标分别由各自应用维护，不是工作区通用支持范围。
 
 ## 构建、运行与资源生成
 
@@ -51,7 +51,7 @@ python3 watchfaces/reference-face-configurable/scripts/generate-fonts.py --font 
 
 按 Garmin 的[官方新工程流程](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/)，在 VS Code 使用 **Monkey C: New Project**，选择 Watch Face，在 `watchfaces/` 下创建新的真实工程目录；也可基于已安装 SDK 的 `bin/templates/watchface/simple/` 官方模板建立等价工程。为该表盘选择独立 UUID、最低 API 和目标设备，不预建空应用。
 
-新工程保留独立 `manifest.xml`、UUID、源码、资源、测试、脚本、文档及产物目录，并在本页和[技能路由](docs/garmin-dev-project.md)登记。若复用现有表盘脚本，必须先调整 `scripts/configure.py` 中的应用身份（UUID、入口、名称及资源引用）、权限/API要求和能力矩阵生成逻辑，建立新表盘自己的 `docs/compatibility.json`、配置与资源；同时调整 `scripts/build.py` 的 PRG/IQ 产物前缀及默认目标。只改目录名或手改生成的 manifest 会被配置生成覆盖，不能据此复用现有应用身份或35设备矩阵。
+新工程保留独立应用身份、源码、资源、测试、脚本、文档及产物，并在本页和[技能路由](docs/garmin-dev-project.md)登记。若复用现有表盘脚本，必须先调整 `scripts/configure.py` 中的应用身份（UUID、入口、名称及资源引用）、权限/API要求和能力矩阵生成逻辑，建立新表盘自己的 `docs/compatibility.json`、配置与资源；同时调整 `scripts/build.py` 的 PRG/IQ 产物前缀及默认目标。只改目录名或手改生成的 manifest 会被配置生成覆盖，不能据此复用现有应用身份或设备矩阵。
 
 ## 目录调整验收
 

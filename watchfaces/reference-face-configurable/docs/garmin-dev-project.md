@@ -35,7 +35,7 @@ API问题先读技能的`references/connect-iq-docs/index.md`及对应章节。�
 
 - watchFace内存按官方设备`compiler.json`的`appTypes[type=watchFace].memoryLimit`取值；FR45为49,152字节（48 KiB）、API1.4.5。图形池不能与应用内存混算，不采用统一128 KB的假设。
 - 对照 `docs/compatibility.json`；开发 target、营销型号、地区别名和真机验收范围分别记录。国际版 45S 映射仍无最终证据，不从技能初筛结果扩张支持范围。
-- 35个官方target仅是本表盘的矩阵，不是仓库内其它表盘的默认能力或支持范围。各表盘独立维护manifest、UUID、源码、资源、测试、脚本、文档、`bin/`和`artifacts/`；SDK、设备包与仓库外签名密钥可以共用。
+- 40个官方target仅是本表盘的矩阵，包含新增的5个fēnix 6系列目标；不是仓库内其它表盘的默认能力或支持范围。fēnix 6系列复用240/260/280圆屏资源与MIP路径，API3.4下保留机上设置，系统周跑量和日出仍按已有能力检测处理。各表盘独立维护manifest、UUID、源码、资源、测试、脚本、文档、`bin/`和`artifacts/`；SDK、设备包与仓库外签名密钥可以共用。
 - `python3 scripts/build.py --device enduro3` 生成真机 PRG。`--simulator` / `--run` / `--test` 使用官方 `<device>_sim`；920XT 真机字体方向编码不能用于模拟器。
 - 构建、定向测试、模拟器画面、文件侧载、真机显示和续航分别验收。技能安装或脚本读取设备包不构成表盘重新编译或真机验证。
 

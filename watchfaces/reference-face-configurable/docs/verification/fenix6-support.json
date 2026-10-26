@@ -1,0 +1,197 @@
+{
+  "observed_at": "2026-10-26T10:57:38.222217+00:00",
+  "branch": "feat/multifunction-fenix6",
+  "application_uuid": "9d182df86c2d48938ce2c9795678f668",
+  "official_targets": 40,
+  "new_targets": [
+    "fenix6",
+    "fenix6pro",
+    "fenix6s",
+    "fenix6spro",
+    "fenix6xpro"
+  ],
+  "sdk": "9.2.0",
+  "java": "17",
+  "builds": [
+    {
+      "device": "fenix6",
+      "release": {
+        "device": "fenix6",
+        "compiler_device": "fenix6",
+        "simulator_build": false,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6.prg",
+        "log": "bin/logs/fenix6.log",
+        "unit_tests_included": false,
+        "bytes": 55196
+      },
+      "simulator": {
+        "device": "fenix6",
+        "compiler_device": "fenix6_sim",
+        "simulator_build": true,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6-sim.prg",
+        "log": "bin/logs/fenix6-sim.log",
+        "unit_tests_included": false,
+        "bytes": 158540,
+        "simulator_exit_code": 0
+      },
+      "release_sha256": "cf02bf27d824a7ab23090ffffb218ff4db52a8b7bf5865850ae1958a7c4187ef"
+    },
+    {
+      "device": "fenix6pro",
+      "release": {
+        "device": "fenix6pro",
+        "compiler_device": "fenix6pro",
+        "simulator_build": false,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6pro.prg",
+        "log": "bin/logs/fenix6pro.log",
+        "unit_tests_included": false,
+        "bytes": 55196
+      },
+      "simulator": {
+        "device": "fenix6pro",
+        "compiler_device": "fenix6pro_sim",
+        "simulator_build": true,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6pro-sim.prg",
+        "log": "bin/logs/fenix6pro-sim.log",
+        "unit_tests_included": false,
+        "bytes": 158540,
+        "simulator_exit_code": 0
+      },
+      "release_sha256": "cf02bf27d824a7ab23090ffffb218ff4db52a8b7bf5865850ae1958a7c4187ef"
+    },
+    {
+      "device": "fenix6s",
+      "release": {
+        "device": "fenix6s",
+        "compiler_device": "fenix6s",
+        "simulator_build": false,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6s.prg",
+        "log": "bin/logs/fenix6s.log",
+        "unit_tests_included": false,
+        "bytes": 54124
+      },
+      "simulator": {
+        "device": "fenix6s",
+        "compiler_device": "fenix6s_sim",
+        "simulator_build": true,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6s-sim.prg",
+        "log": "bin/logs/fenix6s-sim.log",
+        "unit_tests_included": false,
+        "bytes": 157484,
+        "simulator_exit_code": 0
+      },
+      "release_sha256": "3bd206785f0a6a85f9ccdd942f2c296335d789013cf39c97c1ee76d73e7d8d44"
+    },
+    {
+      "device": "fenix6spro",
+      "release": {
+        "device": "fenix6spro",
+        "compiler_device": "fenix6spro",
+        "simulator_build": false,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6spro.prg",
+        "log": "bin/logs/fenix6spro.log",
+        "unit_tests_included": false,
+        "bytes": 54124
+      },
+      "simulator": {
+        "device": "fenix6spro",
+        "compiler_device": "fenix6spro_sim",
+        "simulator_build": true,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6spro-sim.prg",
+        "log": "bin/logs/fenix6spro-sim.log",
+        "unit_tests_included": false,
+        "bytes": 157484,
+        "simulator_exit_code": 0
+      },
+      "release_sha256": "3bd206785f0a6a85f9ccdd942f2c296335d789013cf39c97c1ee76d73e7d8d44"
+    },
+    {
+      "device": "fenix6xpro",
+      "release": {
+        "device": "fenix6xpro",
+        "compiler_device": "fenix6xpro",
+        "simulator_build": false,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6xpro.prg",
+        "log": "bin/logs/fenix6xpro.log",
+        "unit_tests_included": false,
+        "bytes": 56732
+      },
+      "simulator": {
+        "device": "fenix6xpro",
+        "compiler_device": "fenix6xpro_sim",
+        "simulator_build": true,
+        "exit_code": 0,
+        "compiled": true,
+        "program": "bin/reference-face-configurable-fenix6xpro-sim.prg",
+        "log": "bin/logs/fenix6xpro-sim.log",
+        "unit_tests_included": false,
+        "bytes": 160076,
+        "simulator_exit_code": 0
+      },
+      "release_sha256": "191601306afd3765074bfb662d84caecadb1a1d5dafc73fea3800391ad5d3495"
+    }
+  ],
+  "visual_scenarios": {
+    "fenix6spro": {
+      "daily": "docs/verification/fenix6spro-daily-window.png",
+      "training": "docs/verification/fenix6spro-training-window.png",
+      "minimal": "docs/verification/fenix6spro-minimal-window.png"
+    },
+    "fenix6pro": {
+      "daily": "docs/verification/fenix6pro-daily-window.png",
+      "training": "docs/verification/fenix6pro-training-window.png",
+      "minimal": "docs/verification/fenix6pro-minimal-window.png"
+    },
+    "fenix6xpro": {
+      "daily": "docs/verification/fenix6xpro-daily-window.png",
+      "training": "docs/verification/fenix6xpro-training-window.png",
+      "minimal": "docs/verification/fenix6xpro-minimal-window.png"
+    }
+  },
+  "sleep_evidence": "docs/verification/fenix6spro-sleep-window.png",
+  "checks": [
+    "40 unique manifest targets equal matrix target order",
+    "Original 35 target objects and product rows preserved (checked before evaluator reset)",
+    "Summary resolution/memory groups match target records",
+    "Three layouts and on-device layout changes visually checked on 240/260/280 representative Pro targets",
+    "6S Pro MIP Always-Active hides seconds after next minute",
+    "All five simulator processes finished with exit 0"
+  ],
+  "limitations": [
+    "No Fenix hardware installation, battery-life measurement, phone settings transfer or store upload.",
+    "All validation uses SDK 3.4.5 simulator variants; regional 3.4.1/3.4.2 hardware was not exercised.",
+    "fenix6/6s loaded correct simulator device titles and completed with exit 0; screenshot API failed late in this session, so visual acceptance covers 6S Pro, 6 Pro and 6X Pro only.",
+    "No full repository test suite or unit-test runner was invoked; executable source and resources are unchanged."
+  ],
+  "transient_failures": [
+    "Initial concurrent fenix6spro simulator compilation reported an SDK critical error; unchanged sources compiled successfully in the dedicated launch. Root cause is not established. See fenix6-initial-build-failures.json.",
+    "First supervised launch lacked JAVA_HOME; later launches explicitly used installed Java 17.",
+    "A 6X launcher was stopped with exit 143 while investigating hidden windows, then completed via a fresh launch with exit 0. Window restoration succeeded; this is not evidence of an app crash.",
+    "Early 6X screenshots showing the previous device were rejected and replaced after checking the real device title.",
+    "Eval timeout discarded temporary verification state; final reports were read from build.py output files."
+  ],
+  "git": {
+    "committed": false,
+    "pushed": false
+  },
+  "store_uploaded": false,
+  "hardware_installed": false
+}

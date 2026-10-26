@@ -13,6 +13,26 @@ enduro3.resourcePath = resources;resources-fonts/280
 enduro4.sourcePath = source;profiles/mip;tests
 enduro4.resourcePath = resources;resources-fonts/280
 
+fenix6.sourcePath = source;profiles/mip;tests
+fenix6.resourcePath = resources;resources-fonts/260
+fenix6.excludeAnnotations = propertyValidation
+
+fenix6pro.sourcePath = source;profiles/mip;tests
+fenix6pro.resourcePath = resources;resources-fonts/260
+fenix6pro.excludeAnnotations = propertyValidation
+
+fenix6s.sourcePath = source;profiles/mip;tests
+fenix6s.resourcePath = resources;resources-fonts/240
+fenix6s.excludeAnnotations = propertyValidation
+
+fenix6spro.sourcePath = source;profiles/mip;tests
+fenix6spro.resourcePath = resources;resources-fonts/240
+fenix6spro.excludeAnnotations = propertyValidation
+
+fenix6xpro.sourcePath = source;profiles/mip;tests
+fenix6xpro.resourcePath = resources;resources-fonts/280
+fenix6xpro.excludeAnnotations = propertyValidation
+
 fenix7x.sourcePath = source;profiles/mip;tests
 fenix7x.resourcePath = resources;resources-fonts/280
 

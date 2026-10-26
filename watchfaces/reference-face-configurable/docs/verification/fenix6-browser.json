@@ -1,0 +1,54 @@
+{
+  "narrow": {
+    "width": 390,
+    "scrollWidth": 390,
+    "detailsOpen": true,
+    "imagesLoaded": true
+  },
+  "wide": {
+    "width": 1080,
+    "scrollWidth": 1080,
+    "columns": "298.656px 298.672px 298.656px",
+    "background": "rgb(255, 255, 255)",
+    "imagesLoaded": true
+  },
+  "nativeErrors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "wideErrors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "nativeConsole": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "wideConsole": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "observed_at": "2026-10-26T11:05:29.053Z",
+  "owner": 2237677961599,
+  "block": 2237677961615,
+  "nativeTarget": [
+    {
+      "target": "2237677961615",
+      "title": "耐力仪表·可配｜fēnix 6 系列支持",
+      "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/reference-face-configurable/docs/fenix6-support.html",
+      "docked": true,
+      "shown": true,
+      "driven": true,
+      "tab": "fenix6-receipt"
+    }
+  ],
+  "localLinksChecked": 8,
+  "embeddedScreenshots": 3,
+  "nativeFullPageScreenshot": "Captured and visually inspected at 390px dark theme",
+  "wideScreenshot": "Full-page and viewport screenshots timed out; wide validation is limited to DOM geometry, image loading and console checks",
+  "viewportLimitation": "Docked Tern block cannot emulate width; 1080px light check used a separate headless tab"
+}

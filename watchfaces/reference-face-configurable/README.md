@@ -2,7 +2,7 @@
 
 [返回多表盘工作区](../../README.md) · [本表盘开发约束](docs/garmin-dev-project.md)
 
-“耐力仪表·可配”是一款中文 Connect IQ 表盘，优先适配 Enduro 3。本应用目录包含源码、设置、字体图集、字体许可证、35个官方目标配置及构建脚本；这些目标只属于本表盘。2026-10-22至2026-10-23的历史回读确认：1.0.1程序包和商店图文均已更新，中英文说明、封面、两种语言hero及三张截图已完成回读，后台版本为1.0.1（内部2），当时仍待审核、尚未公开上架。该记录不代表当前商店状态，详见[发布记录](docs/release-1.0.1.md)。
+“耐力仪表·可配”是一款中文 Connect IQ 表盘，优先适配 Enduro 3。本应用目录包含源码、设置、字体图集、字体许可证、40个官方目标配置及构建脚本；这些目标只属于本表盘。2026-10-22至2026-10-23的历史回读确认：1.0.1程序包和商店图文均已更新，中英文说明、封面、两种语言hero及三张截图已完成回读，后台版本为1.0.1（内部2），当时仍待审核、尚未公开上架。该记录不代表当前商店状态，详见[发布记录](docs/release-1.0.1.md)。
 
 ## 显示内容
 
@@ -46,6 +46,9 @@ export PATH="$JAVA_HOME/bin:$PATH"
 # 优先目标：生成 bin/reference-face-configurable-enduro3.prg
 python3 scripts/build.py --device enduro3
 
+# fēnix 6 系列：fenix6 / fenix6pro / fenix6s / fenix6spro / fenix6xpro
+python3 scripts/build.py --device fenix6spro
+
 # 本表盘全部官方目标逐个编译，结果 bin/build-all.json
 python3 scripts/build.py --all
 
@@ -84,11 +87,13 @@ python3 scripts/generate-fonts.py --font /path/to/NotoSansSC-wght.ttf
 
 ## 兼容与安装边界
 
-完整原始矩阵：[docs/compatibility.json](docs/compatibility.json)。目标包括独立的Music/S/LTE/尺寸型号；Enduro 2使用官方`fenix7x`目标，Forerunner 955 Solar使用`fr955`。35个target与35个营销型号并不等价。
+完整原始矩阵：[docs/compatibility.json](docs/compatibility.json)。目标包括独立的Music/S/LTE/尺寸型号；Enduro 2使用官方`fenix7x`目标，Forerunner 955 Solar使用`fr955`。40个target与40个营销型号并不等价。
+
+fēnix 6系列包含`fenix6`、`fenix6pro`、`fenix6s`、`fenix6spro`、`fenix6xpro`五个官方目标，覆盖对应的Solar、Sapphire及Dual Power型号。6S/6S Pro使用240px紧凑布局，6/6 Pro使用260px，6X Pro使用280px；保留三种布局与机上设置。API 3.4没有本表盘使用的系统周跑量和日出Complications，自动信息位跳过它们，显式选择则显示“不支持”；本地近7日跑步图仍按设备活动历史提供。
 
 Forerunner 45 Plus已由官方商店硬件编号`006-B3847-00`核实共用`fr45`；日版ForeAthlete 45S（`006-B3469-00`）也已核实，国际版45S映射仍未确认。[公开映射证据](docs/verification/fr45-device-mapping.json)保留官方记录与SDK编号对照；这些结论不替代真机安装或商店下发验证。没有开发target的旧型号（如25/30/35）不被宣称可安装，其他地区别名与未来型号不自动视为已验证。
 
-最老目标仅API1.4，fr45表盘内存只有48KiB；现代天气/训练/Complications可能不可用，自动布局只选支持的指标。新版的编译、代表设备截图和内存记录以当前验证报告为准，不沿用旧版内存数值证明新版通过。35个target及历史模拟器范围不代表35款真机验收通过。
+最老目标仅API1.4，fr45表盘内存只有48KiB；现代天气/训练/Complications可能不可用，自动布局只选支持的指标。新版的编译、代表设备截图和内存记录以当前验证报告为准，不沿用旧版内存数值证明新版通过。40个target及历史模拟器范围不代表40款真机验收通过。
 
 Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.prg`和`-tests.prg`仅用于模拟器。UUID为`9d182df86c2d48938ce2c9795678f668`，后续更新维持此身份。旧“耐力仪表”的UUID为`b9b8804748954f99be17e7c4483b4db3`，其应用及数据必须保留。
 
@@ -97,6 +102,7 @@ Enduro 3的真机候选为`bin/reference-face-configurable-enduro3.prg`；`-sim.
 ## 项目证据
 
 - [首次提交审查与定向验证](docs/review-commit-2026-10-22.md)
+- [fēnix 6系列支持与本轮验收](docs/fenix6-support.html) · [原始构建与运行结果](docs/verification/fenix6-support.json)
 - [设备兼容矩阵](docs/compatibility.md)
 - [字体来源、哈希及图集元数据](docs/font-assets.json)
 - [1.0.0发布记录与验证边界](docs/release-1.0.0.md)

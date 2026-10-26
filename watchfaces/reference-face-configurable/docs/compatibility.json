@@ -2,21 +2,21 @@
   "summary": {
     "retrieved_at": "2026-10-19T21:15:54.359796+08:00",
     "alias_mapping_verified_at": "2026-10-19T15:48:48.891218+00:00",
-    "official_targets": 35,
+    "official_targets": 40,
     "enduro_targets": 4,
     "forerunner_targets": 31,
-    "named_product_rows_including_aliases": 38,
+    "named_product_rows_including_aliases": 55,
     "forerunner_named_product_rows": 34,
     "additional_aliases_target_unresolved": 1,
-    "watchface_supported_targets": 35,
-    "part_number_records": 65,
-    "unique_part_numbers": 65,
+    "watchface_supported_targets": 40,
+    "part_number_records": 85,
+    "unique_part_numbers": 85,
     "screen_resolution_groups": {
-      "280 x 280": 4,
+      "280 x 280": 5,
       "390 x 390": 6,
       "215 x 180": 4,
-      "240 x 240": 8,
-      "260 x 260": 3,
+      "240 x 240": 10,
+      "260 x 260": 5,
       "218 x 218": 2,
       "416 x 416": 1,
       "360 x 360": 1,
@@ -25,13 +25,16 @@
       "205 x 148": 1
     },
     "memory_bytes_groups": {
-      "114688": 1,
-      "131072": 19,
+      "114688": 3,
+      "131072": 20,
       "65536": 5,
-      "98304": 9,
+      "98304": 11,
       "49152": 1
     },
-    "all_rows_cross_checked": true
+    "all_rows_cross_checked": true,
+    "fenix6_verified_at": "2026-10-26T10:29:30.675620+00:00",
+    "fenix6_targets": 5,
+    "fenix6_named_product_rows": 17
   },
   "targets": [
     {
@@ -366,6 +369,938 @@
       "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/enduro4.html",
       "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
       "retrieved_at": "2026-10-19T21:15:54.359796+08:00"
+    },
+    {
+      "family": "fēnix 6",
+      "official_name": "fēnix® 6 / 6 Solar / 6 Dual Power",
+      "in_scope_name": "fēnix 6 / fēnix 6 Solar / fēnix 6 Dual Power",
+      "ciq_product_id": "fenix6",
+      "screen_resolution": "260 x 260",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 114688,
+      "watchface_memory_kib": 112,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 114688,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3289-00",
+        "006-B3514-00",
+        "006-B3766-00",
+        "006-B3770-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3289-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ],
+          "api_version": "3.4.5"
+        },
+        {
+          "part_number": "006-B3514-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3766-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3770-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.1"
+        }
+      ],
+      "notes": [
+        "API 3.4：系统周跑量与日出 Complications 不可用；自动信息位按现有能力检测选择。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix6/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix6.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "source_files": [
+        "fenix6/compiler.json",
+        "fenix6/simulator.json"
+      ],
+      "retrieved_at": "2026-10-26T10:29:30.675620+00:00"
+    },
+    {
+      "family": "fēnix 6",
+      "official_name": "fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6",
+      "in_scope_name": "fēnix 6 Pro / fēnix 6 Sapphire / fēnix 6 Pro Solar / fēnix 6 Pro Dual Power",
+      "ciq_product_id": "fenix6pro",
+      "screen_resolution": "260 x 260",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 114688,
+      "watchface_memory_kib": 112,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 114688,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3290-00",
+        "006-B3515-00",
+        "006-B3782-00",
+        "006-B3767-00",
+        "006-B3771-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3290-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ],
+          "api_version": "3.4.5"
+        },
+        {
+          "part_number": "006-B3515-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3782-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3767-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3771-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        }
+      ],
+      "notes": [
+        "API 3.4：系统周跑量与日出 Complications 不可用；自动信息位按现有能力检测选择。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix6pro/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix6pro.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "source_files": [
+        "fenix6pro/compiler.json",
+        "fenix6pro/simulator.json"
+      ],
+      "retrieved_at": "2026-10-26T10:29:30.675620+00:00"
+    },
+    {
+      "family": "fēnix 6",
+      "official_name": "fēnix® 6S / 6S Solar / 6S Dual Power",
+      "in_scope_name": "fēnix 6S / fēnix 6S Solar / fēnix 6S Dual Power",
+      "ciq_product_id": "fenix6s",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 32768,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 65536,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        }
+      },
+      "part_numbers": [
+        "006-B3287-00",
+        "006-B3512-00",
+        "006-B3764-00",
+        "006-B3768-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3287-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ],
+          "api_version": "3.4.5"
+        },
+        {
+          "part_number": "006-B3512-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3764-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3768-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.1"
+        }
+      ],
+      "notes": [
+        "API 3.4：系统周跑量与日出 Complications 不可用；自动信息位按现有能力检测选择。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix6s/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix6s.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "source_files": [
+        "fenix6s/compiler.json",
+        "fenix6s/simulator.json"
+      ],
+      "retrieved_at": "2026-10-26T10:29:30.675620+00:00"
+    },
+    {
+      "family": "fēnix 6",
+      "official_name": "fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power",
+      "in_scope_name": "fēnix 6S Pro / fēnix 6S Sapphire / fēnix 6S Pro Solar / fēnix 6S Pro Dual Power",
+      "ciq_product_id": "fenix6spro",
+      "screen_resolution": "240 x 240",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 98304,
+      "watchface_memory_kib": 96,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 98304,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        }
+      },
+      "part_numbers": [
+        "006-B3288-00",
+        "006-B3513-00",
+        "006-B3765-00",
+        "006-B3769-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3288-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ],
+          "api_version": "3.4.5"
+        },
+        {
+          "part_number": "006-B3513-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3765-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3769-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        }
+      ],
+      "notes": [
+        "API 3.4：系统周跑量与日出 Complications 不可用；自动信息位按现有能力检测选择。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix6spro/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix6spro.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "source_files": [
+        "fenix6spro/compiler.json",
+        "fenix6spro/simulator.json"
+      ],
+      "retrieved_at": "2026-10-26T10:29:30.675620+00:00"
+    },
+    {
+      "family": "fēnix 6",
+      "official_name": "fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power",
+      "in_scope_name": "fēnix 6X Pro / fēnix 6X Sapphire / fēnix 6X Pro Solar",
+      "ciq_product_id": "fenix6xpro",
+      "screen_resolution": "280 x 280",
+      "screen_shape": "round",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "display_colors_reference": 64,
+      "api_level_compatible_page": "3.4",
+      "watchface_supported": true,
+      "watchface_memory_bytes": 131072,
+      "watchface_memory_kib": 128,
+      "touch": false,
+      "all_app_types": {
+        "Audio Content Provider": {
+          "memory_bytes": 524288,
+          "notes": ""
+        },
+        "Background": {
+          "memory_bytes": 32768,
+          "notes": "Requires Permission"
+        },
+        "Data Field": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Glance": {
+          "memory_bytes": 32768,
+          "notes": "Build as Widget"
+        },
+        "Watch App": {
+          "memory_bytes": 1310720,
+          "notes": ""
+        },
+        "Watch Face": {
+          "memory_bytes": 131072,
+          "notes": ""
+        },
+        "Widget": {
+          "memory_bytes": 1048576,
+          "notes": ""
+        }
+      },
+      "part_numbers": [
+        "006-B3291-00",
+        "006-B3516-00",
+        "006-B3783-00"
+      ],
+      "regional_variants": [
+        {
+          "part_number": "006-B3291-00",
+          "language_groups": [
+            [
+              "ara",
+              "bul",
+              "ces",
+              "dan",
+              "deu",
+              "dut",
+              "eng",
+              "est",
+              "fin",
+              "fre",
+              "gre",
+              "heb",
+              "hrv",
+              "hun",
+              "ita",
+              "lav",
+              "lit",
+              "nob",
+              "pol",
+              "por",
+              "ron",
+              "rus",
+              "slo",
+              "slv",
+              "spa",
+              "swe",
+              "tur",
+              "ukr"
+            ]
+          ],
+          "api_version": "3.4.5"
+        },
+        {
+          "part_number": "006-B3516-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        },
+        {
+          "part_number": "006-B3783-00",
+          "language_groups": [
+            [
+              "eng",
+              "ind",
+              "zsm"
+            ],
+            [
+              "zhs"
+            ],
+            [
+              "zht"
+            ],
+            [
+              "jpn"
+            ],
+            [
+              "kor"
+            ],
+            [
+              "tha"
+            ],
+            [
+              "vie"
+            ]
+          ],
+          "api_version": "3.4.2"
+        }
+      ],
+      "notes": [
+        "API 3.4：系统周跑量与日出 Complications 不可用；自动信息位按现有能力检测选择。"
+      ],
+      "reference_url": "https://developer.garmin.com/connect-iq/device-reference/fenix6xpro/",
+      "article_url": "https://developer.garmin.com/connect-iq/articles/device-reference/fenix6xpro.html",
+      "compatible_url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+      "device_version": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+      "source_files": [
+        "fenix6xpro/compiler.json",
+        "fenix6xpro/simulator.json"
+      ],
+      "retrieved_at": "2026-10-26T10:29:30.675620+00:00"
     },
     {
       "family": "Enduro",
@@ -4156,6 +5091,210 @@
       "source": "https://developer.garmin.com/connect-iq/device-reference/fenix7x/"
     },
     {
+      "name": "fēnix 6",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6/"
+    },
+    {
+      "name": "fēnix 6 Solar",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6/"
+    },
+    {
+      "name": "fēnix 6 Dual Power",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6/"
+    },
+    {
+      "name": "fēnix 6 Pro",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6pro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6pro/"
+    },
+    {
+      "name": "fēnix 6 Sapphire",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6pro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6pro/"
+    },
+    {
+      "name": "fēnix 6 Pro Solar",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6pro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6pro/"
+    },
+    {
+      "name": "fēnix 6 Pro Dual Power",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6pro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "260 x 260",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 114688,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6pro/"
+    },
+    {
+      "name": "fēnix 6S",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6s",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6s/"
+    },
+    {
+      "name": "fēnix 6S Solar",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6s",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6s/"
+    },
+    {
+      "name": "fēnix 6S Dual Power",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6s",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6s/"
+    },
+    {
+      "name": "fēnix 6S Pro",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6spro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6spro/"
+    },
+    {
+      "name": "fēnix 6S Sapphire",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6spro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6spro/"
+    },
+    {
+      "name": "fēnix 6S Pro Solar",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6spro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6spro/"
+    },
+    {
+      "name": "fēnix 6S Pro Dual Power",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6spro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "240 x 240",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 98304,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6spro/"
+    },
+    {
+      "name": "fēnix 6X Pro",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6xpro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6xpro/"
+    },
+    {
+      "name": "fēnix 6X Sapphire",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6xpro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6xpro/"
+    },
+    {
+      "name": "fēnix 6X Pro Solar",
+      "family": "fēnix 6",
+      "ciq_product_id": "fenix6xpro",
+      "target_mapping_status": "官方参考页与 SDK 设备包明确",
+      "watchface_supported": true,
+      "screen_resolution": "280 x 280",
+      "screen_technology": "Memory-In-Pixel (64 colors)",
+      "api_level": "3.4",
+      "watchface_memory_bytes": 131072,
+      "source": "https://developer.garmin.com/connect-iq/device-reference/fenix6xpro/"
+    },
+    {
       "name": "Forerunner 165",
       "family": "Forerunner",
       "ciq_product_id": "fr165",
@@ -4577,7 +5716,7 @@
     }
   ],
   "research_notes": {
-    "scope": "只读研究，不修改项目、不安装工具、不访问凭据或用户聊天。官方兼容目录全量匹配 Enduro 和 Forerunner，再逐 target 核对 Watch Face。",
+    "scope": "Enduro、Forerunner 与 fēnix 6 系列目标矩阵；fēnix 6 于 2026-10-26 核对官方兼容目录、设备参考及本机官方设备包。各目标保留独立核对日期。",
     "sources": {
       "compatible": "https://developer.garmin.com/connect-iq/compatible-devices/",
       "reference_index": "https://developer.garmin.com/connect-iq/device-reference/",
@@ -4634,6 +5773,7 @@
       "不推定地区硬件编号与国家、零售 SKU、ForeAthlete/J/Lite 等名称的映射；保存各 target 的全部 Part Number 与语言/字体分组，以供后续验证。",
       "原始矩阵调研后，主代理已安装官方 SDK 和设备包，完成全部 35 目标 Release 编译及 11 类屏幕代表模拟器验收；原始结果在 verification/。真机安装和商店发布后的实际下发仍未验证。",
       "官网新增 Enduro 4、Forerunner 70/170/170 Music 已在兼容页、设备参考页和本机 SDK 设备包中核实并编译；不据此断言所有地区零售上市。",
+      "2026-10-26新增5个fēnix 6系列target及17个系列型号，SDK区域API为3.4.1–3.4.5；沿用现有240/260/280圆屏资源与MIP路径。本轮构建和模拟器证据独立记录，不代表真机验收或商店发布。",
       "45 Plus 与日版 ForeAthlete 45S 的 target 映射已用官方商店和 SDK 的硬件编号交叉核实；国际版 45S 映射仍未确认，不把地区证据外推为全部零售 SKU。"
     ],
     "access_issues": [

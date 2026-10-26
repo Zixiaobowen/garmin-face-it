@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-26T10:29:30.675620+00:00",
+  "failures": [
+    {
+      "device": "fenix6spro",
+      "mode": "simulator",
+      "exit_code": 1,
+      "output": "fenix6spro: FAILED (bin/logs/fenix6spro-sim.log)\nERROR: fenix6spro: A critical error has occurred. Please re-run the Monkey C Compiler with logging enabled and file a report with the Connect IQ support team (ConnectIQ@garmin.com).\n"
+    }
+  ],
+  "service_failure": "fenix6spro-validation: Java Runtime not found; launch requires explicit Java 17 environment."
+}

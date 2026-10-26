@@ -23,7 +23,7 @@ python3 watchfaces/reference-face-configurable/scripts/build.py --device enduro3
 
 技能实体仍在**仓库根** `.agents/skills/garmin-dev/`，`.omp/skills/garmin-dev` 指向同一份内容；`.hermes/` 与 `skills-lock.json` 也保留在仓库根。这些本机辅助目录不是应用构建依赖。技能更新需保留到本路由的入口，再按选定表盘读取其约束。
 
-SDK、Java、官方设备包和仓库外开发者签名密钥可以共用。每款表盘的 UUID、能力矩阵、资源及产物独立维护；同一表盘更新维持原签名和 UUID。耐力仪表·可配的35目标、SDK故障记录、商店历史回读和真机验收边界只约束该应用。
+SDK、Java、官方设备包和仓库外开发者签名密钥可以共用。每款表盘的 UUID、能力矩阵、资源及产物独立维护；同一表盘更新维持原签名和 UUID。耐力仪表·可配的40目标、SDK故障记录、商店历史回读和真机验收边界只约束该应用。
 
 新增表盘按[根 README](../README.md#新增表盘)使用官方 **Monkey C: New Project** 或 SDK 自带的官方模板在新子目录创建真实工程，再登记路由和专属说明。复用脚本前必须调整 `configure.py` 的身份与能力矩阵，以及 `build.py` 的产物前缀；不能把已有表盘的生成配置直接当作新工程。
 
