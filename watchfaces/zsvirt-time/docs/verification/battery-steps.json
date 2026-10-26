@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-10-26T15:52:14.346766+08:00",
+  "branch": "feat/zsvirt-time-battery-steps",
+  "device": "enduro3",
+  "sdk": "9.2.0",
+  "device_build": {
+    "command": "python3 watchfaces/zsvirt-time/scripts/build.py --device enduro3",
+    "exit_code": 0,
+    "program": "bin/zsvirt-time-enduro3.prg",
+    "bytes": 14844,
+    "sha256": "6ba0f70a782caab9f4eb4d295162ee26121b7120c3766e7039d63b35ca0cf1d6",
+    "report": "bin/build-enduro3.json"
+  },
+  "simulator": {
+    "command": "python3 watchfaces/zsvirt-time/scripts/build.py --device enduro3 --run",
+    "compiler_device": "enduro3_sim",
+    "compile_exit_code": 0,
+    "runner_exit_code": 0,
+    "program": "bin/zsvirt-time-enduro3-sim.prg",
+    "sha256": "be30af2c07d3f3278d6c019ee0af0b5472bfe20f987ae6bc1e6bafeb5ddd94d3",
+    "report": "bin/build-enduro3-sim.json",
+    "service": "zsvirt-battery-steps-run",
+    "completion": "Restored simulated battery to 50%, steps to 0 and time display to 24-hour; gracefully terminated this task-owned simulator. Supervised runner exited 0."
+  },
+  "visual_cases": [
+    {
+      "battery_percent": 50,
+      "steps": 8642,
+      "time_format": "24h",
+      "window_capture": "battery-steps-8642-window.png"
+    },
+    {
+      "battery_percent": 100,
+      "steps": 123456,
+      "time_format": "12h",
+      "period": "PM",
+      "window_capture": "battery-steps-full-six-digits-window.png"
+    },
+    {
+      "battery_percent": 0,
+      "steps": 0,
+      "time_format": "12h",
+      "period": "PM",
+      "window_capture": "battery-steps-zero-window.png"
+    },
+    {
+      "battery_percent": 82,
+      "steps": 8642,
+      "time_format": "24h",
+      "observed_time": "15:47",
+      "window_capture": "battery-steps-final-window.png",
+      "screen_crop": "battery-steps-final-screen.png"
+    }
+  ],
+  "visual_observations": {
+    "logo_and_time_visible": true,
+    "metric_icons_and_values_visible": true,
+    "clipping_observed": false,
+    "overlap_observed": false,
+    "steps_transition": [
+      8642,
+      123456,
+      0,
+      8642
+    ],
+    "battery_transition": [
+      50,
+      100,
+      0,
+      82
+    ],
+    "zero_displays_as_zero": true,
+    "hide_show_refresh_observed": true
+  },
+  "data_scope": "All percentages and step counts in screenshots are simulator inputs; the unchanged production APIs read device-local SystemStats and ActivityMonitor.Info.",
+  "not_performed": [
+    "null step-value injection",
+    "new unit tests or rerun of unchanged clock tests",
+    "repository-wide tests",
+    "on-watch installation or visual validation",
+    "battery-life measurement",
+    "store package export or upload for the metric changes",
+    "Git commit or push for the metric changes"
+  ]
+}

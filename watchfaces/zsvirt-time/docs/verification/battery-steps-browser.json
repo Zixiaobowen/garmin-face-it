@@ -1,0 +1,61 @@
+{
+  "observed_at": "2026-10-26T15:55:56.492816+08:00",
+  "receipt": "watchfaces/zsvirt-time/docs/delivery.html",
+  "tern_owner": 2237677961422,
+  "tern_block": 2237677961556,
+  "wide": {
+    "width": 1386,
+    "scrollWidth": 1386,
+    "imageLoaded": true,
+    "links": [
+      {
+        "text": "Enduro 3 安装包",
+        "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/zsvirt-time/bin/zsvirt-time-enduro3.prg"
+      },
+      {
+        "text": "使用说明",
+        "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/zsvirt-time/README.md"
+      },
+      {
+        "text": "本轮验证记录",
+        "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/zsvirt-time/docs/verification/battery-steps.json"
+      },
+      {
+        "text": "1.0.0 发布记录",
+        "url": "file:///Users/zixiaobowen/myProjects/garmin-face-it/watchfaces/zsvirt-time/docs/release-1.0.0.md"
+      },
+      {
+        "text": "ZSvirt 官方下载页",
+        "url": "https://zsvirt.io/download"
+      }
+    ]
+  },
+  "narrow": {
+    "width": 390,
+    "scrollWidth": 390,
+    "imageLoaded": true,
+    "detailsOpen": true,
+    "scheme": "rgb(16, 26, 32)"
+  },
+  "wide_errors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "narrow_errors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "wide_console": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "narrow_console": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "missing_local_links": []
+}

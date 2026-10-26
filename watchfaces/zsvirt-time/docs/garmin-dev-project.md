@@ -1,6 +1,6 @@
 # ZSvirt Time 开发约束
 
-本说明仅约束 `watchfaces/zsvirt-time/`。当前目标是时间与 ZSvirt 官方 Logo，用户设备为 Enduro 3。不要套用耐力仪表的 UUID、35 目标矩阵、数据模块、配置生成器或发布历史。
+本说明仅约束 `watchfaces/zsvirt-time/`。当前目标以时间与ZSvirt官方Logo为主视觉，并显示手表电量和今日步数；用户设备为Enduro 3。不要套用耐力仪表的UUID、35目标矩阵、数据模块、配置生成器或发布历史。
 
 ## 身份与工程
 
@@ -12,8 +12,9 @@
 ## 行为与资源
 
 - `FaceTime` 负责 12/24 小时制与 AM/PM；`ZsvirtTimeView` 直接读取设备本地时钟和系统时制，不模拟时间、不进行时区换算。
-- 字符串仅在时、分或时制变化时重建；每次 `onUpdate` 仍重绘完整画面，避免返回表盘时出现残影或空白。
-- 不显示秒，不添加 Timer、动画、后台联网或传感器读取。MIP 休眠由官方 WatchFace 生命周期控制，保持 Logo 与时间完整可见；不宣称已测得节电比例。
+- 时间字符串仅在时、分或时制变化时重建；电量、步数字符串仅在对应值变化时重建。每次 `onUpdate` 读取当前系统电量和当天步数，并重绘完整画面，避免返回表盘时出现残影或空白。
+- 不显示秒，不添加Timer、动画、后台联网或直接传感器采样。电量来自 `System.getSystemStats().battery`，显示整数百分比；步数来自 `ActivityMonitor.getInfo().steps`，有效0必须显示0，null显示 `--`，不沿用上一有效值。这两个系统API无需新增权限。
+- MIP休眠由官方WatchFace生命周期控制，保持Logo、时间、电量及步数完整可见；不宣称已测得节电比例。固定布局仅为Enduro 3设计：Logo顶部60px，时间中心158px，AM/PM中心197px，底部数据中心225px。
 - Logo 原件和来源见 `assets/SOURCES.json`；图形只裁透明边、等比缩放、转为四级灰。通过 `scripts/generate-resources.py` 重现，不能重画品牌图形或替换字标。
 
 ## 调度与验证
